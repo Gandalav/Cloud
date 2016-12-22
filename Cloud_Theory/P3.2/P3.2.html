@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)https://theproject.zone/writeup/3/2 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+
+    <link type="image/x-icon" rel="shortcut icon" href="https://theproject.zone/static/favicon.ico">
+    <!--<link type="text/css" rel="stylesheet" href="/static/css/table_sort.css">-->
+    <link type="text/css" rel="stylesheet" href="./P3.2_files/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="./P3.2_files/jquery.dataTables.min.css">
+    <link type="text/css" rel="stylesheet" href="./P3.2_files/header.css">
+    <link type="text/css" rel="stylesheet" href="./P3.2_files/defaultTheme.css">
+    <link type="text/css" rel="stylesheet" href="./P3.2_files/datepicker.css">
+    <link type="text/css" rel="stylesheet" href="./P3.2_files/bootstrap-editable.css">
+    <title>15-319/619 Cloud Computing</title>
+    
+    
+    
+    
+    
+    <link type="text/css" rel="stylesheet" href="./P3.2_files/inside.base.css">
+
+    <link type="text/css" rel="stylesheet" href="./P3.2_files/docs.min.css">
+
+
+    <script type="text/javascript" src="./P3.2_files/jquery.min.js"></script>
+    <script type="text/javascript" src="./P3.2_files/jquery.tablesorter.js"></script>
+    <script type="text/javascript" src="./P3.2_files/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="./P3.2_files/jquery.fixedheadertable.js"></script>
+    <script type="text/javascript" src="./P3.2_files/fnSetFilteringDelay.js"></script>
+    <script type="text/javascript" src="./P3.2_files/datatableview.min.js"></script>
+    <script type="text/javascript" src="./P3.2_files/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./P3.2_files/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="./P3.2_files/bootstrap-editable.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./P3.2_files/prettify.css"></head>
+
+<body role="document" style="margin-bottom: 40px">
+
+    <div id="base-container" class="container-fluid" style="padding-top: 49.888888835907px;">
+    
+    
+    
+    
+    
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+   
+        <div class="container-fluid">
+
+            <div class="navbar-header" style="padding-bottom:40px">
+               <a href="https://theproject.zone/home"><img src="./P3.2_files/TPZlogo_small_inverted.png"></a>
+            </div>
+
+            <div class="navbar-header pull-right">
+                <a class="navbar-brand" href="https://theproject.zone/writeup/3/2#" onclick="return false;" style="margin-left: 0px;"><span class="label label-default" id="username-label">pgandala</span></a>
+            </div>
+
+            <div class="coll pull-right">
+                <ul id="navbar" class="nav navbar-nav" style="font-weight:bold">
+                    <li id="home"><a href="https://theproject.zone/home">Home</a></li>
+
+                    
+                        
+                        <li id="project0" class="dropdown">
+                            <a href="https://theproject.zone/writeup/3/2#" data-toggle="dropdown" class="dropdown-toggle">Primer
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/0/1">Project Primer</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li id="project1" class="dropdown">
+                            <a href="https://theproject.zone/writeup/3/2#" data-toggle="dropdown" class="dropdown-toggle">Project 1
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/1/1">1.1 Sequential Analysis</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/1/2">1.2 Using Amazon's Elastic MapReduce</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li id="project2" class="dropdown">
+                            <a href="https://theproject.zone/writeup/3/2#" data-toggle="dropdown" class="dropdown-toggle">Project 2
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/2/1">2.1 Introduction to AWS APIs</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/2/2">2.2 Load Balancing and AutoScaling</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/2/3">2.3 Advanced Scaling Concepts</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li id="project3" class="dropdown active">
+                            <a href="https://theproject.zone/writeup/3/2#" data-toggle="dropdown" class="dropdown-toggle">Project 3
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/3/1">3.1 Files v/s Databases</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="./P3.2_files/P3.2.html">3.2 Partitioning and Replication</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/3/3">3.3 Database-as-a-Service</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/3/4">3.4 Cloud Data Warehousing</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/3/5">3.5 Consistency in Distributed Key-Value Stores</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li id="project4" class="dropdown">
+                            <a href="https://theproject.zone/writeup/3/2#" data-toggle="dropdown" class="dropdown-toggle">Project 4
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/4/1">4.1 MapReduce Programming using YARN</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/4/2">4.2 Iterative Programming using Apache Spark</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/4/3">4.3 Graph Programming using GraphLab</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li id="project5" class="dropdown">
+                            <a href="https://theproject.zone/writeup/3/2#" data-toggle="dropdown" class="dropdown-toggle">15619 Project
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/1">Phase 1</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/2">Phase 1 Report</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/3">Phase 2</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/4">Phase 2 Live Test (MySQL)</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/5">Phase 2 Live Test (HBase)</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/6">Phase 2 Report</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/7">Phase 3</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/9">Phase 3 Live Test</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/10">Phase 3 Report</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                    
+                
+                    
+                    <li id="grade"><a class="active" href="https://theproject.zone/grade/">Grade Book</a></li>
+                    <li id="profile"><a href="https://theproject.zone/profile">Profile</a></li>
+                    <li id="logout"><a href="https://theproject.zone/log_out">Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+
+        <div class="row">
+
+        <div class="col-md-6">
+            <h2>3.2 Partitioning and Replication</h2>
+        </div>
+        
+        
+        <div class="col-md-6 pull-down">
+            <div class="btn-group pull-right" style="margin-bottom: 10px">
+                <a class="btn btn-default btn-primary" href="https://theproject.zone/writeup/3/2/" id="nav_writeup">Writeup</a>
+
+                
+
+                
+
+                <a class="btn btn-default" href="https://theproject.zone/submissions/3/2/" id="nav_submissions">Submissions</a>
+                <a class="btn btn-default" href="https://theproject.zone/scoreboard/3/2/" id="nav_score_board">ScoreBoard</a>
+            </div>
+        </div>
+        
+        
+        </div>
+
+        <table class="table table-striped table-bordered table-condensed prettyBorder">
+        <thead>
+            <tr>
+                <th>Phase</th>
+                <th>Open</th>
+                <th>Deadline</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>3.2 Partitioning and Replication</td>
+                <td>Mar. 02, 2015 00:01</td>
+                <td>Mar. 08, 2015 23:59</td>
+            </tr>
+        </tbody>
+        </table>
+        
+        
+
+        <hr>
+        
+
+<style>
+  img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  }
+  small.caption {
+  display: block;
+  text-align: center;
+  margin-bottom: 4em;
+  }
+  iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  }
+  .bs-callout-task {
+  background-color: #ffffff;
+  border-left-color: green;
+  }
+  .bs-callout-task h4,
+  .bs-callout-task a.alert-link {
+  color: green;
+  }
+  .bs-callout-learning {
+  background-color: #ffffff;
+  border-left-color: purple;
+  }
+  .bs-callout-learning h4,
+  .bs-callout-learning a.alert-link {
+  color: purple;
+  }
+  .bs-docs-sidebar.affix {
+  position: fixed;
+  top: 25x;
+  }
+</style>
+
+<div id="writeup-content" class="row">
+  <div class="col-md-3" role="complementary">
+    <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top" style="top:120px">
+      <!-- Inline CSS Hack for Display -->
+      <ul class="nav bs-docs-sidenav">
+        <li><a href="https://theproject.zone/writeup/3/2#intro">Introduction</a>
+            <ul class="nav">
+            <li><a href="https://theproject.zone/writeup/3/2#sharding-and-replication">Sharding and Replication</a></li>
+            <li><a href="https://theproject.zone/writeup/3/2#mysql-cluster">MySQL Cluster</a></li>
+            <li><a href="https://theproject.zone/writeup/3/2#mysql-cluster-types">Types of Nodes in a MySQL Cluster</a></li>
+            <li><a href="https://theproject.zone/writeup/3/2#the-scenario">The Scenario</a></li>
+            </ul>
+        </li>
+        <li>
+          <a href="https://theproject.zone/writeup/3/2#the-experiments">Experiments</a>
+          <ul class="nav">
+          <li><a href="https://theproject.zone/writeup/3/2#creating-one-node-cluster">Creating a MySQL Cluster with One Data Node</a></li>
+          <li><a href="https://theproject.zone/writeup/3/2#config-management-node">Configuring the management node</a></li>
+          <li><a href="https://theproject.zone/writeup/3/2#config-database-node">Configuring the Database Node</a></li>
+          <li><a href="https://theproject.zone/writeup/3/2#config-api-node">Configuring the API Node</a></li>
+          <li><a href="https://theproject.zone/writeup/3/2#create-user-mysql">Creating a user for your MySQL Cluster</a></li>
+          <li><a href="https://theproject.zone/writeup/3/2#extending-cluster-sharding">Extending the Cluster to Three Data Node Sharding</a></li>
+          <li><a href="https://theproject.zone/writeup/3/2#extending-cluster-replication">Switching from Sharding to Replication</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://theproject.zone/writeup/3/2#hbase-benchmarks">HBase Benchmarks</a>
+          <ul class="nav">
+          <li><a href="https://theproject.zone/writeup/3/2#operation">HBase Operations</a></li>
+          <li><a href="https://theproject.zone/writeup/3/2#architecture">HBase Architecture</a></li>
+          </ul>
+        </li>
+      </ul>
+      <a class="back-to-top" href="https://theproject.zone/writeup/3/2#top">
+      Back to top
+      </a>
+    </nav>
+  </div>
+<div class="col-md-9" role="main">
+<div class="bs-docs-section">
+<h1 id="intro" class="page-header">Introduction</h1>
+<div class="bs-callout bs-callout-learning">
+<h4>Learning Objectives</h4>
+<p>This project will encompass the following learning objectives:</p>
+<ol>
+<li>Explore the advantages and disadvantages of using a single MySQL server</li>
+<li>Explore the advantages and disadvantages of using a replicated MySQL server</li>
+<li>Explore the advantages and disadvantages of using a sharded MySQL server</li>
+<li>Explore the advantages and disadvantages of using a NoSQL datastore (HBase)</li>
+</ol>
+</div>
+<h3 id="sharding-and-replication">Sharding and Replication</h3>
+<p>Replication and sharding are two techniques generally used to further improve the performance of the backend database system. The concept of sharding, or horizontal partitioning, is a database design principle whereby rows of a database table are held separately, rather than being split into columns. Each partition forms a shard, which may in turn be located on a separate database server or physical location. There are numerous advantages to this partitioning approach. As databases grow, it is time-consuming to search through whole tables. Thus, using sharding, tables are divided and distributed into multiple servers, the total number of rows in each table in each database instance is reduced. This reduces the index size, which generally improves search performance. A database shard can be placed on separate hardware, and multiple shards can be placed on multiple machines. This enables a distribution of the database over a large number of machines, which means that the database performance can be spread out over multiple machines, greatly improving performance for certain queries.</p>
+<p>Another method to improve the performance of databases is replication, which simply replicates the database on many hosts so that a read query to the database can be satisfied by any one of the replicas of the database. In case of update queries, the request needs to propagate to all replicas in order to preserve consistency across replicas. Replication is particularly important when fault tolerance is of primary importance and also for performance when there exists a record in the database which is accessed very frequently by multiple clients.</p>
+<p>The following figures show the difference between a single database node, cluster with 3 shards and cluster with 3 replicas.</p>
+
+<img src="./P3.2_files/MySQL-Layout.png" title="The layout of a table on a single database node, cluster with 3 shards and cluster with 3 replicas" style="border: 1px solid;" height="350" width="820">
+<h4><small class="caption">Figure 1: The layout of a table on a single database node, cluster with 3 shards and cluster with 3 replicas.</small></h4>
+
+<img src="./P3.2_files/MySQL-Read.png" title="Read query to a single database node, cluster with 3 shards and cluster with 3 replicas" style="border: 1px solid;" height="350" width="820">
+<h4><small class="caption">Figure 2: Read query to a single database node, cluster with 3 shards and cluster with 3 replicas.</small></h4>
+
+<img src="./P3.2_files/MySQL-Write.png" title="Update query to a single database node, cluster with 3 shards and cluster with 3 replicas" style="border: 1px solid;" height="350" width="820">
+<h4><small class="caption">Figure 3: Update query to a single database node, cluster with 3 shards and cluster with 3 replicas.</small></h4>
+
+<h3 id="mysql-cluster">MySQL Cluster</h3>
+<p>MySQL Cluster is an extension to MySQL that provides clustering and auto-sharding/replication for the MySQL database management system. It is designed to provide high availability and high throughput with low latency, while allowing for near linear scalability. MySQL Cluster is implemented through the <b>NDB</b> or <b>NDBCLUSTER</b> storage engine for MySQL (<b>NDB</b> stands for Network Database).</p>
+
+<h3 id="mysql-cluster-types">Types of Nodes in a MySQL Cluster</h3>
+<p>To create a fully functional production MySQL cluster, you need a minimum of 3 instances/nodes. The following are the types of nodes that should be part of a MySQL production cluster:</p>
+<p><b><u>Cluster Management Node:</u></b> The cluster management node manages the cluster. It does not hold any data. A cluster can have multiple management nodes for failover-redundancy and disaster recovery.</p>
+<p><b><u>Data Node:</u></b> The data nodes contain the actual data (i.e. the row-wise partitions of tables). These partitions are distributed across nodes. The cluster can be configured to maintain replicas too. If replication factor is 2, there are two copies of each partition distributed within the cluster.</p>
+<p><b><u>API Node:</u></b> These are the nodes that access the cluster data. In the case of a MySQL Cluster, an API node is a traditional MySQL server that uses the <a href="http://dev.mysql.com/doc/refman/5.1/en/mysql-cluster.html">NDBCLUSTER</a> storage engine. This is also called a SQL Node. API nodes allow for client access via the 3306 port by default.</p>
+<p>In addition to the three types of nodes we can also have a LoadBalancer node or a MySQL proxy node. This node acts as a proxy end-point to an application that tries to access data through the available API Nodes in the cluster. The use of a proxy node is outside the scope of this project, but may come in handy for real-world MySQL deployments.</p>
+
+<p>The following diagram illustrates a MySQL cluster that has 1 management node, 1 API Node and 3 Data Nodes.</p>
+<img src="./P3.2_files/MySQL_Cluster-setup.png" title=" MySQL cluster with one management node, one API node and three database nodes." style="border: 1px solid;" height="550" width="820">
+<h4><small class="caption">Figure 4: MySQL cluster with one management node, one API node and three database nodes.</small></h4>
+
+<h3 id="the-scenario">The Scenario</h3>
+<p>Since you excelled at your first job at Carnegie Records(CR), you got promoted to work on the backend storage systems of CR which delivers massive amount of music content to its half a billion customers worldwide. You are expected to make certain decisions for future planning for CR. Before that, you must familiarize yourself with the different backend storage systems that can be used at CR. In the following steps, you will perform certain experiments at the end of which you will be expected to make informed decisions. Make sure to pay special attention to the results and what they mean.</p>
+
+<div class="bs-callout bs-callout-warning">
+<h4 id="resource-tagging">Resource Tagging</h4>
+<p>For this project, assign the tag with <code>Key: Project</code> and <code>Value: 3.2</code> for all resources</p>
+</div>
+
+<div class="bs-docs-section">
+<h1 id="the-experiments" class="page-header">Experiments</h1>
+<p> In this project we will first create a MySQL cluster configuration with one management node, one data node and one API node. After experimenting with one data node, we will extend the cluster to three data nodes. We will use <b>m1.small</b> instances for the management node and data nodes, and use <b>m3.xlarge</b> for MySQL API node. To achieve this, launch 2 <b>m1.small</b> instances (one management node and one data node) and one <b>m3.xlarge</b> instance (API node) <b>(ami-84562dec)</b> - all in the same availability zone. Note down the private IPs of all nodes. Please allow all traffic in the security group assigned to all nodes in the MySQL cluster.</p>
+<table class="table">
+<thead>
+            <tr>
+              <th>Instance Usage</th>
+              <th>Instance Type</th>
+              <th>AMI Id</th>
+            </tr>
+</thead>
+          <tbody><tr>
+            <td>Management node</td>
+            <td>m1.small</td>
+            <td>ami-84562dec</td>
+          </tr>
+          <tr>
+            <td>Database Node</td>
+            <td>m1.small</td>
+            <td>ami-84562dec</td>
+          </tr>
+          <tr>
+            <td>API Node</td>
+            <td>m3.xlarge</td>
+            <td>ami-84562dec</td>
+          </tr>
+</tbody></table>
+<h4><small class="caption"><b>Table 1: Instances, types and AMIs to be used</b></small></h4>
+<p><b>Note:</b> Use the <b>ubuntu</b> user to log in to these instances. A lot of following commands require root access. It’s suggested to switch to root user by typing <code>sudo su</code> or add <code>sudo</code> at the beginning of commands.</p>
+
+
+<h3 id="creating-one-node-cluster">Creating a MySQL Cluster with One Data Node</h3>
+<h4 id="config-management-node"><b>Configuring the management node</b></h4>
+<p>We will start by configuring the MySQL management node and then move on to the data node. You will want to execute the following commands as <b>root</b> unless mentioned otherwise:</p>
+<p>Let's create a directory to hold all the source packages for the management node. Navigate to <b>/usr/src</b> directory and create the <b>mysql-mgm</b> directory: <br></p><pre>mkdir /usr/src/mysql-mgm</pre><p></p>
+<p>Now let's download the latest GPL source packages for MySQL-Cluster from the MySQL download site and extract the archive: <br></p><pre>wget http://cdn.mysql.com/Downloads/MySQL-Cluster-7.3/mysql-cluster-gpl-7.3.7-linux-glibc2.5-x86_64.tar.gz<br>tar xvfz mysql-cluster-gpl-7.3.7-linux-glibc2.5-x86_64.tar.gz</pre><p></p>
+<p>Navigate to the extracted folder and move the binaries to <b>/usr/bin</b> so that they appear on the user's PATH for execution:<br></p><pre>cd mysql-cluster-gpl-7.3.7-linux-glibc2.5-x86_64<br>cp bin/ndb_mgm /usr/bin<br>cp bin/ndb_mgmd /usr/bin</pre><p></p>
+<p>Change the permissions for the MySQL binaries to allow for execute and optionally remove the downloaded source files from <b>/usr/src</b><br></p><pre>chmod 755 /usr/bin/ndb_mg*<br>cd /usr/src<br>rm -rf /usr/src/mysql-mgm</pre><p></p>
+<p>Next, we must create the cluster configuration file in <b>/var/lib/mysql-cluster/</b> in a file named <b>config.ini</b>. The folder <b>/var/lib/mysql-cluster/</b> does not exist so you need to create it.<br></p><pre>mkdir /var/lib/mysql-cluster</pre><p></p>
+<p>Create the file <b>config.ini</b> file using your favourite text editor and add the following contents to the line:<br></p><pre>[NDBD DEFAULT]
+# This parameter is very important. We will explain later
+NoOfReplicas=1
+DataMemory=1024M
+IndexMemory=200M
+[MYSQLD DEFAULT]
+
+[NDB_MGMD DEFAULT]
+DataDir=/var/lib/mysql-cluster
+[TCP DEFAULT]
+
+# Section for the cluster management node
+[NDB_MGMD]
+NodeId=1
+# IP address of the first management node (this system)
+HostName=&lt;private ip of your MGMT node&gt;
+
+# Section for the storage nodes
+[NDBD]
+# IP address of the data node(storage node)
+HostName=&lt;private ip of your data node&gt;
+DataDir= /var/lib/mysql-cluster
+
+[MYSQLD]
+# IP address of your API Node
+HostName=&lt;private ip of your API node&gt;
+
+[MYSQLD]
+# IP address of your API Node
+HostName=&lt;private ip of your API node&gt;
+
+[MYSQLD]
+# IP address of your API Node
+HostName=&lt;private ip of your API node&gt;
+
+[MYSQLD]
+# IP address of your API Node
+HostName=&lt;private ip of your API node&gt;</pre><p></p>
+
+<p><b>Note:</b> The parameter NoOfReplicas controls the number of replications in the cluster. In the case with one data node and the parameter set to 1, the cluster behaves similar to a stand-alone mysql server. When we use 3 data nodes later in this project, this parameter decides whether to do sharding or replication. If it is set to 1, the data is partitioned into several shards and distributed across data nodes. If it is set to 3, each data node will store identical data (the whole dataset).<br>The number of [NDBD] sections is the same as the number of data nodes. At this stage we only have one [NDBD] section, representing the one data node. We have four [MYSQLD] sections with exactly the same content, although we are only using one API node. This is because we will configure API node to have multiple connections to the cluster, and each connection needs one slot.</p>
+
+<p><b>Note that all hosts are defined at this stage, even though we are only installing the management node. Note that the management host node needs a NodeID parameter specified whereas the NDBD nodes do not.</b></p>
+
+<p>Once this is done you can start the management node with the following command (this is a single line command):<br></p><pre>ndb_mgmd -f /var/lib/mysql-cluster/config.ini --configdir=/var/lib/mysql-cluster/</pre><p></p>
+
+<p>Next, you can configure the ndb_mgmd to automatically start on boot by configuring it as an init.d script:<br></p><pre>echo "ndb_mgmd -f /var/lib/mysql-cluster/config.ini --configdir=/var/lib/mysql-cluster/" &gt; /etc/init.d/ndb_mgmd<br>chmod 755 /etc/init.d/ndb_mgmd</pre><p></p>
+
+<p>You can verify that the management node is operational using the command - <b>ndb_mgm</b> (just enter <b>ndb_mgm</b> in the terminal) and by typing <b>"show"</b> in the configuration utility. The command will work, but it will show that the ndbd node and API node are disconnected (because we have not configured them yet).</p>
+
+<h4 id="config-database-node"><b>Configuring the Database Node</b></h4>
+<p>Creating the DB nodes is fairly similar to creating the management nodes.</p>
+<p>Navigate to <b>/usr/local</b> and download the same package as the one we used for the management node and extract it.<br></p><pre>cd /usr/local/<br>wget http://cdn.mysql.com/Downloads/MySQL-Cluster-7.3/mysql-cluster-gpl-7.3.7-linux-glibc2.5-x86_64.tar.gz<br>tar xvfz mysql-cluster-gpl-7.3.7-linux-glibc2.5-x86_64.tar.gz</pre><p></p>
+
+<p>Create a symbolic link named <b>mysql</b> pointing to the extracted folder (this will be used later by the DB cluster. So do not delete it!).<br></p><pre>ln -s mysql-cluster-gpl-7.3.7-linux-glibc2.5-x86_64 mysql</pre><p></p>
+
+<p>Copy all the files in the <b>bin</b> directory to the <b>/usr/bin</b> location to keep everything neat and create a symlink to keep references right.<br></p><pre>cd /usr/local/mysql/bin<br>mv * /usr/bin<br>cd ../<br>rm -fr /usr/local/mysql/bin<br>ln -s /usr/bin /usr/local/mysql/bin</pre><p></p>
+
+<p>The configuration file is not included by default. So we need to create it ourselves. The file should be in the <b>/etc/</b> directory and should be named <b>my.cnf</b>. Open the file using a text editor and add the following lines to it:<br></p><pre>[mysqld]
+ndbcluster
+# IP address of the cluster management node
+ndb-connectstring=&lt;private IP of your Management Node&gt;
+# Number of connections to cluster
+ndb-cluster-connection-pool=4
+
+[mysql_cluster]
+# IP address of the cluster management node
+ndb-connectstring=<private ip="" of="" your="" management="" node=""></private></pre><p></p>
+
+<p>Finally create the data folder for the data node and launch the data node server. The initialization needs to be done only when you start the node for the first time, or when <b>/var/lib/mysql-cluster/config.ini</b> file has been changed on the management node(s)<br></p><pre>mkdir /var/lib/mysql-cluster<br>cd /var/lib/mysql-cluster<br>ndbd –-initial</pre><p></p>
+
+<p>Finally, we need to configure <b>ndb</b> to start automatically using an init.d script:<br></p><pre>echo "ndbd" &gt; /etc/init.d/ndbd<br>chmod 755 /etc/init.d/ndbd</pre><p></p>
+
+<p>After launching the data node server, go to the management node and type <b>ndb_mgm</b> to launch the management client. In the console, type show to verify the data node is connected. (At this point, the API node still shows as disconnected, since we haven’t configured it yet)</p>
+
+<p><b>Note</b>: Please verify the data node (or all data nodes later in this project) are connected before you launch the mysql server in the API node.</p>
+
+<h4 id="config-api-node"><b>Configuring the API Node</b></h4>
+<p>We start by creating a mysql group and adding a Linux user for MySQL. This is a good idea in general as you should not run <b>mysql</b> as <b>root</b> on a production system for security reasons.<br></p><pre>groupadd mysql<br>useradd -g mysql mysql</pre><p></p>
+<p>Navigate to <b>/usr/local</b> and download the same package as the one we used for the management node and extract it.<br></p><pre>cd /usr/local/<br>wget http://cdn.mysql.com/Downloads/MySQL-Cluster-7.3/mysql-cluster-gpl-7.3.7-linux-glibc2.5-x86_64.tar.gz<br>tar xvfz mysql-cluster-gpl-7.3.7-linux-glibc2.5-x86_64.tar.gz</pre><p></p>
+<p>Create a symbolic link named <b>mysql</b> pointing to the extracted folder (this will be used later by the DB cluster. So do not delete it!). Once the symlink is complete you can install the database.<br></p><pre>ln -s mysql-cluster-gpl-7.3.7-linux-glibc2.5-x86_64 mysql<br>cd mysql<br>apt-get install libaio1 libaio-dev</pre><p></p>
+<p>Install the mysql database by running the script.<br></p><pre>scripts/mysql_install_db --user=mysql --datadir=/usr/local/mysql/data</pre><p></p>
+<p>Change the ownership of the directory to the newly created <b>mysql</b> group. </p><pre>chown -R root:mysql .<br>chown -R mysql data</pre><p></p>
+<p>As with the management nodes, we want the database engine to start automatically and thus we need to add the appropriate <b>init.d</b> script.<br></p><pre>cp support-files/mysql.server /etc/init.d/<br>chmod 755 /etc/init.d/mysql.server</pre><p></p>
+<p>Finally, copy all the files in the <b>bin</b> directory to the <b>/usr/bin</b> location to keep everything neat and create a symlink to keep references right as shown below.<br></p><pre>cd /usr/local/mysql/bin<br>mv * /usr/bin<br>cd ../<br>rm -fr /usr/local/mysql/bin<br>ln -s /usr/bin /usr/local/mysql/bin</pre><p></p>
+<p>The MySQL configuration file is not included by default. So we need to create it ourselves. The file should be in the <b>/etc/</b> directory and should be named <b>my.cnf</b>. Open the file using a text editor and add the following lines to it: <br></p><pre>[mysqld]
+ndbcluster
+# IP address of the cluster management node
+ndb-connectstring=&lt;private IP of your Management Node&gt;
+# Number of connections to cluster
+ndb-cluster-connection-pool=4
+
+[mysql_cluster]
+# IP address of the cluster management node
+ndb-connectstring=&lt;private IP of your Management Node&gt;
+</pre><p></p>
+
+<p>Once the <b>my.cnf</b> file has been saved we need to create the data folders for MySQL.<br></p><pre>mkdir /var/lib/mysql-cluster</pre><p></p>
+
+<p>Once that is done, we just need to start the service.<br></p><pre>/etc/init.d/mysql.server start</pre><p></p>
+
+<p>After this, secure the MySQL installation by running the appropriate script.<br></p><pre>/usr/local/mysql/bin/mysql_secure_installation</pre><p></p>
+
+<p>When asked to assign a new password for the root user, you can choose to not assign a password. If you created a new password for the root user, you will need it for the later step to create a new user. When asked whether to delete test database, please choose yes.</p>
+
+<p>Once everything is completed it is time to verify our configuration to check if everything is working as configured. In the terminal of the management node, open the ndb management shell by typing <b>ndb_mgm</b> in the terminal and type <b>show</b>. This time you should see that both the data node and API node are connected like this:<br></p><pre>Cluster Configuration
+---------------------
+[ndbd(NDB)]    1 node(s)
+id=2    @IP  (mysql-5.6.21 ndb-7.3.7, Nodegroup: 0, *)
+
+[ndb_mgmd(MGM)]    1 node(s)
+id=1    @IP  (mysql-5.6.21 ndb-7.3.7)
+
+[mysqld(API)]    4 node(s)
+id=3    @IP  (mysql-5.6.21 ndb-7.3.7)
+id=4    @IP  (mysql-5.6.21 ndb-7.3.7)
+id=5    @IP  (mysql-5.6.21 ndb-7.3.7)
+id=6    @IP  (mysql-5.6.21 ndb-7.3.7)
+</pre><p></p>
+
+<h4 id="create-user-mysql"><b>Creating a user for your MySQL Cluster</b></h4>
+<p>Log into the API node SQL shell by typing <br></p><pre>mysql -u root -p</pre>or if you have set a password for root user, type <br><pre>mysql -u root -pYOURPASSWORD</pre><p></p>
+
+<p>Once logged into the API node SQL shell, execute the following command: <br></p><pre>CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';<br>GRANT ALL PRIVILEGES ON *.* TO 'user'@'localhost' with grant option;<br>CREATE USER 'user'@'%' IDENTIFIED BY 'password';<br>GRANT ALL PRIVILEGES ON *.* TO 'user'@'%' with grant option;<br>FLUSH PRIVILEGES;</pre><p></p>
+<p>Change the user and password as per your configuration needs. The % in the IP-address acts as a wildcard and thus the whole subnet is allowed to connect remotely to this API node. Remember to flush privileges after the user has been added. This username and password will be used to connect to the API Node from outside the cluster.</p>
+
+</div>
+
+<div class="bs-callout bs-callout-warning">
+<h4>Project AMI</h4>
+<p>For this part, the AMI ID is <code>ami-84562dec</code> (MySQL) and <code>ami-16f4ab7e</code> (YCSB), and the instance type is <code>m3.xlarge</code> (YCSB). For the MySQL instances check the next section.</p>
+</div>
+
+<div class="bs-callout bs-callout-task">
+<h4>Task to Complete:</h4>
+
+<p>1. You will be using the <a href="https://github.com/brianfrankcooper/YCSB/">Yahoo Cloud System Benchmark (YCSB)</a> to run the benchmark experiments on the MySQL configurations. To start, obtain a <b>m3.xlarge</b> machine <b>(Remember to use spot instances as m3.xlarge instances are very expensive)</b> and boot it using the YCSB AMI (ami-16f4ab7e). Since this AMI is based on Amazon Linux, you can log in using the username ec2-user. This will be the client machine from which you run all your experiments (Measuring Read and Update benchmarks for various configurations of the MySQL cluster). Make sure the security group assigned to this machine is configured to allow all TCP, UDP, and ICMP traffic.</p>
+
+<p>2. Create a <b>records.props</b> file in the YCSB root directory, if it does not exist already. This file will tell YCSB how many database records to create and the offset at which to start creating records. Note that the offset only matters if we were using multiple YCSB clients and wanted each one to independently generate database entries. Make sure the file contains the following three lines:<br></p><pre>recordcount=50000<br>insertstart=0<br>threadcount=100</pre>YCSB runs the benchmark tests by accessing the MySQL database using the JDBC database driver. For MySQL this is called MySQL Connector/J. In the YCSB AMI provided to you, there is already a connector jar file, which YCSB uses.<p></p>
+
+<p>3. Edit the <b>db.properties</b> file under the configuration folder of jdbc-binding. In this file, you should see several properties. For MySQL the Driver Class should be <b>com.mysql.jdbc.Driver</b>. The JDBC URL is of the form:</p><pre>jdbc:mysql://server/databaseName</pre>(Here the server should be the public DNS of the API node in your MySQL Cluster and the <b>databaseName</b> is <b>test</b>). Finally you should set the MySQL database’s user name and password according to your settings on the MySQL Cluster. These configurations are essential for YCSB to connect to the MySQL setup and run the benchmark tests.<p></p>
+
+<p>4. SSH to the API node, run the following SQL command to create a table in the MySQL Cluster. </p><pre>CREATE DATABASE test;<br>USE test;<br>CREATE TABLE usertable(YCSB_KEY VARCHAR (255) PRIMARY KEY, FIELD0 CHAR(1),  FIELD1 CHAR(1), FIELD2 CHAR(1),   FIELD3 CHAR(1), FIELD4 CHAR(1),   FIELD5 CHAR(1), FIELD6 CHAR(1),   FIELD7 CHAR(1), FIELD8 CHAR(1),   FIELD9 CHAR(1)) ENGINE=NDBCLUSTER;</pre><p></p>
+
+<p>5. On the YCSB client, we can now load the MySQL cluster with the data required for the benchmark. Go to the YCSB root directory (~/ycsb-0.1.4)  and run the following command: </p><pre>./ycsb load jdbc -threads 5 -P workloads/workloada -P jdbc-binding/conf/db.properties -P records.props -s 1&gt;  summary_file_loaddata  2&gt; results_file_loaddata</pre><p></p>
+
+<p>6. The usage of YCSB command for running the benchmark tests is given below. Please ensure that the correct trace_type and configuration_type are specified before running, as these are used for auto-grading your run on TPZ. </p><pre>Usage: time bin/ycsb run trace_type configuration_type [options]<br>Valid values for trace_type: read, update<br>Valid values for configuration_type: single, sharding, replication, hbase</pre><p></p>
+
+<p>7. Now, we are going to run the benchmark with different workloads. Under the workloads folder, there are several files describing different workloads. For example, in <b>workloada</b>, only read requests will be sent while in <b>workloadb</b>, only update requests will be sent. For these workloads, the distribution of requests is uniform. Use the following commands to run the benchmark: </p><pre>time ./ycsb run read single jdbc -P workloads/workloada -P jdbc-binding/conf/db.properties -P records.props -p operationcount=1000000 -s -threads 100  summary_file_testId  results_file_testId<br>time ./ycsb run update single jdbc -P workloads/workloadb -P jdbc-binding/conf/db.properties -P records.props -p operationcount=1000000 -s -threads 100  summary_file_testId  results_file_testId</pre>where test id can be any string of your choice to identify the result file. The standard output will be redirected to file summary_file_testId, which contains the throughput(options per second) in a line like: <pre>[OVERALL], Throughput(ops/sec),</pre> The standard error will be redirected to file results_file_testId where you can find error messages if there are any or the throughput with every 10-second time interval. Repeat the tests several times to get an accurate measure. If your run is accepted, you will see a tick mark for the corresponding run in TPZ submissions table at the end of the run (Wait for 60 seconds after each run for TPZ to show the results).<p></p>
+
+<p>8. Please note down the overall throughput in the summary files for both read and write workloads. The throughput will be needed for analysis in the quiz questions (aka for making future decisions for CR)</p>
+
+<p>9. If you configured your MySQL cluster and ran the YCSB benchmark correctly, you should get points in the submissions on TPZ. Proceed to the quiz only after you get a tick against all the tasks on TPZ (i.e, after completing all the experiments and noting down results)</p>
+
+</div>
+
+<h4 id="extending-cluster-sharding"><b>Extending the Cluster to Three Data Node Sharding</b></h4>
+
+<p>Now that you are familiar with the infrastructure of MySQL cluster, you are going to extend the cluster by adding two additional data nodes. <b>Note:</b> Please do not terminate the previous running instances, otherwise you will need to configure them again. </p>
+
+<p>Launch two more m1.small instances with the same ami and security group as the data node in the first step. Install and configure the newly launched data nodes by following the steps in section <b>Configuring Database Node</b>, but skip the last step (ndbd –-initial). Go to the management node and change the file <b>/var/lib/mysql-cluster/config.ini</b> to add two more [NDBD] sections corresponding to the two newly launched data nodes.</p>
+
+<p>Now we have configured the cluster to have one management node, one API node and three data nodes. We need to restart the system for the new configuration to take effect. The restart of the system is tricky and error-prone. Please follow the following steps carefully.</p>
+
+<p>To restart the system, go to the management node and open the management console by typing <b>ndb_mgm</b>. In the interactive shell, type <b>shutdown</b> to close the management server and data node servers. After this is down, type quit to quit the management console.</p>
+
+<p>Next we need to manually shutdown the mysql server in the API node. SSH to the API node and type <b>ps aux | grep -i mysqld</b>. This command will show all processes that have “mysqld” as their name or parameter. The second column is the process id that we will use to terminate the processes. The first two lines should be the mysql server that we want to terminate.(Ignore the the line saying “grep --color=auto -i mysqld” because this is the process for searching mysqld processes). To kill the two mysql servers, type <b>kill -9 &lt;process id&gt;</b>.</p>
+
+<p>Now that all processes on all nodes related to the MySQL cluster have been terminated, we then start these processes to complete a restart.</p>
+
+<p>In order to add the database node details for sharding, first SSH to the management node to remove the database node data and launch the management server:</p><pre>rm -rf /var/lib/mysql-cluster/ndb*<br>ndb_mgmd -f /var/lib/mysql-cluster/config.ini --configdir=/var/lib/mysql-cluster/</pre><p></p>
+<p>SSH to each data node to remove the database data and launch the database server:</p><pre>cd /var/lib/mysql-cluster<br>rm -rf /var/lib/mysql-cluster/ndb*<br>ndbd –-initial</pre><p></p>
+<p>Next, we want to make sure all data nodes are connected to the management node before starting the API node server. In the management node, type <b>ndb_mgm</b> to enter the management console and enter <b>show</b> to view node status. You should see that all data nodes are connected.</p>
+<p>Finally, ssh to the API node and type: </p><pre>/etc/init.d/mysql.server start</pre> Note that since we didn’t change the NoOfReplicas parameter in the /var/lib/mysql-cluster/config.ini file, there is only one copy of the data. This means the current configuration is sharding with three data nodes.<p></p>
+<p>You can verify all nodes are connected using <b>ndb_mgm</b> console in management node. You should see something like: </p><pre>Cluster Configuration
+---------------------
+[ndbd(NDB)]    3 node(s)
+id=2    @private ip of db1  (mysql-5.6.21 ndb-7.3.7, Nodegroup: 0, *)
+id=3    @private ip of db2 (mysql-5.6.21 ndb-7.3.7, Nodegroup: 1)
+id=4    @private ip of db3  (mysql-5.6.21 ndb-7.3.7, Nodegroup: 2)
+
+[ndb_mgmd(MGM)]    1 node(s)
+id=1    @private ip of mgm node  (mysql-5.6.21 ndb-7.3.7)
+
+[mysqld(API)]    4 node(s)
+id=5    @private ip of api node  (mysql-5.6.21 ndb-7.3.7)
+id=6    @private ip of api node  (mysql-5.6.21 ndb-7.3.7)
+id=7    @private ip of api node  (mysql-5.6.21 ndb-7.3.7)
+id=8    @private ip of api node  (mysql-5.6.21 ndb-7.3.7)
+</pre><p></p>
+
+<p>The three data nodes have different node groups, meaning that they store different shards of the data.</p>
+
+<p>After making sure all nodes are connected, you have completed restarting the cluster and can do experiments with the YCSB benchmark.</p>
+
+<div class="bs-callout bs-callout-task">
+<h4>Task to Complete:</h4>
+<p>1. Since we deleted the table data when we reconfigured and restarted the MySQL cluster, we need to create the table again in the API node. In the API node, open the mysql client console: </p><pre>mysql -u USERNAME -pYOURPASSWORD</pre> Replace USERNAME and YOURPASSWORD accordingly.<p></p>
+<p>2. Switch to the database test and create the table usertable as we did in previous task: </p><pre>USE test;<br>CREATE TABLE usertable(YCSB_KEY VARCHAR (255) PRIMARY KEY, FIELD0 CHAR(1),  FIELD1 CHAR(1), FIELD2 CHAR(1),   FIELD3 CHAR(1), FIELD4 CHAR(1),   FIELD5 CHAR(1), FIELD6 CHAR(1),   FIELD7 CHAR(1), FIELD8 CHAR(1), FIELD9 CHAR(1)) ENGINE=NDBCLUSTER;</pre><p></p>
+<p>3. Now that the table is created, go back to the YCSB instance and <strong>repeat the load</strong> and run tests as we did in the previous task, but change the parameter <em>single</em> to <em>sharding</em>.</p>
+<pre>./ycsb load jdbc -threads 5 -P workloads/workloada -P jdbc-binding/conf/db.properties -P records.props -s 1&gt;  summary_file_loaddata  2&gt; results_file_loaddata
+time ./ycsb run read sharding jdbc -P workloads/workloada -P jdbc-binding/conf/db.properties -P records.props -p operationcount=1000000 -s -threads 100  summary_file_testId  results_file_testId
+time ./ycsb run update sharding jdbc -P workloads/workloadb -P jdbc-binding/conf/db.properties -P records.props -p operationcount=1000000 -s -threads 100  summary_file_testId  results_file_testId</pre>
+<p>4. If you configured your MySQL cluster and ran the YCSB benchmark correctly, you should get points in the submissions on TPZ. Proceed to the next steps only if you get points on TPZ.</p>
+</div>
+
+<h4 id="extending-cluster-replication"><b>Switching from Sharding to Replication</b></h4>
+
+<p>At this point, you have played with the MySQL cluster with one data node and cluster with three data nodes configured as shards of a table. Next we are going to change the configuration to replication. After this step is done, there will be three identical copies of the data, each stored on one of the three data nodes.</p>
+
+<p>First, go to the management node and edit the configuration file <b>/var/lib/mysql-cluster/config.ini</b>. Change the line <b>NoOfReplicas=1</b> to <b>NoOfReplicas=3</b></p>
+
+<p>Next, restart the cluster by following the instructions in the previous section.</p>
+
+<p>Finally, verify that all nodes are connected using ndb_mgm console in the management node. You should see output like: </p><pre>Cluster Configuration
+---------------------
+[ndbd(NDB)]    3 node(s)
+id=2    @private ip of db1  (mysql-5.6.21 ndb-7.3.7, Nodegroup: 0, *)
+id=3    @private ip of db2 (mysql-5.6.21 ndb-7.3.7, Nodegroup: 0)
+id=4    @private ip of db3  (mysql-5.6.21 ndb-7.3.7, Nodegroup: 0)
+
+[ndb_mgmd(MGM)]    1 node(s)
+id=1    @private ip of mgm node  (mysql-5.6.21 ndb-7.3.7)
+
+[mysqld(API)]    4 node(s)
+id=5    @private ip of api node  (mysql-5.6.21 ndb-7.3.7)
+id=6    @private ip of api node  (mysql-5.6.21 ndb-7.3.7)
+id=7    @private ip of api node  (mysql-5.6.21 ndb-7.3.7)
+id=8    @private ip of api node  (mysql-5.6.21 ndb-7.3.7)
+</pre>All data nodes are in Nodegroup 0, meaning that they store identical copies of the data.<p></p>
+
+<div class="bs-callout bs-callout-task">
+<h4>Task to Complete:</h4>
+<p>1. After restarting the MySQL cluster, you need to create the table <b>usertable</b> again from the API node similar to how you did it in the previous task</p>
+<p>2. Similar to the step in the previous task, go to the YCSB instance and <strong>repeat the load</strong> and run tests, but change the parameter single to replication</p>
+<pre>./ycsb load jdbc -threads 5 -P workloads/workloada -P jdbc-binding/conf/db.properties -P records.props -s 1&gt;  summary_file_loaddata  2&gt; results_file_loaddata
+time ./ycsb run read replication jdbc -P workloads/workloada -P jdbc-binding/conf/db.properties -P records.props -p operationcount=1000000 -s -threads 100  summary_file_testId  results_file_testId
+time ./ycsb run update replication jdbc -P workloads/workloadb -P jdbc-binding/conf/db.properties -P records.props -p operationcount=1000000 -s -threads 100  summary_file_testId  results_file_testId</pre>
+<p>3. Please note down the overall throughputs in the summary files for both the read and write workloads. The throughputs will be needed for analysis in order to answer the quiz questions.</p>
+<p>4. If you configured your MySQL cluster and ran the YCSB benchmark correctly, you should get points in the submissions on TPZ. At this stage, you should have got all scores for the MySQL experiments in TPZ as shown in the following picture:</p>
+<img src="./P3.2_files/3_2table.JPG" title="Replace Image" style="border: 1px solid;" width="820">
+</div>
+
+<h1 id="hbase-benchmarks"><b>HBase Benchmarks</b></h1>
+
+<p>Apache HBase is an open-source version of Google's <b>BigTable</b> distributed storage system and is supported by the Apache Software Foundation. <b>BigTable</b> is a distributed, scalable, high-performance, versioned database. BigTable 's infrastructure is designed to store billions of rows and columns of data in loosely defined tables. Just as traditional RDBMSs are designed to run on top of a local file system, HBase is designed to work on top of the <b>Hadoop Distributed File System (HDFS)</b>. HDFS is a distributed file system that stores files as replicated blocks across multiple servers. HDFS lends a scalable and reliable file system back end to HBase. </p>
+
+<p>So, In an HBase table, data are organized as rows and columns as shown in the following figure: </p>
+
+<p><img src="./P3.2_files/HBase-table.JPG" title="HBase Table" style="border: 1px solid;">
+</p><h4><small class="caption">Figure 5: HBase Table</small></h4>
+<p>A row in HBase is referenced using a row key which is <b>raw byte array</b>, which can be considered to be the primary key of the table in an RDBMS. The primary key of the table has to be unique and hence reference one and only one row. HBase automatically sorts table rows by row key when it stores them. By default, this sort is byte ordered.</p>
+<p>As shown in the above figure, each key consists of the following parts: <b>rowkey, column_family, column and timestamp</b>. Thus the mapping becomes: (rowkey, column family, column, timestamp) -&gt; value. Rowkey and value are simply bytes, so anything that could be serialized into bytes can be stored into a cell. These cells in HBase are sorted lexicographically by rowkey which is a very important property as it allows for quick searching. </p>
+<p>Columns in HBase have a column name, which can be used to refer to a column. Columns can be further grouped into column families. All column family members have a common prefix, so, in the above figure, the columns <b>Metadata:Type</b> and <b>Metadata:Language</b> are both members of the Metadata column family, whereas Content:Data belongs to the Content family. By default, the colon character (:) delimits the column prefix from the family member. The column family prefix must be composed of <b>printable characters</b>. The qualifying tail can be made of any arbitrary bytes.</p>
+<h4 id="operation"><b>HBase Operations</b></h4>
+<p>HBase has four primary operations on the data model: <b>Get, Put, Scan, and Delete.</b></p>
+<p>A Get operation returns all of the cells for a specified row, which are pointed to by a row key. A Put operation can either add new rows to the table when used with a new key or update a row if the key already exists. Scan is an operation that iterates over multiple rows based on some condition, such as a row key value or a column attribute. A Delete operation removes a row from a table. Get and Scan operations always return data in sorted order. Data are first sorted by row key, then by column family, then by family members, and finally by timestamp (so the latest values appear first).</p>
+<p>By default, Get, Scan, and Delete operations on an HBase table are performed on data that have the latest version. A Put operation always creates a new version of the data that are put into HBase. By default, Delete operations delete an entire row but can also be used to delete specific versions of data in a row. Each operation can be targeted to an explicit version number as well.</p>
+<h4 id="architecture"><b>HBase Architecture</b></h4>
+<p>HBase is organized as a cluster of HBase nodes. These nodes are of two types: a master node and one or more slave nodes called <b>RegionServers</b>.</p>
+<img src="./P3.2_files/Hbasecluster.JPG" title="HBase Architecture" style="border: 1px solid;">
+<h4><small class="caption">Figure 6: HBase architecture</small></h4>
+<p>HBase uses Apache ZooKeeper as a distribution coordination service for the entire HBase cluster. For example, it handles master selection (choosing one of the nodes to be the master node), the lookup for the <b>-ROOT-</b> catalog table (explained shortly), and node registration (when new regionservers are added). The master node that is chosen by ZooKeeper handles such functions as region allocation, failover, and load balancing.</p>
+<p>HBase is designed to use HDFS in the back end but also supports various kinds of file systems, including a local file system and even Amazon S3.</p>
+<iframe width="560" height="315" src="./P3.2_files/lUOFLa0DKdc.html" frameborder="0" allowfullscreen=""></iframe>
+<h4><small class="caption">Video: HBase Demo</small></h4><p></p>
+<div class="bs-callout bs-callout-task">
+<h4>Task to Complete:</h4>
+<p>1. You will use the YCSB instance that you already have running to test the performance of HBase for the following scenario:</p>
+ <table class="table">
+<thead>
+            <tr>
+              <th>Scenario</th>
+              <th>Number of Core Instances</th>
+              <th>Instance Type</th>
+            </tr>
+</thead>
+          <tbody><tr>
+            <td>1</td>
+            <td>4</td>
+            <td>m1.large</td>
+          </tr>
+ </tbody></table>
+
+<p>2. We will be using Amazon's Elastic MapReduce (EMR) to provision an HBase cluster for us to use. HBase uses the Hadoop Distributed File System (HDFS) in order to store data. HDFS is a file system that is distributed over the individual core nodes in an EMR cluster. By default, Amazon configures HDFS in an EMR cluster to use the built-in (instance) storage volumes that come by default in each core EC2 instance. The subsequent steps will illustrate how you can run an EMR cluster to work with HBase. </p>
+
+<p>3. Launch an EMR cluster with 1 master and 4 core nodes
+  </p><ul>
+    <li>Make sure all instances are <b>m1.large</b></li>
+    <li>Choose AMI version 2.4.2 (Hadoop version 1.0.3)</li>
+    <li>Remove any existing services such as Pig and Hive and choose to install HBase version <b>0.92</b></li>
+    <li>You must specify a key-pair to be able to SSH to the individual instances. Note that the username to use while SSHing to these instances is <b>hadoop</b></li>
+    <li>Do not forget to set a tag that will be automatically propagated to the individual instances in the cluster.</li>
+    <li>Enable "termination protection" and "keep-alive" for your cluster</li>
+  </ul>
+<p></p>
+
+<p>4. Modify the security group of the core instances and allow port 22 so that you can SSH to the instances.<br>You should also modify the security groups of the master and core instances to allow all traffic, especially from your YCSB client node.</p>
+<p>you can run the following command to verify that HDFS is healthy being reported per datanode:</p>
+<pre>hadoop dfsadmin -report</pre>
+<p>5. SSH to the HBase master node and run the following command:</p>
+<pre>hbase org.apache.hadoop.hbase.util.RegionSplitter usertable -c 200 -f family</pre>
+<p><code>-c <region count=""></region></code> Allows us to create a new Table with a pre-split number of regions</p>
+<p><code>-f <family:family></family:family></code> Specifies the column families to create in the table</p>
+<p>6. SSH to the YCSB client launched and configured earlier and create a records.props file in the YCSB root directory, if it does not exist already. This file will tell YCSB how many database records to create and the offset at which to start creating records. Note that the offset only matters if we were using multiple YCSB clients and wanted each one to independently generate database entries. Make sure the file contains the following two lines:</p>
+<pre>recordcount=1000000
+insertstart=0
+</pre>
+<p>Then, go to the ycsb-0.1.4 directory.</p>
+<p>7. Edit the <strong>ycsb0.1.4/hbase-binding/conf/hbase-site.xml</strong> to specify the relevant fields of MASTER, ROOTDIR and ZOOKEEPER. They must all be set to the address of the EMR/HBase master node.</p>
+<p>8. We can now load the HBase cluster with the data required for the benchmark. Run the following command:</p>
+<pre>time ./ycsb load hbase -p columnfamily=family -P workloads/workloada -P records.props -threads 50 -s 1&gt;  username_hbase_summary_file_loaddata  2&gt; username_hbase_results_file_loaddata</pre>
+<p>Enter your andrewID in the username fields above.</p>
+<p>9. An important parameter in YCSB is the request arrival rate. This parameter can be used to specify the how often requests are sent to the database during the benchmark. We will be testing the target arrival rates of 800. Use the following command to run the benchmark from the ycsb-0.1.4 folder :</p>
+<pre>time ./ycsb run read hbase -p columnfamily=family -P workloads/workloada -p operationcount=200000 -P records.props -threads 50 -s -target 800 username_hbase_summary_file username_hbase_results_file</pre>
+<p>10. You can run the test for each target arrival rate three times and record the average throughput for later work. Make sure you run the tests consecutively without a long delay in betweeen. The throughput and other statistics are in the summary file.</p>
+<p>11. Terminate all your instances once you are done.</p>
+</div>
+
+<h1 id="grading" class="page-header">Grading</h1>
+
+<p>To complete the project, you are expected to answer some questions provided in the YCSB AMI. Please complete all experiments with YCSB before answering quiz questions. The quiz questions are present in the file <code>/home/ec2-user/Project3_2/runner.sh</code>. You can verify and submit your results using the given auto-grader in the AMI. The quiz questions are designed to test your role as a backend architect at Carnegie Records. To use the autograder, do the following:</p>
+
+<ol>
+<li>
+<p>Go to the auto-grader folder located at <code>/home/ec2-user/Project3_2</code></p>
+</li>
+<li>
+<p>The auto-grader consists of three files, <code>runner.sh</code>, <code>submitter</code> and <code>references</code>. You have permissions to edit <code>runner.sh</code> and <code>references</code> files.</p>
+</li>
+<li>
+<p>Edit the script <code>runner.sh</code> to include the answers to the quiz questions.</p>
+</li>
+<li>
+<p>Edit the text file <code>references</code> to include all the links that you referred to for completing this project.     Also include the Andrew IDs of all the other students who you might have discussed general ideas with when working on this project in the same file.</p>
+</li>
+<li>
+<p>You can run the autograder by typing <code>./runner.sh</code> from the autograder folder. Running this script should print out the answers to all the questions. Please ensure that the answers are printing correctly before using submitter.</p>
+</li>
+<li>
+<p>Once you have completed all the questions, you can submit the answers to the evaluation system using the auto-grader executable <code>submitter</code>. Run the executable using the command <code>./submitter</code> from the autograder folder. After running this command, you should be able to see your scores on the website in a few minutes. <b>You are limited to 3 submissions. So decide carefully before submitting the results</b>. Each submission must be at least 60 seconds apart.</p>
+</li>
+</ol>
+
+<div class="bs-callout bs-callout-danger">
+<h4>Project Grading Penalties</h4>
+<p>Besides the penalties mentioned in recitation and/or on Piazza, penalties accrue for the following:</p>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Violation</th>
+              <th>Penalty of the project grade</th>
+            </tr>
+          </thead>
+          <tbody><tr>
+            <td>Spending more than $15 for this project checkpoint</td>
+            <td>-10%</td>
+          </tr>
+          <tr>
+            <td>Spending more than $30 for this project checkpoint</td>
+            <td>-100%</td>
+          </tr>
+          <tr>
+            <td>Failing to tag all your resources for this project</td>
+            <td>-10%</td>
+          </tr>
+          <tr>
+            <td>Using any instance other than the ones specified in the writeup</td>
+            <td>-10%</td>
+          </tr>
+          <tr>
+            <td>Attempting to hack/tamper the auto-grader</td>
+            <td>-100%</td>
+          </tr>
+        </tbody></table>
+      </div>
+
+<p></p></div>
+</div>
+<!-- JS Scripts -->
+<script src="./P3.2_files/docs.min.js"></script>
+<p></p>
+
+
+    </div>
+
+
+    </div>
+
+    <div id="footer" class="navbar-fixed-bottom" style="height:30px;background-color:#f5f5f5;position:fixed;bottom:0;width:100%;text-align:center;padding:5px">
+        <p class="text-muted credit">©2015 Teaching Staff Of The Cloud Computing Course, Carnegie Mellon University</p>
+    </div>
+
+    
+    
+    
+
+    <script type="text/javascript">
+        function dashIfUNE(str) {
+            return (str==null || str.length===0)?'<span class="glyphicon glyphicon-minus"></span>':str;
+        }
+        /* https://docs.djangoproject.com/en/dev/ref/csrf/ */
+        function csrfSafeMethod(method) {
+            return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+        }
+        $.ajaxSetup({
+            beforeSend: function(xhr, settings) {
+                if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                    xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                }
+            }
+        });
+        function getCookie(name) {
+            var cookieValue = null;
+            if (document.cookie && document.cookie != '') {
+                var cookies = document.cookie.split(';');
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = jQuery.trim(cookies[i]);
+                    if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+        var csrftoken = getCookie('csrftoken');
+    </script>
+    
+    <script type="text/javascript">
+        function fixNavbarTop() {
+            $('#base-container').css('padding-top', $('.navbar-fixed-top').height()+10);
+        }
+        $(document).ready(fixNavbarTop);
+        $(window).resize(fixNavbarTop);
+        $(window).load(fixNavbarTop);
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_writeup').addClass('btn-primary');
+            $("#project3").addClass('active');
+        });
+    </script>
+
+
+
+</div></body></html>

@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)https://theproject.zone/writeup/2/1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+
+    <link type="image/x-icon" rel="shortcut icon" href="https://theproject.zone/static/favicon.ico">
+    <!--<link type="text/css" rel="stylesheet" href="/static/css/table_sort.css">-->
+    <link type="text/css" rel="stylesheet" href="./P2.1_files/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="./P2.1_files/jquery.dataTables.min.css">
+    <link type="text/css" rel="stylesheet" href="./P2.1_files/header.css">
+    <link type="text/css" rel="stylesheet" href="./P2.1_files/defaultTheme.css">
+    <link type="text/css" rel="stylesheet" href="./P2.1_files/datepicker.css">
+    <link type="text/css" rel="stylesheet" href="./P2.1_files/bootstrap-editable.css">
+    <title>15-319/619 Cloud Computing</title>
+    
+    
+    
+    
+    
+    <link type="text/css" rel="stylesheet" href="./P2.1_files/inside.base.css">
+
+    <link type="text/css" rel="stylesheet" href="./P2.1_files/docs.min.css">
+
+
+    <script type="text/javascript" src="./P2.1_files/jquery.min.js"></script>
+    <script type="text/javascript" src="./P2.1_files/jquery.tablesorter.js"></script>
+    <script type="text/javascript" src="./P2.1_files/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="./P2.1_files/jquery.fixedheadertable.js"></script>
+    <script type="text/javascript" src="./P2.1_files/fnSetFilteringDelay.js"></script>
+    <script type="text/javascript" src="./P2.1_files/datatableview.min.js"></script>
+    <script type="text/javascript" src="./P2.1_files/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./P2.1_files/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="./P2.1_files/bootstrap-editable.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./P2.1_files/prettify.css"></head>
+
+<body role="document" style="margin-bottom: 40px">
+
+    <div id="base-container" class="container-fluid" style="padding-top: 49.888888835907px;">
+    
+    
+    
+    
+    
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+   
+        <div class="container-fluid">
+
+            <div class="navbar-header" style="padding-bottom:40px">
+               <a href="https://theproject.zone/home"><img src="./P2.1_files/TPZlogo_small_inverted.png"></a>
+            </div>
+
+            <div class="navbar-header pull-right">
+                <a class="navbar-brand" href="https://theproject.zone/writeup/2/1#" onclick="return false;" style="margin-left: 0px;"><span class="label label-default" id="username-label">pgandala</span></a>
+            </div>
+
+            <div class="coll pull-right">
+                <ul id="navbar" class="nav navbar-nav" style="font-weight:bold">
+                    <li id="home"><a href="https://theproject.zone/home">Home</a></li>
+
+                    
+                        
+                        <li id="project0" class="dropdown">
+                            <a href="https://theproject.zone/writeup/2/1#" data-toggle="dropdown" class="dropdown-toggle">Primer
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/0/1">Project Primer</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li id="project1" class="dropdown">
+                            <a href="https://theproject.zone/writeup/2/1#" data-toggle="dropdown" class="dropdown-toggle">Project 1
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/1/1">1.1 Sequential Analysis</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/1/2">1.2 Using Amazon's Elastic MapReduce</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li id="project2" class="dropdown active">
+                            <a href="https://theproject.zone/writeup/2/1#" data-toggle="dropdown" class="dropdown-toggle">Project 2
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="./P2.1_files/P2.1.html">2.1 Introduction to AWS APIs</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/2/2">2.2 Load Balancing and AutoScaling</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/2/3">2.3 Advanced Scaling Concepts</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li id="project3" class="dropdown">
+                            <a href="https://theproject.zone/writeup/2/1#" data-toggle="dropdown" class="dropdown-toggle">Project 3
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/3/1">3.1 Files v/s Databases</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/3/2">3.2 Partitioning and Replication</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/3/3">3.3 Database-as-a-Service</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/3/4">3.4 Cloud Data Warehousing</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/3/5">3.5 Consistency in Distributed Key-Value Stores</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li id="project4" class="dropdown">
+                            <a href="https://theproject.zone/writeup/2/1#" data-toggle="dropdown" class="dropdown-toggle">Project 4
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/4/1">4.1 MapReduce Programming using YARN</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/4/2">4.2 Iterative Programming using Apache Spark</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/4/3">4.3 Graph Programming using GraphLab</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li id="project5" class="dropdown">
+                            <a href="https://theproject.zone/writeup/2/1#" data-toggle="dropdown" class="dropdown-toggle">15619 Project
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/1">Phase 1</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/2">Phase 1 Report</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/3">Phase 2</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/4">Phase 2 Live Test (MySQL)</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/5">Phase 2 Live Test (HBase)</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/6">Phase 2 Report</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/7">Phase 3</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/9">Phase 3 Live Test</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/10">Phase 3 Report</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                    
+                
+                    
+                    <li id="grade"><a class="active" href="https://theproject.zone/grade/">Grade Book</a></li>
+                    <li id="profile"><a href="https://theproject.zone/profile">Profile</a></li>
+                    <li id="logout"><a href="https://theproject.zone/log_out">Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+
+        <div class="row">
+
+        <div class="col-md-6">
+            <h2>2.1 Introduction to AWS APIs</h2>
+        </div>
+        
+        
+        <div class="col-md-6 pull-down">
+            <div class="btn-group pull-right" style="margin-bottom: 10px">
+                <a class="btn btn-default btn-primary" href="https://theproject.zone/writeup/2/1/" id="nav_writeup">Writeup</a>
+
+                
+
+                
+
+                <a class="btn btn-default" href="https://theproject.zone/submissions/2/1/" id="nav_submissions">Submissions</a>
+                <a class="btn btn-default" href="https://theproject.zone/scoreboard/2/1/" id="nav_score_board">ScoreBoard</a>
+            </div>
+        </div>
+        
+        
+        </div>
+
+        <table class="table table-striped table-bordered table-condensed prettyBorder">
+        <thead>
+            <tr>
+                <th>Phase</th>
+                <th>Open</th>
+                <th>Deadline</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2.1 Introduction to AWS APIs</td>
+                <td>Feb. 02, 2015 00:01</td>
+                <td>Feb. 08, 2015 23:59</td>
+            </tr>
+        </tbody>
+        </table>
+        
+        
+
+        <hr>
+        
+
+<!-- Copy/Paste the Following Section into TPZ -->
+
+<style>
+img{
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 10px;
+}
+
+small.caption {
+display: block;
+text-align: center;
+margin-bottom: 4em;
+}
+
+iframe {
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 30px;
+}
+
+.bs-callout-task {
+background-color: #ffffff;
+border-left-color: green;
+}
+
+.bs-callout-task h4,
+.bs-callout-task a.alert-link {
+color: green;
+}
+
+.bs-callout-learning {
+background-color: #ffffff;
+border-left-color: purple;
+}
+
+.bs-callout-learning h4,
+.bs-callout-learning a.alert-link {
+color: purple;
+}
+
+.bs-docs-sidebar.affix {
+position: fixed;
+top: 25x;
+}
+
+</style>
+
+<div id="writeup-content" class="row">
+
+<div class="col-md-3" role="complementary">
+   <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top" style="top:120px"> <!-- Inline CSS Hack for Display -->
+    <ul class="nav bs-docs-sidenav">
+<li><a href="https://theproject.zone/writeup/2/1#intro">Introduction</a>
+    <ul class="nav">
+    <li><a href="https://theproject.zone/writeup/2/1#the-scenario">The Scenario</a></li>
+    </ul>
+</li>
+<li><a href="https://theproject.zone/writeup/2/1#building-blocks">Building Blocks</a>
+    <ul class="nav">
+    <li><a href="https://theproject.zone/writeup/2/1#lg-and-dci">The Load Generator and Data Center Instances</a></li>
+        <li><a href="https://theproject.zone/writeup/2/1#use-lg">Using The Load Generator</a></li>
+    </ul>
+</li>
+
+<li><a href="https://theproject.zone/writeup/2/1#aws-apis">Amazon Web Service APIs</a>
+    <ul class="nav">
+    <li><a href="https://theproject.zone/writeup/2/1#api-for-aws">APIs and SDK access for AWS</a></li>
+    <li><a href="https://theproject.zone/writeup/2/1#cli">Amazon Command-Line Interface API Tools</a></li>
+    <li><a href="https://theproject.zone/writeup/2/1#sdk-java">AWS SDK for Java</a></li>
+    <li><a href="https://theproject.zone/writeup/2/1#ec2-api">Amazon EC2 API</a></li>
+    <li><a href="https://theproject.zone/writeup/2/1#walkthrough">Walkthrough</a></li>
+    <li><a href="https://theproject.zone/writeup/2/1#sdk-python">AWS SDK for Python (boto)</a></li>
+    <li><a href="https://theproject.zone/writeup/2/1#cw">Amazon CloudWatch</a></li>
+    </ul>
+</li>
+<li><a href="https://theproject.zone/writeup/2/1#The-MSB-Recruitment-Exam">The MSB Recruitment Exam</a>
+    <ul class="nav">
+    <li><a href="https://theproject.zone/writeup/2/1#getting-ready">Getting Ready</a></li>
+        <li><a href="https://theproject.zone/writeup/2/1#vertical-scaling">Vertical Scaling Test</a></li>
+    <li><a href="https://theproject.zone/writeup/2/1#horizontal-scaling">Horizontal Scaling Test</a></li>
+    <li><a href="https://theproject.zone/writeup/2/1#elb">Elastic Load Balancer Test</a></li>
+    <li><a href="https://theproject.zone/writeup/2/1#test">MSB Knowledge Test</a></li>
+    <li><a href="https://theproject.zone/writeup/2/1#code">Code Submission</a></li>
+    </ul>
+</li>
+</ul>
+<a class="back-to-top" href="https://theproject.zone/writeup/2/1#top">
+Back to top
+</a>
+</nav>
+</div>
+
+<!--<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">-->
+
+<div class="col-md-9" role="main">
+<div class="bs-docs-section">
+<h1 id="intro" class="page-header">Introduction</h1>
+<div class="bs-callout bs-callout-learning">
+<h4>Learning Objectives</h4>
+<p>This project will encompass the following learning objectives:</p>
+<ol>
+<li>Get familiar with AWS APIs for provisioning/de-provisioning EC2 instances.</li>
+<li>Get familiar with the concepts of Vertical and Horizontal scaling, and understand the differences between them.</li>
+<li>Get familiar with, and understand the need for Amazon's Elastic Load Balancing.</li>
+<li>Understand the limitations of Amazon's Elastic Load Balancing.</li>
+<ol>
+</ol></ol></div>
+
+<p>In this part of the project, we will learn how to programmatically manage AWS resources and explore a deployment scenario involving infrastructure provisioning and load-balancing. You will also get introduced to the concepts of vertical and horizontal scaling.</p>
+<h3 id="the-scenario">The Scenario</h3>
+<p>The Massive Surveillance Bureau (MSB) gathers data from millions of sources. This data is used to provide intelligence to a group of authorized agents. You wish to join this challenging and lucrative organization as a system architect. A system architect at the MSB designs and deploys a distributed network of web servers.</p>
+<p>Timely information is extremely valuable to MSB agents, so performance guarantees must be met when considering system design. Thus, MSB systems must be able to handle a varying load and scale accordingly, while minimizing cost.</p>
+<p>Over the next several weeks, you will experience the career of a system architect at the MSB.</p>
+<p>This week you will attend a technical interview where the MSB hires system architects who meet their requirements. CMU has assigned the 15319/15619 course team to prepare you for this interview.</p>
+<p>All the best!!!</p>
+<div class="bs-callout bs-callout-warning">
+<h4>Resource Tagging</h4>
+<p>For this project, assign the tag with <code>Key: Project</code> and <code>Value: 2.1</code> for all resources</p>
+</div>
+</div>
+
+<div class="bs-docs-section">
+<h1 id="building-blocks" class="page-header">Building Blocks</h1>
+<p>Let us start by introducing the building blocks of this project (aka Project 2).</p>
+
+<p>The Massive Surveillance Bureau receives traffic from millions of devices at hundreds of distributed web proxies. These proxies then forward data to a large number of data centers for storage and processing. At the start, you get to control one of these clouds (shown below).</p>
+<img src="./P2.1_files/msb_arch.png" title="The MSB loves fast coders! Finish the project by Feb. 4 23:59:59 (ET) to earn a bonus!" style="border: 1px solid;">
+<h4><small class="caption">Figure 1: MSB's System Architecture</small></h4>
+<p>Your cloud receives data and service requests at a proxy/load generator. Your job is to correctly handle these requests by passing them to a data center that comprises of multiple VM instances. These VMs either store the given data for further processing, or provide the information an agent is asking for. A new use case for this cloud will be explained every week.</p>
+</div>
+
+<div class="bs-docs-section">
+<h3 id="lg-and-dci" class="page-header">The Load Generator and Data Center Instances</h3>
+<p>For each student in this course, the MSB has provided access to a single load generator AMI. They also give you an image of the data center AMI. Both these images are closed, so when you launch them, you will not be able to SSH in. Instead, you will be interacting with the web interfaces on each.</p>
+<div class="bs-callout bs-callout-warning">
+<h4>Project AMIs</h4>
+<p>For this project, the AMI IDs are <code>Load Generator (LG) : ami-4c4e0f24</code> and <code>Data Center Instance (DCI): ami-b04106d8</code></p>
+<p>For this project, use only <b>m3.medium</b> instance for <code>Load Generator (LG)</code> or your test result will be invalid.
+</p></div>
+<p>Please start an <b>m3.medium</b> instance of the load generator and an <b>m1.small</b> instance of the data center. <strong>Configure the security groups to allow incoming (HTTP) requests on port 80</strong>. It is highly recommended that you use spot instances if the spot price is less than the normal price. However, make sure that you tag the spot instances once they have been launched because the tags that you create while submitting a spot request don't propagate to the instances once they are launched.</p>
+<p>The following image is a screenshot of the load generator interface:</p>
+
+<img src="./P2.1_files/lg_ui.png" title="The MSB loves fast coders! Finish the project by Feb. 4 23:59:59 (ET) to earn a bonus!" style="border: 1px solid;">
+<h4><small class="caption">Figure 2: Load generator user-interface</small></h4>
+<p>The following image is a screenshot of the data center instance interface:</p>
+<img src="./P2.1_files/dc_ui.png" title="The MSB loves fast coders! Finish the project by Feb. 4 23:59:59 (ET) to earn a bonus!" style="border: 1px solid;">
+<h4><small class="caption">Figure 3: Data center user-interface</small></h4>
+<p>The data center instances receive sensitive tracking information about people or devices. You can see some examples by clicking on <b>Track Person</b> or <b>Track Device</b> in the data center interface. Please refresh those pages a few times to see how the MSB gathers new sources of data (this can be by installing bugs on mobile devices, spyware on laptops and desktops, and in rare cases even implanting an RFID tracking chip on people).</p>
+<p>You should see something like this in the <b>Track Person page</b>:</p>
+<img src="./P2.1_files/track_example.png" title="The MSB loves fast coders! Finish the project by Feb. 4 23:59:59 (ET) to earn a bonus!" style="border: 1px solid;">
+<h4><small class="caption">Figure 4: Example of the information stored in the data center instances</small></h4>
+</div>
+
+<div class="bs-docs-section">
+<h3 id="use-lg">Using the Load Generator</h3>
+<p>Before CMU sends you to take the recruitment test, we want you to understand the amount of load different types of instances can handle.</p>
+<p>To see the amount of load a data center instance experiences, click on your <b>m1.small</b> data center instance in the EC2 Web Console, and select the monitoring tab. Click on the tab that says <b>Enable Detailed Monitoring</b>. This gives you minute-by-minute updates of the resource utilization of your <b>m1.small</b> data center instance.</p>
+
+<p>Now you can activate the load generator. To do so please visit the following URL on your load generator <b>http://&lt;your-load-generator-instance-dns-name&gt;/test/vertical</b></p>
+
+<img src="./P2.1_files/single_test_submit.png" title="The MSB loves fast coders! Finish the project by Feb. 4 23:59:59 (ET) to earn a bonus!" style="border: 1px solid;">
+<h4><small class="caption">Figure 5: Starting a vertical scaling test from the load generator user-interface</small></h4>
+
+<p>Here you should submit your Data Center's <b>m1.small</b> Instance DNS. Click on submit.</p>
+
+<p>Note that this HTML form can be submitted in code by making a HTTP GET request in the language of your choice to: <b>http://&lt;your-load-generator-instance-dns-name&gt;/test/vertical?dns=&lt;your-instance-dns-name&gt;</b>. This will be useful later in the project.</p>
+
+<p>Once you submit, the following page will be displayed. Click on ’Test’ to view the test log.</p>
+
+<img src="./P2.1_files/single_test_started.png" title="The MSB loves fast coders! Finish the project by Feb. 4 23:59:59 (ET) to earn a bonus!" style="border: 1px solid;">
+<h4><small class="caption">Figure 6: Vertical scaling test started</small></h4>
+
+<p>When you submit the <b>/test/vertical</b> form, the load generator begins sending some traffic to the <b>m1.small</b> data center instance. To view this load graphically, go to the monitoring tab in the EC2 console. You should note down the CPUUtililzation during this testing period (as the test is probably not synchronized with CloudWatch, use the middle three minutes of the five minute test window). Please click on the small CPUUtilization graph to view the actual Utilization at each minute of the test.</p>
+<img src="./P2.1_files/cloud_watch.png" title="The MSB loves fast coders! Finish the project by Feb. 4 23:59:59 (ET) to earn a bonus!" width="800px" style="border: 1px solid;">
+<h4><small class="caption">Figure 7: Monitoring instances through cloud watch</small></h4>
+<p>Each time you launch a test from this URL, it will generate a steady load for five minutes and then stop.</p>
+<p>The MSB measures system performance based on the requests handled by the data center instance every second (rps). To view the average rps for your test (generated at one-minute intervals), please visit: <b>http://&lt;your-load-generator-instance-dns-name&gt;/log?name=test.&lt;testId&gt;.log</b></p> Please pay attention to the <strong>MSB validation message</strong> at the end of test log when test is finished.
+<img src="./P2.1_files/single_logs.png" title="The MSB loves fast coders! Finish the project by Feb. 4 23:59:59 (ET) to earn a bonus!" style="border: 1px solid;">
+<h4><small class="caption">Figure 8: Test logs for vertical scaling test</small></h4>
+</div>
+
+<div class="bs-docs-section">
+<h1 id="aws-apis" class="page-header">Amazon Web Service APIs</h1>
+<h3 id="api-for-aws"> APIs and SDK access for AWS</h3>
+<p>The other thing to learn before joining the MSB is how to programmatically create and manage AWS resources.</p>
+<p>The Amazon Web Services SDK includes different kinds of API packages which developers can use to create and manage resources and applications running on AWS. This allows developers to programmatically automate management tasks on AWS. Almost all of the functionality in AWS is accessible via Command Line Interface (CLI), APIs or SDK. We will go through some of the most popular AWS tools now. The following video provides a brief introduction to AWS SDKs:</p>
+<iframe width="560" height="315" src="./P2.1_files/6Ru_f9WVIno.html" frameborder="0" allowfullscreen=""></iframe>
+<h4><small class="caption">Video 1: Introduction to AWS SDKs</small></h4>
+</div>
+
+<div class="bs-docs-section">
+<h3 id="cli">Amazon Command-Line Interface API Tools</h3>
+<p>For those of you who prefer to use bash scripts to run cloud jobs, the Amazon CLI tools allow for command-line manipulation of various facets of AWS. The following CLI-tools are available from AWS:</p>
+<ul>
+<li><a href="http://aws.amazon.com/cli/">AWS CLI Tool</a>: The EC2 API tools allow you to create, manage and terminate many AWS Services</li>
+</ul>
+<p>Students who plan on using the CLI tools within bash/shell scripts should:</p>
+<ol>
+<li>Download and install the CLI tools on your development machine.</li>
+<li>Add the path of the CLI tools into $HOME/.bashrc</li>
+<li>Setup their AWS credentials within the $HOME/.bashrc file.</li>
+</ol>
+<p>Most of the above API tools require you to specify your AWS Credentials (Either your AWS Access Key ID/Secret Key or X.509 Certificates).</p>
+</div>
+
+<div class="bs-docs-section">
+<h3 id="sdk-java">AWS SDK for Java</h3>
+<p>The AWS SDK is available for multiple languages, including, Java, .NET, node.js, Ruby etc. The <a href="http://aws.amazon.com/sdk-for-java/">AWS SDK for Java</a> has been developed by Amazon and is a fully featured SDK, which includes:</p>
+<ul>
+<li><b>The AWS Java Library:</b> Java packages, classes and methods (i.e. an API) that allow you to program AWS using Java. The API hides much of the complexity that is otherwise involved in using a REST/SOAP-based HTTP interface including authentication, request retries and error handling.</li>
+<li><b>Code Samples:</b> Code samples that demonstrate the use of an API to perform various tasks on AWS.</li>
+<li><b>Eclipse support:</b> Includes an Eclipse plugin that allows developers to create Java apps that work with AWS from within the Eclipse IDE.</li>
+</ul>
+</div>
+
+<div class="bs-docs-section">
+<h3 id="ec2-api">Amazon EC2 API</h3>
+<p>You are already quite familiar with Amazon EC2 through the AWS Management Console. The AWS SDK exposes the EC2 management functionality provided by the AWS Management Console and the command line tools via programming interfaces in Java. All of the EC2 related functionality is encapsulated in the <b>com.amazonaws.services.ec2</b> package. You can use the EC2 classes and methods to:</p>
+<ul>
+<li>Create EC2 Keypairs
+</li>
+<li>Create Security Groups for Instances and open ports (also known as authorize security group ingress)
+</li>
+<li>Create, launch, stop, reboot and terminate instances on EC2.
+</li>
+</ul>
+<p>For example in the EC2 API, the following java code snippet will launch an instance:</p>
+<h3 id="walkthrough">Walkthrough</h3>
+<p>Launching an Instance using the AWS SDK for Java</p>
+<pre class="prettyprint prettyprinted"><span class="com">//Load the Properties File with AWS Credentials</span><span class="pln">
+</span><span class="typ">Properties</span><span class="pln"> properties </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Properties</span><span class="pun">();</span><span class="pln">
+properties</span><span class="pun">.</span><span class="pln">load</span><span class="pun">(</span><span class="typ">RunInstance</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">.</span><span class="pln">getResourceAsStream</span><span class="pun">(</span><span class="str">"/AwsCredentials.properties"</span><span class="pun">));</span><span class="pln">
+</span><span class="typ">BasicAWSCredentials</span><span class="pln"> bawsc </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">BasicAWSCredentials</span><span class="pun">(</span><span class="pln">properties</span><span class="pun">.</span><span class="pln">getProperty</span><span class="pun">(</span><span class="str">"accessKey"</span><span class="pun">),</span><span class="pln"> properties</span><span class="pun">.</span><span class="pln">getProperty</span><span class="pun">(</span><span class="str">"secretKey"</span><span class="pun">));</span><span class="pln">
+
+</span><span class="com">//Create an Amazon EC2 Client</span><span class="pln">
+</span><span class="typ">AmazonEC2Client</span><span class="pln"> ec2 </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">AmazonEC2Client</span><span class="pun">(</span><span class="pln">bawsc</span><span class="pun">);</span><span class="pln">
+
+</span><span class="com">//Create Instance Request</span><span class="pln">
+</span><span class="typ">RunInstancesRequest</span><span class="pln"> runInstancesRequest </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">RunInstancesRequest</span><span class="pun">();</span><span class="pln">
+
+</span><span class="com">//Configure Instance Request</span><span class="pln">
+runInstancesRequest</span><span class="pun">.</span><span class="pln">withImageId</span><span class="pun">(</span><span class="str">"ami-b04106d8"</span><span class="pun">)</span><span class="pln">
+</span><span class="pun">.</span><span class="pln">withInstanceType</span><span class="pun">(</span><span class="str">"t1.micro"</span><span class="pun">)</span><span class="pln">
+</span><span class="pun">.</span><span class="pln">withMinCount</span><span class="pun">(</span><span class="lit">1</span><span class="pun">)</span><span class="pln">
+</span><span class="pun">.</span><span class="pln">withMaxCount</span><span class="pun">(</span><span class="lit">1</span><span class="pun">)</span><span class="pln">
+</span><span class="pun">.</span><span class="pln">withKeyName</span><span class="pun">(</span><span class="str">"project1_test"</span><span class="pun">)</span><span class="pln">
+</span><span class="pun">.</span><span class="pln">withSecurityGroups</span><span class="pun">(</span><span class="str">"MySecurityGroup"</span><span class="pun">);</span><span class="pln">
+
+</span><span class="com">//Launch Instance</span><span class="pln">
+</span><span class="typ">RunInstancesResult</span><span class="pln"> runInstancesResult </span><span class="pun">=</span><span class="pln"> ec2</span><span class="pun">.</span><span class="pln">runInstances</span><span class="pun">(</span><span class="pln">runInstancesRequest</span><span class="pun">);</span><span class="pln">   
+
+</span><span class="com">//Return the Object Reference of the Instance just Launched</span><span class="pln">
+</span><span class="typ">Instance</span><span class="pln"> instance</span><span class="pun">=</span><span class="pln">runInstancesResult</span><span class="pun">.</span><span class="pln">getReservation</span><span class="pun">().</span><span class="pln">getInstances</span><span class="pun">().</span><span class="kwd">get</span><span class="pun">(</span><span class="lit">0</span><span class="pun">);</span></pre>
+<!--<h2>Walkthrough</h2>-->
+<p>Listing all running instances using the AWS SDK for Java</p>
+<pre class="prettyprint prettyprinted"><span class="com">//Load the Properties File with AWS Credentials</span><span class="pln">
+</span><span class="typ">Properties</span><span class="pln"> properties </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Properties</span><span class="pun">();</span><span class="pln">
+properties</span><span class="pun">.</span><span class="pln">load</span><span class="pun">(</span><span class="pln">EC2CWTest</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">.</span><span class="pln">getResourceAsStream</span><span class="pun">(</span><span class="str">"/AwsCredentials.properties"</span><span class="pun">));</span><span class="pln">
+bawsc </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">BasicAWSCredentials</span><span class="pun">(</span><span class="pln">properties</span><span class="pun">.</span><span class="pln">getProperty</span><span class="pun">(</span><span class="str">"accessKey"</span><span class="pun">),</span><span class="pln"> properties</span><span class="pun">.</span><span class="pln">getProperty</span><span class="pun">(</span><span class="str">"secretKey"</span><span class="pun">));</span><span class="pln">
+
+</span><span class="com">//Launch an EC2 Client </span><span class="pln">
+amazonEC2Client </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">AmazonEC2Client</span><span class="pun">(</span><span class="pln">bawsc</span><span class="pun">);</span><span class="pln">
+
+</span><span class="com">//Obtain a list of Reservations</span><span class="pln">
+</span><span class="typ">List</span><reservation><span class="pln"> reservations </span><span class="pun">=</span><span class="pln"> amazonEC2Client</span><span class="pun">.</span><span class="pln">describeInstances</span><span class="pun">().</span><span class="pln">getReservations</span><span class="pun">();</span><span class="pln">
+</span><span class="kwd">int</span><span class="pln"> reservationCount </span><span class="pun">=</span><span class="pln"> reservations</span><span class="pun">.</span><span class="pln">size</span><span class="pun">();</span><span class="pln">
+</span><span class="kwd">for</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"> i </span><span class="pun">&lt;</span><span class="pln"> reservationCount</span><span class="pun">;</span><span class="pln"> i</span><span class="pun">++)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+   </span><span class="typ">List</span><instance><span class="pln"> instances </span><span class="pun">=</span><span class="pln"> reservations</span><span class="pun">.</span><span class="kwd">get</span><span class="pun">(</span><span class="pln">i</span><span class="pun">).</span><span class="pln">getInstances</span><span class="pun">();</span><span class="pln">
+   </span><span class="kwd">int</span><span class="pln"> instanceCount </span><span class="pun">=</span><span class="pln"> instances</span><span class="pun">.</span><span class="pln">size</span><span class="pun">();</span><span class="pln">
+
+   </span><span class="com">//Print the instance IDs of every instance in the reservation.</span><span class="pln">
+   </span><span class="kwd">for</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> j </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"> j </span><span class="pun">&lt;</span><span class="pln"> instanceCount</span><span class="pun">;</span><span class="pln"> j</span><span class="pun">++)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+       </span><span class="typ">Instance</span><span class="pln"> instance </span><span class="pun">=</span><span class="pln"> instances</span><span class="pun">.</span><span class="kwd">get</span><span class="pun">(</span><span class="pln">j</span><span class="pun">);</span><span class="pln">
+       </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">instance</span><span class="pun">.</span><span class="pln">getState</span><span class="pun">().</span><span class="pln">getName</span><span class="pun">().</span><span class="pln">equals</span><span class="pun">(</span><span class="str">"running"</span><span class="pun">))</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+           </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="pln">instance</span><span class="pun">.</span><span class="pln">getInstanceId</span><span class="pun">());</span><span class="pln">
+       </span><span class="pun">}</span><span class="pln">
+   </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span></instance></reservation></pre>
+
+<p>The snippets above assume that you have an <b>AwsCredentials.properties</b> file with your AWS keys and have already created an EC2 keypair and security group.</p>
+<p>In addition, the Amazon EC2 API provides classes such as DescribeInstanceStatusRequest to make requests that check an instance's status:</p>
+<ul>
+<li>Running</li>
+<li>Pending</li>
+<li>Shutting Down, etc...</li>
+</ul>
+<p>For more information on the Amazon EC2 API, please refer to the <a href="http://aws.amazon.com/documentation/sdk-for-java/">AWS SDK for Java Documentation</a> and the <a href="http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/index.html">AWS Java API Reference</a> </p>
+</div>
+
+<div class="bs-docs-section">
+<h3 id="sdk-python" class="page-header">AWS SDK for Python (boto)</h3>
+<p>For python-inclined developers, AWS supports a third-party API called <a href="http://docs.pythonboto.org/en/latest/">boto</a>, which can be used to make API requests to AWS from within python. To install boto on the AMI, just follow the steps outlined in the <a href="http://docs.pythonboto.org/en/latest/getting_started.html">Getting Started Guide.</a></p>
+</div>
+
+<div class="bs-docs-section">
+<h3 id="cw">Amazon CloudWatch</h3>
+<p>Amazon CloudWatch enables developers to monitor various facets of their AWS resources. Developers can use it to collect and track metrics from various AWS resources that are running on the AWS Cloud. Using APIs, CloudWatch also allows you to programmatically retrieve monitoring data, which can be used to track resources, spot trends and take automated action based on the state of your cloud resources on AWS. CloudWatch also allows you to set alarms, which constitute a set of instructions to be followed in case of an event that is tracked by CloudWatch is triggered.
+</p>
+<p>CloudWatch can be used to monitor various types of AWS resources including:
+</p>
+<ul>
+<li>EC2 instances</li>
+<li>EBS volumes</li>
+<li>EMR job flows etc</li>
+<li>ELB Loads</li>
+</ul>
+<p>For EC2 instances, CloudWatch allows you to monitor CPU, memory and disk utilization.
+</p>
+<p>For more information on CloudWatch please refer to the <a href="http://aws.amazon.com/documentation/cloudwatch/"> Amazon CloudWatch documentation.</a></p>
+</div>
+
+<div class="bs-docs-section">
+<h1 id="The-MSB-Recruitment-Exam" class="page-header">The MSB Recruitment Exam</h1>
+<h3 id="getting-ready"> Getting Ready</h3>
+<p>The MSB recruitment exam requires you to write code to build a system that is capable of handling the large volume of data generated by the Load Generator. Often, one data center instance might not be capable of handling all the tracking information that MSB is getting. To be able to handle more traffic, you will have to either switch to a larger, more powerful instance type or use multiple data center instances</p>
+</div>
+
+<div class="bs-docs-section">
+<h3 id="vertical-scaling" class="page-header">Vertical Scaling</h3>
+<p>Vertical scaling involves adding resources to a single node in the system. This typically involves addition of CPUs or memory. </p>
+<div class="bs-callout bs-callout-task">
+<h4>Tasks to Complete:</h4>
+<p>You don't need to write any code for vertical scaling. Feel free to use your browser.</p><p>
+</p><p>Launch a <b>m3.medium</b> load generator and an <b>m1.small</b> data center instance. Test the performance of the data center by performing the following steps:
+</p>
+<ol>
+<p>
+</p><li>
+Activate detailed monitoring for the data center instance using the EC2 Web Console.
+</li>
+<p></p>
+<p>
+</p><li>
+Submit the DNS of the data center instance to the load generator's “test/vertical” URL: <br><b>http://&lt;your-load-generator-instance-dns-name&gt;/test/vertical</b><br>or by using<br> <b>http://&lt;your-load-generator-instance-dns-name&gt;/test/vertical?dns=&lt;your-instance-dns-name&gt;</b>
+</li>
+<p></p>
+<p>
+</p><li>
+Note down the results at: <b>http://&lt;your-load-generator-instance-dns-name&gt;/log?name=test.&lt;testId&gt;.log</b>
+</li>
+<p></p>
+</ol>
+<p>At this point, the load generator will start firing a massive amount of traffic to your data center instance. Unfortunately, a single instance with little resources (CPU, Memory, etc..) is incapable of handling this traffic. </p>
+<p>Repeat this process with an <b>m1.medium</b> and <b>m1.large</b> data center instances. </p>
+</div>
+<p>Did you see any difference in RPS when you went from <b>m1.small</b>  to <b>m1.medium</b>  and then to <b>m1.large</b> data center instances? What is the difference in the AWS pricing of <b>m1.small</b> , <b>m1.medium</b>  and <b>m1.large</b> instances? Do you think that the increase in RPS when scaling up justifies the increase in costs (Hint: You could calculate and compare the rps/cent for each of these instance sizes).</p>
+
+<p>You should now understand the MSB's system. You are almost ready attempt the recruitment exam.</p>
+</div>
+
+<div class="bs-docs-section">
+<h2 id="horizontal-scaling">Horizontal Scaling Test</h2>
+<p>Horizontal scaling involves adding more nodes to the system. An example would be scaling out from a single <b>m3.medium</b> instance to three <b>m3.medium</b> instances. </p>
+<p>To pass the final exam, you have to write code using Amazon EC2 APIs. The code should scale out horizontally the number of instances in the data center until the cumulative RPS of all connected instances in the data center reaches 4000.</p>
+
+<p>During the test, you may find it very interesting to monitor the instance graphs on the EC2 Console with detailed monitoring enabled.</p>
+<img src="./P2.1_files/cw_monitoring.png" title="The MSB loves fast coders! Finish the project by Feb. 4 23:59:59 (ET) to earn a bonus!" style="border: 1px solid;">
+<h4><small class="caption">Figure 9: Monitoring instances using cloud watch</small></h4>
+<p>To complete the test, you have a maximum of 30 minutes to reach your target RPS of 4000. 
+</p>
+<div class="bs-callout bs-callout-task">
+<h4>Tasks to Complete:</h4>
+<ol>
+<p>
+</p><li>
+Write code in Python, Java or shell script using the AWS APIs to launch a <b>m3.medium</b> load generator instance. 
+</li>
+<p></p>
+<p>
+</p><li>
+In the same program write code to launch a <b>m3.medium</b> data center instance and start the horizontal scaling test by requesting the URL: <b>http://&lt;your-load-generator-instance-dns-name&gt;/test/horizontal?dns=&lt;your-instance-dns-name&gt;</b>. The response will contain the <strong>testId</strong> which you need to save for use later in querying the current RPS.
+<br>
+</li>
+<p></p>
+<p>
+</p><li>
+Monitor the current RPS by parsing the logs available at <b>http://&lt;your-load-generator-instance-dns-name&gt;/log?name=test.&lt;testId&gt;.log</b> (INI parsers available for Java and Python are highly recommended).
+</li>
+<p></p>
+<p>
+</p><li>
+If the current RPS is less than the required RPS (4000), spin up a <strong>m3.medium</strong> instance through code and add it to the load generator by calling the URL: <b>http://&lt;your-load-generator-instance-dns-name&gt;/test/horizontal/add?dns=&lt;your-instance-dns-name&gt;</b>. 
+</li>
+<p></p>
+<p>
+</p><li>
+Once the target RPS has been met, quit the program. Do not terminate your instances.
+</li>
+<p></p>
+</ol>
+</div>
+<div class="bs-callout bs-callout-danger">
+<h4>Warning</h4>
+<p>Monitor the number of instances launched by your code carefully as faulty logic can spin up too many instances burning through your budget.</p>
+</div>
+<div class="bs-callout bs-callout-info">
+<h4>Notes and Suggestions</h4>
+<br>
+<ol>
+<li>Please make sure you start with a blank slate. All your instances must be launched by your code. Your security group should also be created by your code. All data center instances (except for the first one) should be launched after the test starts. The autograder checks for this.</li>
+<li><p>All instances must be tagged.</p></li>
+<li>Since you need to achieve the target RPS of 4000 within 30 minutes, you might want to avoid spot instances for Horizontal Scaling Test (please use spot instances for the Vertical Scaling Test if the spot price is lower than the on-demand price). Can you think of a reason why we are recommending against using spot instances in Horizontal Scaling Test?</li>
+<li><strong>It takes time</strong> for your Data Center Instance to be ready to receive traffic at <strong>/track/device</strong>. The 'running' state of that EC2 instance does not necessarily mean that it is ready. Try to find a better way/time to add Data Center instance to Load Generator.</li>
+<li>Make sure your code processes the current requests per second and then decides whether to launch another instance.</li>
+<ul>
+<li>Do not hardcode the number of instances into the code.</li>
+<li>Your code should not launch multiple data center instances simultaneously. MSB will check if any pair of data center instances have a launch time within <strong>2 minutes</strong>(100 seconds actually) of each other.</li>
+</ul>
+<li>Your code should not terminate the instances at the end of the test, we will have one more task after this.</li>
+<li>Try a dry run without code (using only the browser), if you want to get a feel for the process.</li>
+<li>If you are unfamiliar with how to submit an HTML form using code, view the process on your browser.</li>
+<li>Launching all instances within the same subnet should yield a better performance than having them in different subnets.</li>
+<li>The test log files are in the ini format. You might want to consider using ConfigParser library in python and ini4j in Java to parse them.</li>
+<li>Your code for this part of the project will be manually graded by the MSB instructors. Please follow the instructions for code upload and write neat, well commented code. Your score for the code will be updated once it is manually graded.</li>
+</ol>
+<p><b>Note:</b> Do not terminate your instances yet.</p>
+
+</div>
+
+<div class="bs-docs-section">
+<p>At this point, you should look back and understand the limitations of this method:</p>
+<p>You have a load generator, and several data center instances trying to ingest data from it. Everytime you add an instance, you need to inform the load generator, which must perform some computations to begin sending traffic to the new Data Center VMs. However, how can you make sure that all instances get an equal amount of traffic? What would happen if you wanted to remove an instance? Or if an instance failed? How would you even monitor if an instance failed?</p>
+<p>To be able to address these shortcomings (and for many other benefits), Amazon has a service known as Elastic Load Balancing that automatically divides traffic to connected instances and also handles instance failures. As with any new technology, there are trade-offs, some of which we hope to introduce you to in the coming modules.</p>
+</div>
+
+<div class="bs-docs-section">
+<h2 id="elb">Elastic Load Balancer Test</h2>
+<p>The Elastic Load Balancer acts as a network router that will forward incoming requests to multiple EC2 Instances sitting behind it in a round-robin fashion. Round-robin scheduling is not perfect, but it can do an adequate job given a large number of users, each with relatively simple requests. Can you think of any situations in which round-robin scheduling is not perfect? </p>
+<p>The Instances that ELB points to can be added manually through the web console, programmatically through an API, or dynamically with an Auto Scaling Group. ELB also does a Health Check to see if the instance is alive (if not, it will stop sending requests to it). Using an ELB costs $ 0.025 per hour + $ 0.008 per GB transferred through it.</p>
+<img src="./P2.1_files/elb.png" title="The MSB loves fast coders! Finish the project by Feb. 4 23:59:59 (ET) to earn a bonus!" style="border: 1px solid;">
+<h4><small class="caption">Figure 10: An Elastic Load Balancer</small></h4>
+<p>The following video covers the basics of ELB:</p>
+<iframe width="560" height="315" src="./P2.1_files/Fw0aNoMZesg.html" frameborder="0" allowfullscreen=""></iframe>
+<h4><small class="caption">Video 2: Elastic Load Balancing</small></h4>
+</div>
+
+<div class="bs-callout bs-callout-task">
+<h4>Tasks to Complete:</h4>
+<ol>
+<li>
+<p>Please register all running data center instances your code created in the previous step (not the load generator) with the Elastic Load Balancer. Use the ELB Console on the Amazon website. We do not expect you to complete this task programmatically using the APIs.
+</p>
+</li>
+<img src="./P2.1_files/create_elb.png" title="The MSB loves fast coders! Finish the project by Feb. 4 23:59:59 (ET) to earn a bonus!">
+<h4><small class="caption">Figure 11: Creating an ELB</small></h4>
+<li>
+<p>For the health-check, you should use the /heartbeat page. Do not use a different page for the heartbeat, as we are running validation code on this page to test if you really used it.
+</p>
+</li>
+<img src="./P2.1_files/elb_hc.png" title="The MSB loves fast coders! Finish the project by Feb. 4 23:59:59 (ET) to earn a bonus!">
+<h4><small class="caption">Figure 12: Configuring ELB health check</small></h4>
+<li>
+<p>Wait for the instances to be “in-service”
+</p>
+</li>
+<img src="./P2.1_files/elb_in_service.png" title="The MSB loves fast coders! Finish the project by Feb. 4 23:59:59 (ET) to earn a bonus!" style="border: 1px solid;">
+<h4><small class="caption">Figure 13: Waiting for the instances connected to the ELB to be in-service</small></h4>
+<li>
+<p>Then visit the URL:<b>http://&lt;your-load-generator-instance-dns-name&gt;/test/elb</b></p>
+<p>Observe the minute-wise logs and monitor the utilization on the EC2 as well as ELB console. Once again, this is at: <b>http://&lt;your-load-generator-instance-dns-name&gt;/log?name=test.&lt;testId&gt;.log</b></p> 
+</li>
+<li>
+<p>This test takes 15 minutes to complete.</p>
+</li>
+</ol>
+<p>How did performance using the ELB compare with the earlier performance? Was the RPS higher or lower with ELB compared to what you had achieved earlier? Why do you think that is the case?</p>
+<p>Try to run more ELB tests if you have budget left. Could you explain why the test results are different?</p>
+</div>
+
+<div class="bs-callout bs-callout-info">
+<h4>Note</h4>
+<p>
+Your code may possibly launch an extra data center instance or two towards the end after the RPS has been met. For the ELB test add only the data center instances you see in the last minute of the test log.
+</p>
+</div>
+
+<div class="bs-docs-section">
+<h2 id="test">MSB Recruitment Knowledge Test</h2>
+<p>Once you are done with the ELB test, please proceed to take the test by going to <b>http://&lt;load-generator-dns-name&gt;/test/knowledge</b> on the Load Generator.</p>
+</div>
+
+<div class="bs-docs-section">
+<h2 id="code">Code Submission</h2>
+<p>Once you are done with the MSB Recruitment Knowledge Test (We are sure you aced it after all the training that we gave you!), please submit the code you used for the Horizontal Scaling Test by clicking on the <b>Code Submission</b> link in the Load Generator interface. You have to upload a .zip which has your source code (*.java, *.py or *.sh) <b>and</b> a file containing all the references you have used (file should be called 'references'). Please note that the references file is compulsory. </p>
+
+<p>Please do not include any library (*.jar) or credential (*.pem,access_key.csv) files in your .zip. </p>
+
+<p>Your code will be graded <strong>manually</strong>.</p>
+</div>
+
+<div class="bs-callout bs-callout-danger">
+<h4>Project Grading Penalties</h4>
+<p>Besides the penalties mentioned in recitation and/or on Piazza, penalties accrue for the following:</p>
+
+<table class="table">
+<thead>
+ <tr>
+   <th>Violation</th>
+   <th>Penalty of the project grade</th>    
+ </tr>
+ </thead>
+ <tbody><tr>
+   <td>Spending more than $8 for  this project phase</td>
+   <td>-10%</td>    
+ </tr>  
+ <tr>
+   <td>Spending more than $16 for  this project phase</td>
+   <td>-100%</td>    
+ </tr>  
+ <tr>
+   <td>Failing to tag all your instances for this project</td>
+   <td>-10%</td>    
+ </tr>
+ <tr>
+   <td>Submitting your AWS credentials in your code for grading</td>
+   <td>-10%</td>    
+ </tr></tbody></table>
+</div>
+
+<!--DIV END HERE -->
+
+<p></p></div>
+</div>
+</div>
+<!-- JS Scripts -->
+<script src="./P2.1_files/docs.min.js"></script>
+<p></p>
+
+
+    </div>
+
+
+    </div>
+
+    <div id="footer" class="navbar-fixed-bottom" style="height:30px;background-color:#f5f5f5;position:fixed;bottom:0;width:100%;text-align:center;padding:5px">
+        <p class="text-muted credit">©2015 Teaching Staff Of The Cloud Computing Course, Carnegie Mellon University</p>
+    </div>
+
+    
+    
+    
+
+    <script type="text/javascript">
+        function dashIfUNE(str) {
+            return (str==null || str.length===0)?'<span class="glyphicon glyphicon-minus"></span>':str;
+        }
+        /* https://docs.djangoproject.com/en/dev/ref/csrf/ */
+        function csrfSafeMethod(method) {
+            return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+        }
+        $.ajaxSetup({
+            beforeSend: function(xhr, settings) {
+                if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                    xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                }
+            }
+        });
+        function getCookie(name) {
+            var cookieValue = null;
+            if (document.cookie && document.cookie != '') {
+                var cookies = document.cookie.split(';');
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = jQuery.trim(cookies[i]);
+                    if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+        var csrftoken = getCookie('csrftoken');
+    </script>
+    
+    <script type="text/javascript">
+        function fixNavbarTop() {
+            $('#base-container').css('padding-top', $('.navbar-fixed-top').height()+10);
+        }
+        $(document).ready(fixNavbarTop);
+        $(window).resize(fixNavbarTop);
+        $(window).load(fixNavbarTop);
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_writeup').addClass('btn-primary');
+            $("#project2").addClass('active');
+        });
+    </script>
+
+
+
+</body></html>

@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)https://theproject.zone/writeup/2/3 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+
+    <link type="image/x-icon" rel="shortcut icon" href="https://theproject.zone/static/favicon.ico">
+    <!--<link type="text/css" rel="stylesheet" href="/static/css/table_sort.css">-->
+    <link type="text/css" rel="stylesheet" href="./P2.3_files/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="./P2.3_files/jquery.dataTables.min.css">
+    <link type="text/css" rel="stylesheet" href="./P2.3_files/header.css">
+    <link type="text/css" rel="stylesheet" href="./P2.3_files/defaultTheme.css">
+    <link type="text/css" rel="stylesheet" href="./P2.3_files/datepicker.css">
+    <link type="text/css" rel="stylesheet" href="./P2.3_files/bootstrap-editable.css">
+    <title>15-319/619 Cloud Computing</title>
+    
+    
+    
+    
+    
+    <link type="text/css" rel="stylesheet" href="./P2.3_files/inside.base.css">
+
+    <link type="text/css" rel="stylesheet" href="./P2.3_files/docs.min.css">
+
+
+    <script type="text/javascript" src="./P2.3_files/jquery.min.js"></script>
+    <script type="text/javascript" src="./P2.3_files/jquery.tablesorter.js"></script>
+    <script type="text/javascript" src="./P2.3_files/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="./P2.3_files/jquery.fixedheadertable.js"></script>
+    <script type="text/javascript" src="./P2.3_files/fnSetFilteringDelay.js"></script>
+    <script type="text/javascript" src="./P2.3_files/datatableview.min.js"></script>
+    <script type="text/javascript" src="./P2.3_files/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./P2.3_files/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="./P2.3_files/bootstrap-editable.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./P2.3_files/prettify.css"></head>
+
+<body role="document" style="margin-bottom: 40px">
+
+    <div id="base-container" class="container-fluid" style="padding-top: 49.888888835907px;">
+    
+    
+    
+    
+    
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+   
+        <div class="container-fluid">
+
+            <div class="navbar-header" style="padding-bottom:40px">
+               <a href="https://theproject.zone/home"><img src="./P2.3_files/TPZlogo_small_inverted.png"></a>
+            </div>
+
+            <div class="navbar-header pull-right">
+                <a class="navbar-brand" href="https://theproject.zone/writeup/2/3#" onclick="return false;" style="margin-left: 0px;"><span class="label label-default" id="username-label">pgandala</span></a>
+            </div>
+
+            <div class="coll pull-right">
+                <ul id="navbar" class="nav navbar-nav" style="font-weight:bold">
+                    <li id="home"><a href="https://theproject.zone/home">Home</a></li>
+
+                    
+                        
+                        <li id="project0" class="dropdown">
+                            <a href="https://theproject.zone/writeup/2/3#" data-toggle="dropdown" class="dropdown-toggle">Primer
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/0/1">Project Primer</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li id="project1" class="dropdown">
+                            <a href="https://theproject.zone/writeup/2/3#" data-toggle="dropdown" class="dropdown-toggle">Project 1
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/1/1">1.1 Sequential Analysis</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/1/2">1.2 Using Amazon's Elastic MapReduce</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li id="project2" class="dropdown active">
+                            <a href="https://theproject.zone/writeup/2/3#" data-toggle="dropdown" class="dropdown-toggle">Project 2
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/2/1">2.1 Introduction to AWS APIs</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/2/2">2.2 Load Balancing and AutoScaling</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="./P2.3_files/P2.3.html">2.3 Advanced Scaling Concepts</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li id="project3" class="dropdown">
+                            <a href="https://theproject.zone/writeup/2/3#" data-toggle="dropdown" class="dropdown-toggle">Project 3
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/3/1">3.1 Files v/s Databases</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/3/2">3.2 Partitioning and Replication</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/3/3">3.3 Database-as-a-Service</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/3/4">3.4 Cloud Data Warehousing</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/3/5">3.5 Consistency in Distributed Key-Value Stores</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li id="project4" class="dropdown">
+                            <a href="https://theproject.zone/writeup/2/3#" data-toggle="dropdown" class="dropdown-toggle">Project 4
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/4/1">4.1 MapReduce Programming using YARN</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/4/2">4.2 Iterative Programming using Apache Spark</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/4/3">4.3 Graph Programming using GraphLab</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li id="project5" class="dropdown">
+                            <a href="https://theproject.zone/writeup/2/3#" data-toggle="dropdown" class="dropdown-toggle">15619 Project
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/1">Phase 1</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/2">Phase 1 Report</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/3">Phase 2</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/4">Phase 2 Live Test (MySQL)</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/5">Phase 2 Live Test (HBase)</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/6">Phase 2 Report</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/7">Phase 3</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/9">Phase 3 Live Test</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/10">Phase 3 Report</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                    
+                
+                    
+                    <li id="grade"><a class="active" href="https://theproject.zone/grade/">Grade Book</a></li>
+                    <li id="profile"><a href="https://theproject.zone/profile">Profile</a></li>
+                    <li id="logout"><a href="https://theproject.zone/log_out">Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+
+        <div class="row">
+
+        <div class="col-md-6">
+            <h2>2.3 Advanced Scaling Concepts</h2>
+        </div>
+        
+        
+        <div class="col-md-6 pull-down">
+            <div class="btn-group pull-right" style="margin-bottom: 10px">
+                <a class="btn btn-default btn-primary" href="https://theproject.zone/writeup/2/3/" id="nav_writeup">Writeup</a>
+
+                
+
+                
+
+                <a class="btn btn-default" href="https://theproject.zone/submissions/2/3/" id="nav_submissions">Submissions</a>
+                <a class="btn btn-default" href="https://theproject.zone/scoreboard/2/3/" id="nav_score_board">ScoreBoard</a>
+            </div>
+        </div>
+        
+        
+        </div>
+
+        <table class="table table-striped table-bordered table-condensed prettyBorder">
+        <thead>
+            <tr>
+                <th>Phase</th>
+                <th>Open</th>
+                <th>Deadline</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2.3 Advanced Scaling Concepts</td>
+                <td>Feb. 16, 2015 00:01</td>
+                <td>Feb. 22, 2015 23:59</td>
+            </tr>
+        </tbody>
+        </table>
+        
+        
+
+        <hr>
+        
+
+<style>
+   img{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 10px;
+   }
+   small.caption {
+   display: block;
+   text-align: center;
+   margin-bottom: 4em;
+   }
+   iframe {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 30px;
+   }
+   .bs-callout-task {
+   background-color: #ffffff;
+   border-left-color: green;
+   }
+   .bs-callout-task h4,
+   .bs-callout-task a.alert-link {
+   color: green;
+   }
+   .bs-callout-learning {
+   background-color: #ffffff;
+   border-left-color: purple;
+   }
+   .bs-callout-learning h4,
+   .bs-callout-learning a.alert-link {
+   color: purple;
+   }
+   .bs-docs-sidebar.affix {
+   position: fixed;
+   top: 25x;
+   }
+</style>
+
+<div id="writeup-content" class="row">
+   <div class="col-md-3" role="complementary">
+      <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top" style="top:120px">
+         <!-- Inline CSS Hack for Display -->
+         <ul class="nav bs-docs-sidenav">
+            <li>
+               <a href="https://theproject.zone/writeup/2/3#lb-as">Advanced Scaling Concepts: Caching</a>
+               <ul class="nav">
+                  <li><a href="https://theproject.zone/writeup/2/3#caching">Caching</a></li>
+                  <li><a href="https://theproject.zone/writeup/2/3#mitm">Improving performance through man-in-the-middle caching</a></li>
+               </ul>
+            </li>
+            <li>
+               <a href="https://theproject.zone/writeup/2/3#goals">Goals</a>
+               <ul class="nav">
+                  <li><a href="https://theproject.zone/writeup/2/3#task">Tasks to Complete</a></li>
+                  <li><a href="https://theproject.zone/writeup/2/3#hints">Hints</a></li>
+                  <li><a href="https://theproject.zone/writeup/2/3#additional">Additional Resources and References</a></li>
+               </ul>
+            </li>
+         </ul>
+         <a class="back-to-top" href="https://theproject.zone/writeup/2/3#top">
+         Back to top
+         </a>
+      </nav>
+   </div>
+   <div class="col-md-9" role="main">
+      <div class="bs-docs-section">
+         <h1 id="lb-as" class="page-header">Advanced Scaling Concepts: Caching</h1>
+         <div class="bs-callout bs-callout-learning">
+            <h4>Learning Objectives</h4>
+            <p>This project will encompass the following learning objectives:</p>
+            <ol>
+               <li>Understand the need for caching in web services</li>
+               <li>Understand the differences between temporal locality and spatial locality</li>
+               <li>Learn how to build a web service that employs caching</li>
+            </ol>
+         </div>
+         <div class="bs-callout bs-callout-warning">
+            <h4 id="resource-tagging">Resource Tagging And Project AMIs</h4>
+            <p>For this project, assign the tag with <code>Key: Project</code> and <code>Value: 2.3</code> for all resources.</p>
+            <p>For this project, the AMI IDs are <code>Load Generator (LG): ami-7e277316</code>, <code>Data Center Instance (DCI): ami-cc7a2fa4</code>
+               <code>Front End Instance(FE): ami-4ae2b722.</code> Add port 80 to the security group for all.
+            </p>
+            <p>For this project, use only <strong>m1.small</strong> instance for FE and DCI and <strong>m3.medium</strong> for LG or your test
+               result will be invalid.
+            </p>
+         </div>
+         <h3 id="caching">Project Introduction</h3>
+         <p>The MSB is spying on CMU students. They want to make sure that the students they hire are really experts at scaling data centers, and not just benefiting from the wisdom of their classmates. They are collecting data on individual student activity (especially the interactions they have with classmates) at CMU and storing them on the data centers instances (DCIs) in the following format:</p>
+         <p><code>targetID (number), first_name, last_name, encrypted data(text)</code></p>
+         <p>Here, the targetID denotes a particular student with first_name and last_name, while the encrypted data consists of a series of conversations and other activity of the student while the student is at CMU. MSB Agents require this information in the field when investigating individual students at CMU.
+         </p>
+         <p>This data is served by the DCIs to individual client requests by the targetID. Therefore, a client (the load generator in our case) sends a targetID to the DCIs, which can then reply with:</p>
+         <p>
+            <code>
+               Target 
+               &lt;targetID&gt;
+               first_name last_name’s encrypted conversations are: &lt;conversations&gt; 
+            </code>
+         </p>
+         <p>MSB is interested in improving the performance of this system to better serve the needs of its agents in the field. Each DCI instance is able to cache around 10,000 records at any given time. However, with so many nefarious activities (and so many tricky students), this level of caching is insufficient when testing against our Load Generators. The MSB is interested in optimizing the performance by introducing a caching tier.</p>
+         <h3 id="mitm">Improving Performance through Man-In-The-Middle Caching</h3>
+         <p>A significant factor that makes the World Wide Web a success is the number of interesting applications that it provides to users. However, these applications are often resource-hungry and performance-sensitive. Also, users have high performance expectations, requiring application designers to build scalable systems.</p>
+         <p>As we have seen earlier, one way to improve the performance of a system is by using horizontal or vertical scaling (adding more/larger resources to the system). Though this approach was great for computer hardware manufactures, it led to incredibly expensive systems that became obsolete every few years. A better solution would be to improve the performance of a fixed set of resources responding to the workload it faced. Two of the most trivial ways that this is achieved is with the use of caching and replication <a href="https://theproject.zone/writeup/2/3#fn1"><sup id="sup1">[1]</sup></a>.</p>
+         <p>Replication, caching and load-balancing are the simplest ways to deal with scaling systems, without partitioning/sharding data (we will explore this in future projects). Caching is often done with special applications (like Varnish, Squid, memcached), which store the result of common computations closer to the client. This has two benefits: a) The system does not recompute results, allowing more efficient use of the infrastructure, and, b) The data is moved closer to the client, reducing the number of hops taken to send results back to the client. These techniques are hugely responsible for the success of web giants Google, Flickr, Facebook, Wikipedia…</p>
+         <p>The other common solution, often used in conjunction with a cache, is replication. Here, multiple copies of the data or applications are distributed across the system. This allows many different resources to respond to simultaneous service requests that rely on the same computation base. However, while using this approach, it is important to consider several points. First, a strategy must be established to transparently distribute client requests to the replicas. This can be content-aware (specific requests are redirected to specific replicas) or content-blind. Next, the replicas should be monitored such that there is no imbalance (or hot spot) for the most frequently requested pages. Finally, maintaining consistency when writing across these replicas is another hard problem that we must learn how to deal with in the future. We will not address consistency in this week’s project. </p>
+
+         <p>The MSB system we deal with this week has two replicas of a database in the back end. This alleviates the chances of overwhelming a single instance during periods of heavy load. Another important reason for this is so that they can have an element of fault-tolerance in case of database corruption, or failure. As you may have experienced last week, it is very dangerous to leave only a single instance running at any given time, as failure leads to an outage (as opposed to service deterioration, if we have two instances). It is also possible to dynamically scale these in and out, but we will not be doing that this week. The following figure should make this clearer:</p>
+         <img src="./P2.3_files/msb_spy.png" style="border: 1px solid;" width="70%" height="50%">
+         <h4>
+            <small class="caption">
+               <p>Fig 1.1</p>
+               <p>A. Tracing the first request for a target in the MSB Data Center</p>
+               <p>B. Tracing the request for a target cached in the front-end</p>
+            </small>
+         </h4>
+         <p>In the example above, internal communications within the data center take 1 ms, fetching the data from disk takes 10 ms and external communications take 2 ms each. Before caching, when the MSB Agent first requests data (about Target ID 1234), your program needs to reroute this request to one of the backend instances and read the encrypted conversations. This requires 12 ms to fetch the data and replay it to the agent-- the entire transaction takes 16 ms. However, if you now store this on the front-end, then the next time that an agent asks for data from Target ID 1234, you can simply retrieve it from the front-end, hence a transaction takes only 4 ms. In this case, you are exploiting <strong>temporal locality</strong>, which means that you assume that a target that is being searched for, may be requested multiple times in succession.</p>
+         <p>There may also be <strong>spatial locality</strong> -- say data about Target ID 2345 is requested for the first time. If it is safe to assume that #2345 is part of a gang of suspects, you may want to cache all IDs from 2345-2350. In this case, the first read may take longer than 12 ms, but future reads will take only 4 ms. As a part of mastering debugging and monitoring on the cloud, you should be able to estimate these durations yourself.</p>
+         <p>Another thing to remember is that caching can be explicit and implicit, and can happen at multiple layers. For e.g., in both situations above, you are explicitly caching the target’s records on the front-end. However, most data stores (DBs, file systems etc.) also employ a form of caching. In this data center, the MSB stores the most recent 10,000 unique records per backend. Hence, if the example from Fig 1.1. was repeated several times, it would not really require 16 ms, even if there was no front-end caching. Instead, all future requests would take only 6 ms (the 10 ms fetch would take place only on the first read).</p>
+         <h1 id="goals" class="page-header">Goals</h1>
+         <p>The MSB has requested you to build a system that gives a good throughput for different kinds of traffic patterns that MSB experiences. Unfortunately, the instances have a very limited memory. You will have to study the trace file and identify patterns for caching. Luckily, MSB has given you the code that a former employee had written before he was fired for being incompetent. Although your team lead believes that adding a layer of cache will make a significant improvement in the throughput, you might also want to consider optimizing other parts of the code.</p>
+         <p> The two DCI provided to you have a cache which stores 10,000 most recently accessed records. Both instances have the same data, but have their own caches. The DCI instances have the following interfaces: </p>
+         <ol>
+            <li>"/target?targetID=X" returns the result for that targetID and caches it.</li>
+            <li>"/range?start_range=X&amp;end_range=Y" returns the result (semi-colon separated) for all targetIDs in that range and also caches it.</li>
+         </ol>
+         <p></p>
+         <div class="bs-callout bs-callout-task">
+            <h4 id="task">Tasks to Complete</h4>
+            <ol>
+               <li>
+                  Launch a frontend instance of type m1.small. 
+               </li>
+               <li>You only have ssh access to this instance. SSH into the instance using <b>ubuntu</b> as the user name and your own pem file. 
+               </li>
+               <li>
+                  In the folder <b>Project2_3</b> you will find the executable <b>submitter</b>, <b>MSB.java</b>, <b>MSB.py</b>, <b>references</b> and several other helper files. 
+               </li>
+               <li>
+                  Decide whether you want to complete this project in Java or in Python, and accordingly get familiar with the code in MSB.java or in MSB.py.
+               </li>
+               <li>
+                  Launch two datacenter instances of type m1.small and one load generator instance of type m3.medium. 
+                  Make sure that you have added port 80 to the security group to allow http requests.
+               </li>
+               <li> In MSB file, add your two datacenter instances’ DNS in the format ec-XX-XX-XX-XX.compute-x.amazonaws.com.  
+               </li>
+               <li>    
+                  You are required to modify the function <b>retrieveDetails</b> to make it perform faster. You can run the code already present to get a feel for the process.
+               </li>
+               <li>
+                  To improve the performance, you are allowed to store up to 1000 records in a local cache on the Front-end instance. The data structure, eviction &amp; loading strategies and any other optimizations are completely in your hands. However, you C<strong>ANNOT STORE MORE THAN 1000 RECORDS IN THE FRONT-END</strong>. If you do, it is a 100% penalty.
+               </li>
+               <li>
+                  Once you have made your changes, try starting the web service using the following command:
+                  <p><code>sudo vertx/bin/vertx run &lt;MSB-file-name&gt;</code></p>
+               </li>
+               <li>
+                  Once you are convinced that your web service works, make a submission by executing one of the following commands, depending on your choice of language:
+                  <p>For Java <code>./submitter -j -l &lt;your-load-generator-dns&gt; (in the format ec-XX-XX-XX-XX.compute-x.amazonaws.com)</code></p>
+                  <p>For Python <code>./submitter -p -l &lt;your-load-generator-dns&gt; (in the format ec-XX-XX-XX-XX.compute-x.amazonaws.com)</code></p>
+                  <p>Please note that all outputs from your MSB file are suppressed, and that you will not be able to see them on the console</p>
+               </li>
+               <li>
+                  You can view the test logs by going to the user interface of your load generator through your browser.
+               </li>
+            </ol>
+         </div>
+         <div class="bs-callout bs-callout-info">
+            <h4 id="hints">Hints</h4>
+            <ul>
+               <li>It might be a good idea to not launch the load generator and the DCI until you are familiar with the web service code that has been provided to you. </li>
+               <li>You are allowed to make changes to all functions in MSB.java or MSB.py to make your web service faster. However, make sure that you don't cache more than 1000 records at a time. </li>
+               <li>You might find it useful to measure the various latencies in your system to find out the components that you should try to optimize the most.</li>
+               <li>Read up about temporal locality and spatial locality. Think how you can apply those two concepts while designing your cache.</li>
+               <li>You are given two DCIs with identical data but separate caches. Think how you can utilize both caches to their fullest. </li>
+               <li>Get familiar with the concepts of synchronous and asynchronous requests. The DCIs offer web-services which make asynchronous requests to the underlying database. Find out what kind of requests the code given to you is using.</li>
+               <li>For the sake of simplicity, we are not doing any inserts, updates or deletes. This makes it easier to have a consistent backend. However, you may find it interesting to think about the complexity of making changes to the backend.</li>
+               <li> <b>You can get a full score (100 points) by simply caching (no other optimization). </b></li>
+            </ul>
+         </div>
+         <h3 id="additional">Additional Resources and References</h3>
+         <p><a href="http://www.cs.berkeley.edu/~brewer/Giant.pdf" id="_i_6">1. Brewer, Eric A. "Lessons from giant-scale services." Internet Computing, IEEE 5.4 (2001): 46-55.</a></p>
+         <p><a href="http://www.distributed-systems.net/papers/2007.ic.pdf" id="_i_7">2. Sivasubramanian, Swaminathan, et al. "Analysis of caching and replication strategies for web applications." Internet Computing, IEEE 11.1 (2007): 60-66.</a></p>
+         <p><a href="http://www.akamai.com/dl/technical_publications/ConsistenHashingandRandomTreesDistributedCachingprotocolsforrelievingHotSpotsontheworldwideweb.pdf">3. Karger, David, et al. "Consistent hashing and random trees: Distributed caching protocols for relieving hot spots on the World Wide Web." Proceedings of the twenty-ninth annual ACM symposium on Theory of computing. ACM, 1997.</a></p>
+         <p><a href="http://www.cs.cmu.edu/~hl/papers/loadbal-socc2011.pdf">4. Fan, Bin, et al. "Small cache, big effect: Provable load balancing for randomly partitioned cluster services." Proceedings of the 2nd ACM Symposium on Cloud Computing. ACM, 2011.</a></p>
+         <div class="bs-callout bs-callout-danger">
+            <h4>Project Grading Penalties</h4>
+            <p>Besides the penalties mentioned in recitation and/or on Piazza, penalties accrue for the following:</p>
+            <table class="table">
+               <thead>
+                  <tr>
+                     <th>Violation</th>
+                     <th>Penalty of the project grade</th>
+                  </tr>
+               </thead>
+               <tbody><tr>
+                  <td>Spending more than $10 for this project phase</td>
+                  <td>-10%</td>
+               </tr>
+               <tr>
+                  <td>Spending more than $20 for this project phase</td>
+                  <td>-100%</td>
+               </tr>
+               <tr>
+                  <td>Failing to tag all your resources for this project</td>
+                  <td>-10%</td>
+               </tr>
+               <tr>
+                  <td>Submitting your AWS credentials in your code for grading</td>
+                  <td>-10%</td>
+               </tr>
+               <tr>
+                  <td>Using instances other than the ones specified</td>
+                  <td>-100%</td>
+               </tr>
+               <tr>
+                  <td>Caching more than 1000 records in the front end</td>
+                  <td>-100%</td>
+               </tr>
+            </tbody></table>
+         </div>
+         <hr>
+         <p><a name="fn1">[1]</a> Rabinovich, Michael, and Oliver Spatscheck. Web caching and replication. Boston, USA: Addison-Wesley…”</p>
+
+         <!--DIV END HERE -->
+      </div>
+
+<p></p></div>
+</div>
+<!-- JS Scripts -->
+<script src="./P2.3_files/docs.min.js"></script>
+<p></p>
+
+
+    </div>
+
+
+    </div>
+
+    <div id="footer" class="navbar-fixed-bottom" style="height:30px;background-color:#f5f5f5;position:fixed;bottom:0;width:100%;text-align:center;padding:5px">
+        <p class="text-muted credit">©2015 Teaching Staff Of The Cloud Computing Course, Carnegie Mellon University</p>
+    </div>
+
+    
+    
+    
+
+    <script type="text/javascript">
+        function dashIfUNE(str) {
+            return (str==null || str.length===0)?'<span class="glyphicon glyphicon-minus"></span>':str;
+        }
+        /* https://docs.djangoproject.com/en/dev/ref/csrf/ */
+        function csrfSafeMethod(method) {
+            return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+        }
+        $.ajaxSetup({
+            beforeSend: function(xhr, settings) {
+                if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                    xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                }
+            }
+        });
+        function getCookie(name) {
+            var cookieValue = null;
+            if (document.cookie && document.cookie != '') {
+                var cookies = document.cookie.split(';');
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = jQuery.trim(cookies[i]);
+                    if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+        var csrftoken = getCookie('csrftoken');
+    </script>
+    
+    <script type="text/javascript">
+        function fixNavbarTop() {
+            $('#base-container').css('padding-top', $('.navbar-fixed-top').height()+10);
+        }
+        $(document).ready(fixNavbarTop);
+        $(window).resize(fixNavbarTop);
+        $(window).load(fixNavbarTop);
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_writeup').addClass('btn-primary');
+            $("#project2").addClass('active');
+        });
+    </script>
+
+
+
+</body></html>

@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)https://theproject.zone/writeup/4/2 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+
+    <link type="image/x-icon" rel="shortcut icon" href="https://theproject.zone/static/favicon.ico">
+    <!--<link type="text/css" rel="stylesheet" href="/static/css/table_sort.css">-->
+    <link type="text/css" rel="stylesheet" href="./P4.2_files/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="./P4.2_files/jquery.dataTables.min.css">
+    <link type="text/css" rel="stylesheet" href="./P4.2_files/header.css">
+    <link type="text/css" rel="stylesheet" href="./P4.2_files/defaultTheme.css">
+    <link type="text/css" rel="stylesheet" href="./P4.2_files/datepicker.css">
+    <link type="text/css" rel="stylesheet" href="./P4.2_files/bootstrap-editable.css">
+    <title>15-319/619 Cloud Computing</title>
+    
+    
+    
+    
+    
+    <link type="text/css" rel="stylesheet" href="./P4.2_files/inside.base.css">
+
+    <link type="text/css" rel="stylesheet" href="./P4.2_files/docs.min.css">
+
+
+    <script type="text/javascript" src="./P4.2_files/jquery.min.js"></script>
+    <script type="text/javascript" src="./P4.2_files/jquery.tablesorter.js"></script>
+    <script type="text/javascript" src="./P4.2_files/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="./P4.2_files/jquery.fixedheadertable.js"></script>
+    <script type="text/javascript" src="./P4.2_files/fnSetFilteringDelay.js"></script>
+    <script type="text/javascript" src="./P4.2_files/datatableview.min.js"></script>
+    <script type="text/javascript" src="./P4.2_files/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./P4.2_files/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="./P4.2_files/bootstrap-editable.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./P4.2_files/prettify.css"></head>
+
+<body role="document" style="margin-bottom: 40px">
+
+    <div id="base-container" class="container-fluid" style="padding-top: 49.888888835907px;">
+    
+    
+    
+    
+    
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+   
+        <div class="container-fluid">
+
+            <div class="navbar-header" style="padding-bottom:40px">
+               <a href="https://theproject.zone/home"><img src="./P4.2_files/TPZlogo_small_inverted.png"></a>
+            </div>
+
+            <div class="navbar-header pull-right">
+                <a class="navbar-brand" href="https://theproject.zone/writeup/4/2#" onclick="return false;" style="margin-left: 0px;"><span class="label label-default" id="username-label">pgandala</span></a>
+            </div>
+
+            <div class="coll pull-right">
+                <ul id="navbar" class="nav navbar-nav" style="font-weight:bold">
+                    <li id="home"><a href="https://theproject.zone/home">Home</a></li>
+
+                    
+                        
+                        <li id="project0" class="dropdown">
+                            <a href="https://theproject.zone/writeup/4/2#" data-toggle="dropdown" class="dropdown-toggle">Primer
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/0/1">Project Primer</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li id="project1" class="dropdown">
+                            <a href="https://theproject.zone/writeup/4/2#" data-toggle="dropdown" class="dropdown-toggle">Project 1
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/1/1">1.1 Sequential Analysis</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/1/2">1.2 Using Amazon's Elastic MapReduce</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li id="project2" class="dropdown">
+                            <a href="https://theproject.zone/writeup/4/2#" data-toggle="dropdown" class="dropdown-toggle">Project 2
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/2/1">2.1 Introduction to AWS APIs</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/2/2">2.2 Load Balancing and AutoScaling</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/2/3">2.3 Advanced Scaling Concepts</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li id="project3" class="dropdown">
+                            <a href="https://theproject.zone/writeup/4/2#" data-toggle="dropdown" class="dropdown-toggle">Project 3
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/3/1">3.1 Files v/s Databases</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/3/2">3.2 Partitioning and Replication</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/3/3">3.3 Database-as-a-Service</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/3/4">3.4 Cloud Data Warehousing</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/3/5">3.5 Consistency in Distributed Key-Value Stores</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li id="project4" class="dropdown active">
+                            <a href="https://theproject.zone/writeup/4/2#" data-toggle="dropdown" class="dropdown-toggle">Project 4
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/4/1">4.1 MapReduce Programming using YARN</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="./P4.2_files/P4.2.html">4.2 Iterative Programming using Apache Spark</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/4/3">4.3 Graph Programming using GraphLab</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li id="project5" class="dropdown">
+                            <a href="https://theproject.zone/writeup/4/2#" data-toggle="dropdown" class="dropdown-toggle">15619 Project
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/1">Phase 1</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/2">Phase 1 Report</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/3">Phase 2</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/4">Phase 2 Live Test (MySQL)</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/5">Phase 2 Live Test (HBase)</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/6">Phase 2 Report</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/7">Phase 3</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/9">Phase 3 Live Test</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/10">Phase 3 Report</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                    
+                
+                    
+                    <li id="grade"><a class="active" href="https://theproject.zone/grade/">Grade Book</a></li>
+                    <li id="profile"><a href="https://theproject.zone/profile">Profile</a></li>
+                    <li id="logout"><a href="https://theproject.zone/log_out">Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+
+        <div class="row">
+
+        <div class="col-md-6">
+            <h2>4.2 Iterative Programming using Apache Spark</h2>
+        </div>
+        
+        
+        <div class="col-md-6 pull-down">
+            <div class="btn-group pull-right" style="margin-bottom: 10px">
+                <a class="btn btn-default btn-primary" href="https://theproject.zone/writeup/4/2/" id="nav_writeup">Writeup</a>
+
+                
+
+                
+
+                <a class="btn btn-default" href="https://theproject.zone/submissions/4/2/" id="nav_submissions">Submissions</a>
+                <a class="btn btn-default" href="https://theproject.zone/scoreboard/4/2/" id="nav_score_board">ScoreBoard</a>
+            </div>
+        </div>
+        
+        
+        </div>
+
+        <table class="table table-striped table-bordered table-condensed prettyBorder">
+        <thead>
+            <tr>
+                <th>Phase</th>
+                <th>Open</th>
+                <th>Deadline</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>4.2 Iterative Programming using Apache Spark</td>
+                <td>Apr. 12, 2015 00:01</td>
+                <td>Apr. 26, 2015 23:59</td>
+            </tr>
+        </tbody>
+        </table>
+        
+        
+
+        <hr>
+        
+
+<style>
+  img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  }
+  small.caption {
+  display: block;
+  text-align: center;
+  margin-bottom: 4em;
+  }
+  iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  }
+  .bs-callout-task {
+  background-color: #ffffff;
+  border-left-color: green;
+  }
+  .bs-callout-danger {
+  background-color: #ffffff;
+  border-left-color: red;
+  }
+
+  .bs-callout-task h4,
+  .bs-callout-task a.alert-link {
+  color: green;
+  }
+  .bs-callout-learning {
+  background-color: #ffffff;
+  border-left-color: purple;
+  }
+  .bs-callout-learning h4,
+  .bs-callout-learning a.alert-link {
+  color: purple;
+  }
+  .bs-docs-sidebar.affix {
+  position: fixed;
+  top: 25x;
+  }
+</style>
+
+<div id="writeup-content" class="row">
+  <div class="col-md-3" role="complementary">
+    <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top" style="top:120px">
+      <!-- Inline CSS Hack for Display -->
+      <ul class="nav bs-docs-sidenav">
+        <li>
+          <a href="https://theproject.zone/writeup/4/2#intro">Introduction</a>
+          <ul class="nav">
+            <li><a href="https://theproject.zone/writeup/4/2#spark-info">What is Apache Spark?</a></li>
+            <li><a href="https://theproject.zone/writeup/4/2#spark-programming">Programming in Apache Spark</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://theproject.zone/writeup/4/2#ranking">Ranking Functions</a>
+          <ul class="nav">
+            <li><a href="https://theproject.zone/writeup/4/2#tf-idf">TF-IDF</a></li>
+            <li><a href="https://theproject.zone/writeup/4/2#pagerank">PageRank</a></li>
+          </ul>
+        </li>
+        <li><a href="https://theproject.zone/writeup/4/2#start-cluster">Launching a Spark cluster</a></li>
+        <li><a href="https://theproject.zone/writeup/4/2#part1">Part I  : TF-IDF</a></li>
+        <li><a href="https://theproject.zone/writeup/4/2#part2">Part II : PageRank</a></li>
+      </ul>
+      <a class="back-to-top" href="https://theproject.zone/writeup/4/2#top">
+      Back to top
+      </a>
+    </nav>
+  </div>
+  <div class="col-md-9" role="main">
+    <h1 id="top" class="page-header">Iterative Programming using Apache Spark</h1>
+      <div class="bs-callout bs-callout-learning">
+        <h4>Learning Objectives</h4>
+        <p>This project will encompass the following learning objectives:</p>
+        <ol>
+          <li>Develop distributed iterative applications on large datasets using the Apache Spark framework.</li>
+          <li>Build a search-term ranking function using Term Frequency - Inverse Document Frequency (TF-IDF) to find the most relevant documents for a search-term.</li>
+          <li>Build a document ranking function using PageRank to find the most important documents in a corpus.</li>
+        </ol>
+      </div>
+      <div class="bs-callout bs-callout-warning">
+        <h4 id="resource-tagging">Resource Tagging And Budgets</h4>
+        <p>Tag all of your resources with <code>Key: Project</code> and <code>Value: 4.2</code></p>
+        <p>You have a budget <strong>$25</strong> for Project 4.2.</p>
+      </div>
+      <div class="bs-callout bs-callout-danger" align="center"><font color="red"><big><b>&lt;!&gt;</b> This module is due Sunday 4/26/2015 <b>&lt;!&gt;</b></big></font></div>
+      <div class="bs-docs-section">
+      <h3 id="intro">Introduction</h3>
+      <p>After <a href="https://theproject.zone/writeup/4/1">Project 4.1</a>, Mellonitics now has an input text predictor, but it still does not have any search functionality. You take on the responsibility to add this core feature to your search engine. Specifically, you are responsible for building a search engine for Wikipedia documents.</p>
+      <p>Using the Wikipedia dataset, you need to build an index over it to allow a search of its contents. Of course, it is important for your search engine to return useful results, and you decide to explore two techniques to perform this task.</p>
+      <p>The techniques used are Term Frequency - Inverse Document Frequency (TF-IDF) and PageRank. Both return results in a different order either based on the relevance or the importance of the document to the search term.</p>
+      <p>When working with multi-step or iterative algorithms on large datasets, MapReduce performs non-optimally primarily because it relies on spilling and reading data to/from disk at each step. The Apache Spark framework improves the performance of such applications by using a shared, distributed in-memory data abstraction known as Resilient Distributed Datasets (RDDs).</p>
+      <h4 id="spark-info">What is Apache Spark?</h4>
+      <p>Spark is an open source cluster computing framework developed at the <a href="https://amplab.cs.berkeley.edu/">UC Berkeley AMPLab</a>. It uses in-memory primitives that allow it to perform over 100x faster than traditional MapReduce for certain applications.</p>
+      <p>Spark was built and optimized towards three classes of parallel distributed applications:
+      </p><ul><li>Iterative: such as most machine learning tasks that iterate over a training data set until convergence is met</li>
+      <li>Interactive: where users run commands that return results in real-time. </li>
+      <li>Streaming application: where input data is continuously arriving from one or a few streams leading to an update of the stored state</li></ul><p></p>
+      <p>Along with the framework to run such applications, several libraries have grown around Spark, allowing fast execution of SQL-like queries, Machine Learning and Graph Computation applications.</p>
+      <p>The goal of any distributed programming framework is to support the execution of a parallel computation across multiple nodes in a performant manner. Consider an iterative application that runs a machine learning algorithm on a large graph. Spark would store this graph as a Resilient Distributed Dataset (RDD) (Figure 1). The Spark Client would store the details of the program to be executed and map it to Spark-specific operations for a cluster, which comprises of many workers. There is a cluster manager that converts these operations into tasks and executes them on worker nodes. Any cluster requires applications to be scheduled well to maximise the utilization and improve performance. Spark allows different policies to be used to schedule tasks on the cluster depending upon factors such as the priority, duration, and resources required by each task.</p>
+      <img src="./P4.2_files/spark_overview.png" width="800px/">
+      <h4><small class="caption">Figure 1: Spark Components</small></h4>
+      <p>Spark relies on Resilient Distributed Datasets (RDDs), a distributed memory abstraction to support fault-tolerant, in-memory computations on large datasets. Programmers invoke operations on RDDs by passing closures (functions) to workers, which are copied to and executed at these workers. We will explore each part of this system in detail.</p>
+      <p>Spark application developers write a driver program to connect to a cluster of workers. The driver defines one or more RDDs and invokes actions on them. The driver also tracks the RDDs’ lineage, which records the history of how this RDD is generated as a Directed Acyclic Graph (DAG). The workers are long-lived processes (running for the entire lifetime of an application) that can store RDD partitions in RAM across operations.</p>
+      <p>The SparkContext object can connect to several types of cluster managers that handle the scheduling of applications and tasks (Figure 2). The cluster manager isolates multiple Spark programs from each other- each application has its own driver and runs on isolated executors coordinated by the cluster manager. Currently, Spark supports applications written in <b>Scala</b>, <b>Java</b> and <b>Python</b>.</p>
+      <img src="./P4.2_files/spark_cluster.png" width="800px/">
+      <h4><small class="caption">Figure 2: Spark Architecture</small></h4>
+      <p>Once the SparkContext connects to the ClusterManager, Spark acquires executors on the worker nodes, which are the actual processes that run computation and store data. After an executor is acquired, the Java/Python/Scala code is sent to the executor and run as tasks. Notice that each application has its own executor processes, which run tasks in multiple threads. The executor exists for the entire application lifecycle.</p>
+      <p>An advantage of this approach is that applications are isolated from each other. Scheduling decisions are made by individual drivers independent of other applications. Also, executors for different applications are isolated as each one runs in a separate JVM. The disadvantage is that it is more difficult to share data between applications.</p>
+      <p>Each Spark application runs as an independent set of processes on a distributed cluster. The driver is the process that runs the main() function of the application and creates a SparkContext object. Spark applications are coordinated by the SparkContext object. The SparkContext in turn connects to a Cluster Manager, which allocates resources across all applications on the cluster. The SparkContext object also contains a number of implicit conversions and parameters for use with various Spark features.</p>
+      <h4 id="spark-programming">Programming in Apache Spark</h4>
+      <p>Spark programs work by operating on and persisting Resilient Distributed Datasets (RDDs).</p>
+      <p>Let us look at some versions of computing WordCount using Spark. </p>
+      <p>Scala version:</p>
+      <pre>val file = spark.textFile("hdfs:///input")
+val counts = file.flatMap(line =&gt; line.split(" "))
+                 .map(word =&gt; (word, 1))
+                 .reduceByKey(_ + _)
+counts.saveAsTextFile("hdfs:///output")</pre>
+      <p>Java version:</p>
+      <pre>JavaRDD&lt;String&gt; file = spark.textFile("hdfs:///input");
+JavaRDD&lt;String&gt; words = file.flatMap(new FlatMapFunction&lt;String, String&gt;() {
+  public Iterable&lt;String&gt; call(String s) { return Arrays.asList(s.split(" ")); }
+});
+JavaPairRDD&lt;String, Integer&gt; pairs = words.mapToPair(new PairFunction&lt;String, String, Integer&gt;() {
+  public Tuple2&lt;String, Integer&gt; call(String s) { return new Tuple2&lt;String, Integer&gt;(s, 1); }
+});
+JavaPairRDD&lt;String, Integer&gt; counts = pairs.reduceByKey(new Function2&lt;Integer, Integer&gt;() {
+  public Integer call(Integer a, Integer b) { return a + b; }
+});
+counts.saveAsTextFile("hdfs:///output");</pre>
+      <p>Python version:</p>
+          <pre>file = spark.textFile("hdfs:///input")
+counts = file.flatMap(lambda line: line.split(" ")) \
+             .map(lambda word: (word, 1)) \
+             .reduceByKey(lambda a, b: a + b)
+counts.saveAsTextFile("hdfs:///output")</pre>
+      <p>The steps are as follows: 
+          </p><ol>
+            <li>Load the text files at HDFS path (say <code>/input</code>) by <code>textFile()</code> as a RDD of String.</li>
+            <li>Split each line by space to get all the words in the line. We use <code>flatMap()</code> here, because we expect to get a RDD of words from the RDD of lines and each line can have multiple words.</li>
+            <li>Emit the count 1 along with each word. So we use <code>map()</code> to transform the RDD of word into a RDD of (word, count) pairs. Steps 2 and 3 are equivalent to the mapper in MapReduce.</li>
+            <li>Sum the count for each word by using <code>reduceByKey()</code>. This transforms the RDD of (word, count) pairs where count = 1, into the final RDD of (word, count) pairs where count is the number of times the word appears. Step 4 is equivalent to the reducer in MapReduce.</li>
+            <li>Persist the RDD as plain text files to HDFS path (say <code>/output</code>).</li>
+          </ol><p></p>
+          <img src="./P4.2_files/sparkwordcount.PNG" width="800px/">
+      <h4><small class="caption">Figure 3: Operations on RDDs in Word Count</small></h4>
+      <p>One interesting parallel to highlight is that Spark code often uses map() and reduce() primitives, allowing you to apply a single function to an entire RDD or a group of multiple RDDs.
+      </p><p>Notice that we use <code>flatMap(func)</code> in Step 2. <code>flatMap(func)</code> expects the <code>func</code> to return a list rather than an object, and the result is flattened as a list. <br>For example, if we have <code>rdd = (1, 2, 3, 4)</code>, <br><code>rdd.map(x =&gt; (x, x + 1)) =&gt; ((1, 2), (2, 3), (3, 4), (4, 5))</code>, <br><code>rdd.flatMap(x =&gt; (x, x + 1)) =&gt; (1, 2, 2, 3, 3, 4, 4, 5)</code>.</p>
+      <p>There is also an essential difference between <code>reduce(func)</code> and <code>reduceByKey(func)</code>. <code>reduce(func)</code>  can be applied to a RDD of any object, while <code>reduceByKey(func)</code> can only be applied to a RDD of object pair. Values that belong to the same key are aggregated together by <code>func</code>. <br> For example, if we have <code>rdd = (1, 2, 3, 4)</code>, <br><code>rdd.reduce(case (a, b) =&gt; a + b) =&gt; 10</code>, <br> <code>rdd.reduceByKey(case (a, b) =&gt; a + b)</code> cannot be applied because it expects a RDD of object pair. <br>In addition, if we have <br><code>rdd = ((1, 2), (1, 3), (2, 4), (2, 5))</code>, <br><code>rdd.reduce(case (a, b) =&gt; a + b)</code> cannot be applied because the plus operation (+) is not defined on object pair, <br><code>rdd.reduceByKey(case (a, b) =&gt; a + b) =&gt; ((1, 5), (2, 9))</code>.</p>
+      <p>An underscore in Scala is a <a href="http://en.wikipedia.org/wiki/Syntactic_sugar">syntactic sugar</a>. In the Word Count example, <code>reduceByKey(_ + _)</code> is equivalent to <code>reduceByKey(case (a, b) =&gt; a + b)</code>. The keyword <code>case</code> is a Scala-specific concept of <a href="http://docs.scala-lang.org/tutorials/tour/case-classes.html">case classes</a>. If you are interested in more examples, please visit <a href="https://spark.apache.org/examples.html">this link</a>.</p>
+
+      <h3 id="ranking">Search Ranking Functions</h3>
+      <p>Before the advent of web search engines, information retrieval (IR) systems were mainly used to index and retrieve documents in libraries and universities. However, just as in search engines, document relevance was of interest to the IR community. Furthermore, modern search engines incorporate information about the user, including location, search history, and many other forms of proprietary personalizations. They also make many adjustments to group together multiple search terms, correct spelling errors, support wildcards and custom search filters.</p>
+      <p>However, such systems require many data sources and are beyond the scope of a two-week project. Instead, we build some useful primitives used to signify document relevance, which are used by the classical IR community. Any ranking system, takes a query <big><i>q</i></big> and returns a collection of documents <big><i>D</i></big> sorted by order <big><i>O</i></big>.</p>
+      <p>The first technique you will use to rank search results is Term Frequency-Inverse Document Frequency (TF-IDF), which computes the baseline content relevance for a search term in a document. TF-IDF is a two-step computation and should work well on Spark, if given enough memory to store the entire working set of data.</p>
+      <p>Next, you will implement PageRank, Google's original search algorithm. PageRank relies on the underlying assumption that the number and quality of incoming links to a page determine its importance.</p>
+
+      <h4 id="tf-idf">Term Frequency--Inverse Document Frequency (TF-IDF)</h4>
+      <h5 id="tf">Term Frequency (TF)</h5>
+      <p>Term frequency ranking assumes that a document is more important for a word if it occurs more frequently for that word. Term Frequency counts the raw frequency of a term in the document, i.e. the number of times the term <code>t</code> occurs in the document <code>d</code>. </p>
+      <p>This is known as the Luhn Assumption: </p><pre>The weight of a term that occurs in a document is simply proportional to the term frequency.</pre><p></p>
+      <h5 id="tf">Inverse Document Frequency (IDF)</h5>
+      <p>Notice that Term Frequency (TF) Ranking is excessively biased towards documents with many common words ("a", "the", "this"...) and does not give sufficient weight to rarer words ("sharding", "scaling", "infrastructure"...). </p>
+      <p>The Inverse Document Frequency (IDF) is a measure of content relevance that is higher for terms that occur less frequently in the corpus. In its simplest form, the IDF of a keyword can begin to be computed by dividing the total number of documents in the corpus by the number of documents in which the term occurs. A log is then run on this fraction</p>
+      <p>Low-frequency terms will thus have a higher IDF and hence will be better at identifying relevant documents for a query. IDF is also known as term specificity. Formally, this is defined as: </p><pre>The specificity of a term can be quantified as an inverse function of the number of documents in which it occurs.</pre><p></p>
+      <p>The IDF measures how much information the word provides, that is, whether the term is common in all the documents.</p>
+      <p> The TF-IDF of a word <code>i</code> in document <code>j</code> may be expressed as:<br><img src="./P4.2_files/TF-IDF.png" width="400px/"></p>     
+      <h4 id="pagerank">PageRank</h4>
+      <p>PageRank represents numerically the importance of a page in the web or of a document in the corpus. The intuition behind PageRank is that when many pages link to a single page P, then P is an important page. And of course, the larger the number of incoming links, the greater the importance of the page.</p>
+      <p>Also, to measure the quality of the incoming links, and not just the quantity, PageRank is computed iteratively. If more important (high PageRank) pages link to the page X, then X will have a high PageRank. This is because, the sum total of all PageRanks within a corpus is fixed, and these values are updated (and re-distributed) at each iteration.</p>
+      <p>At each iteration, the pages with incoming links steal some weight from those linking to them. Of course, this is a very simplified view of PageRank. It is explained in more detail in the <a href="https://theproject.zone/writeup/4/2#part2">implementation section</a>. The main complication ignored for now is that of dangling pages (see <a href="https://theproject.zone/writeup/4/2#part2">below</a>).</p>
+      <p></p>
+      <h4 id="dataset">The Datasets</h4>
+      <p>The dataset for the TF-IDF and PageRank parts are separate.</p>
+      <p>For Part 1 (TF-IDF), the dataset comprises of a tab-separated files. This file contains articles in XML and metadata associated with each article. Each line contains a single Wikipedia article. <strike>This is all present in tsv.bz2 files located at <code>s3://s15-p42-part1/</code></strike> Please use the dataset <code>s3://s15-p42-part1-easy/data/</code> for this project. This contains some selectively filtered Wikipedia articles, since the full dataset may require much longer runs. However, if you want to observe a more complete search engine in terms of having all possible articles, use the full dataset, stored at <code>s3://s15-p42-part1/</code>. Submitting using the full dataset will result in a 5% bonus for Project 4.2. . A sample can be found and downloaded <a href="https://samplexml.s3.amazonaws.com/sample.txt">here</a>.</p>
+      <p>Each line is of the form: </p><pre>PageID  Title   Date    XMLArticle  Article</pre><p></p>
+      <p>For Part 2 (PageRank), we have created a list of arcs of the form <i>(a,b)</i> where <i>a</i> links to <i>b</i>.</p><p>These can be found in the file <code>s3://s15-p42-part2/wikipedia_arcs</code></p>
+      <p>Each article has been replaced by a single identifying number. For your convenience,  the mapping may be found at <code>s3://s15-p42-part2/wikipedia_mapping</code>
+      </p><h2 id="part1">Project Walkthrough</h2>
+      <p>The goal of this project is to extend the website from the <a href="https://theproject.zone/writeup/4/1">previous project</a> to return relevant search results for a single search term. Below, you see the Wikipedia search results for the term  <big><i>abcdef</i></big>.</p>
+      <img src="./P4.2_files/results.png" width="400px/">
+      <h4><small class="caption">Figure 4: A Basic Search Engine for Wikipedia</small></h4> 
+      <p>You are expected to build a simpler version of this that only supports unigram (single word) search terms, and only shows the most relevant page titles (linking to Wikipedia). You do not need to show the most relevant snippet of text. To generate the rankings and the mappings, you must use the Apache Spark framework.</p>
+      <img src="./P4.2_files/P42Overview.PNG" width="800px/">
+      <p>Your Spark programs must process data from Wikipedia to build two search indexes. These can then be loaded to a database and used to respond to search queries.</p>
+      <h3 id="start-cluster">Launching a Spark cluster</h3>
+      <p>To start a standalone Spark cluster, you can follow the instructions in <a href="https://spark.apache.org/docs/latest/ec2-scripts.html">Running Spark on EC2</a>. For your convenience, we have listed the following steps for reference: </p>
+      <ol>
+        <li>Download the pre-compiled Spark version 1.3.0 that is compatible with Hadoop 2.4 as follows:
+          <pre>wget http://apache.mirrors.ionfish.org/spark/spark-1.3.0/spark-1.3.0-bin-hadoop2.4.tgz</pre>
+        </li>
+        <li>Untar the file
+          <pre>tar zxvf spark-1.3.0-bin-hadoop2.4.tgz</pre>
+        </li>
+        <li>Change the directory
+          <pre>cd spark-1.3.0-bin-hadoop2.4/ec2</pre>
+        </li>
+        <li>Set your AWS access key and secret to environment variables<br>
+          <pre>export AWS_SECRET_ACCESS_KEY=AaBbCcDdEeFGgHhIiJjKkLlMmNnOoPpQqRrSsTtU
+export AWS_ACCESS_KEY_ID=ABCDEFG1234567890123</pre>
+        </li>
+        <li>Launch a Spark cluster by
+          <pre>./spark-ec2 -k &lt;keypair&gt; -i &lt;key-file&gt; -s &lt;num-slaves&gt; launch &lt;cluster-name&gt;</pre>
+          <p>where &lt;keypair&gt; is the name of your EC2 key pair (which you see on the AWS Web Console), &lt;key-file&gt; is the private key file for your key pair, &lt;num-slaves&gt; is the number of slave nodes to launch (try 1 at first), and &lt;cluster-name&gt; is the name to give to your cluster.</p>
+        </li>
+        <li>You can specify instance size with the <code>-t</code>  option. We recommend always using r3 EC2 instances due to their large memory. Additionally, the <code>--spot-price=</code> option will save a <big>lot</big> of money, but your cluster may take longer to provision. Use your resources judiciously.</li>
+        <li><strong>Tag</strong> launched instances immediately.</li>
+        <li>Login to the Spark master using the command
+          <pre>./spark-ec2 -k &lt;keypair&gt; -i &lt;key-file&gt; login &lt;cluster-name&gt;</pre> 
+          where &lt;keypair&gt; and &lt;key-file&gt; are as above.
+          You can also SSH into the master directly by using your key pair with <code>ec2-user</code> as the username.
+        </li>
+        <li>To check if Spark is installed correctly, you can run the Spark Pi Calculator by executing
+          <pre>spark/bin/run-example SparkPi</pre>
+          If you see a message like <code>Pi is roughly 3.13768</code>, it means that you have successfully started a Spark cluster and are ready to move on!
+        </li>
+        <li>./bin/spark-submit can be used to launch custom standalone programs. See <a href="https://spark.apache.org/docs/latest/submitting-applications.html">this URL</a> for more details or use the --help option to see all options. </li>
+        <li>You can run your own program through either <strong>bin/spark-shell</strong> or as follows:<pre># Java
+mkdir target
+javac -classpath /root/spark/conf:/root/spark/lib/spark-assembly-1.3.0-hadoop1.0.4.jar -d target/ examples/src/main/java/org/apache/spark/examples/JavaSparkPi.java
+jar cvf JavaSparkPi.jar -C target/ .
+bin/spark-submit --class org.apache.spark.examples.JavaSparkPi JavaSparkPi.jar
+
+# Scala
+mkdir target
+scalac -classpath /root/spark/lib/spark-assembly-1.3.0-hadoop1.0.4.jar -d target/ examples/src/main/scala/org/apache/spark/examples/SparkPi.scala
+jar cvf SparkPi.jar -C target/ .
+bin/spark-submit --class org.apache.spark.examples.SparkPi SparkPi.jar
+
+# Python
+./bin/pyspark examples/src/main/python/pi.py</pre></li>
+<li>If you plan to use Spark with Java, use the following Maven <a href="https://s15-p42-files.s3.amazonaws.com/pom.xml">Project Object Model</a></li>
+      </ol>
+    <p></p>
+    <h3 id="part1">Part I : Multi-step Computation of TF-IDF using Spark</h3>
+    <p>You have already seen the TF-IDF rank explained <a href="https://theproject.zone/writeup/4/2#tf-idf">above</a>.</p>
+    <div class="bs-callout bs-callout-task">
+    <h3>Tasks to complete: Part 1</h3>
+    <p>Remember that TF-IDF is computed as:</p>
+    <p> <img src="./P4.2_files/TF-IDF.png" width="400px/"></p>   
+    <ol>
+    <li><strike>Take as your input the <code>s3://s15-p42-part1/</code>.</strike>Please use the dataset <code>s3://s15-p42-part1-easy/data/</code> for this project. This contains some selectively filtered Wikipedia articles, since the full dataset may require much longer runs. However, if you want to observe a more complete search engine in terms of having all possible articles, use the full dataset, stored at <code>s3://s15-p42-part1/</code> .  Filter each file into two parts: (title, text).</li>
+    <li>For each word in a document, compute the number of times it occurs. Store this in the form (word,title),count. Here, count is the term frequency for each word for each document.</li>
+    <li>Just as in the previous project, convert the text field(XMLArticle) into lowercase alphabets and space only. <ol type="i"><li>Delete all XML tags.</li><li>Replace all <code>\\n</code> (displayed as \n in text)</li><li>Replace all punctuations and numbers with a whitespace.</li><li>Split by whitespaces to find words.</li></ol>
+    </li><li>For each word in the dataset:<ol type="i"><li>Count the number of documents in which each word occurs (d_word).</li>Count the total number of documents in the dataset (N).<li>Compute the IDF for each word-document pair, using log(N/d_word)</li><li>Store this in the form (word,title),idf</li></ol>
+    </li><li>Multiply the results of the previous two steps to generate the TF-IDF for each word. Store this in the form (word,title),tfidf.</li>
+    <li>Finally, from your list of TF-IDF, find the top 100 documents for the search term "cloud". Store these in descending order of frequency (order ties alphabetically by title) a tab-separated file named "tfidf" in the format:<p></p><pre>document_title    tf-idf_value</pre><p></p></li>
+    <li>The next step is to autograde your answers and submit your code. Place all code for this step in the same folder as the submitter (paste spark shell commands into a file if you used only shell commands) and run the following commands:
+    <p>
+</p><pre>cd ~    
+wget https://s3.amazonaws.com/15-319-s15-p42/submitter
+chmod +x submitter
+submitter -t</pre><p></p>
+    </li>
+        <li>If you have run your code on the larger dataset and wish to be assessed for the bonus, place all code along with the answer file for this step in the same folder as the submitter (paste spark shell commands into a file if you used only shell commands) and run the following commands:
+    <p>
+</p><pre>cd ~    
+wget https://s3.amazonaws.com/15-319-s15-p42/submitter
+chmod +x submitter
+submitter -b</pre><p></p>
+    </li>
+    </ol>
+    </div>
+
+<div class="bs-callout bs-callout-warning">
+<h4>Job Monitoring</h4>
+<p>You might find it helpful to monitor the progress of your Spark application by going to the Spark UI. This is available at: http://your-master-dns:8080. This link provides details such as the number of stages completed, tasks remaining, etc.</p>
+<p>You may also use the script in <strong>sbin/start-history-server.sh</strong> to start the history server. Its web UI is available at http://your-master-dns:18080 by default. </p>
+</div>
+
+    <h3 id="part2">Part II : Iterative Computation of PageRank using Spark</h3>
+    <p>To compute PageRank on a graph dataset, there are two stages. </p><p>Stage 1 creates a simple network from the given text corpus. This is in the form of an <a href="http://en.wikipedia.org/wiki/Adjacency_list">adjacency list</a>. An adjacency list is a graph expressed as <node, csv="" of="" neighbors="">:</node,></p>
+    <table class="table">
+        <thead>
+          <tr>
+            <th>Node</th>
+            <th>Neighbors</th>
+          </tr>
+        </thead>
+        <tbody><tr>
+          <td>a</td>
+          <td>b,c,d</td>
+        </tr>
+        <tr>
+          <td>b</td>
+          <td>c,d</td>
+        </tr>
+        <tr>
+          <td>c</td>
+          <td>d</td>
+        </tr>
+        <tr>
+          <td>d</td>
+          <td>e</td>
+        </tr>
+    </tbody></table>
+    <p>Stage 2 involves running PageRank on this graph</p>
+    <div class="bs-callout bs-callout-task">
+    <h3>Tasks to complete : Part 2</h3>
+    <p>Remember that PageRank is computed as:</p>
+    <p> <img src="./P4.2_files/PageRankFormula.png" width="400px/"></p>      
+    <p>To compute the PageRank, follow these steps:</p>
+    <ol>
+    <li>Take as your input the data from <code>s3://s15-p42-part2/</code>.</li>
+    <li>Construct an adjacency list for each document (as explained above).</li>
+    <li>Assign a weight 1.0 to each document.</li>
+    <li>Iterate the following steps 10 times:<ol type="i"><li>For each node in the graph, distribute the PageRank equally amongst all its neighbors. This can be thought of as a map operation.</li><li>Update the PageRank of each document to 0.15 + 0.85 * (contributions)<p>, where contributions is the total PageRank earned from all neighbors of the document.</p></li>
+    <li>Make sure you handle the case of dangling pages. Dangling pages are pages with no outbound links. <b>These are not handled in the example implementation (from the Spark example code).</b> Hence do not rely on it as only the example code as a template for what to do.</li>
+    <p>Consider the following starting position:</p>
+    <pre>    key: page1 value: 1.0 page2 page3 
+    key: page2 value: 1.0 page3 page1
+    key: page3 value: 1.0 
+    </pre>
+    After 1 iteration, the same contributions will be received by each page, as shown:
+    <pre>    key: page1  contributions received: 0.5 adjacency list: page2 page3 
+    key: page2  contributions received: 0.5 adjacency list: page3 page1 
+    key: page3  contributions received: 1.0 adjacency list: 
+    </pre>
+    <p><code>page3</code> is a dangling page. Dangling pages are pages with no outbound links. In PageRank, they generally represent pages that have not been crawled yet. Unfortunately, the total aggregate of all PageRank values should be a constant (as per the formal definition of PageRank). However, dangling pages do not emit any weight and hence, the system tends to lose weight at each iteration. The way to correct this is by redistributing the weight of dangling pages across all the other pages at the end of an iteration. In this example, there is only one dangling page (page3). Hence, its contribution (1.0 should be distributed equally amongst page1, page2, page3).</p>
+    <p>Hence, the new PageRanks are:</p>
+    <pre>    page1 = 0.15 + 0.85 * (0.5 + 1.0/3) = 0.8583
+    page2 = 0.15 + 0.85 * (0.5 + 1.0/3) = 0.8583
+    page3 = 0.15 + 0.85 * (1.0 + 1.0/3) = 1.2833
+    </pre>
+    </ol>
+    </li>
+    <li>In each iteration, the program should end with the data structure format it started with. This ensures that the algorithm is correctly iterative.</li>
+    <li>Finally, from your output list of PageRank, find the top 100 documents. Store these in descending order of frequency (order ties alphabetically by title) a tab-separated file named "pagerank" of the type:<p></p><pre>document_title  pagerank_value</pre><p></p></li>
+    <li>The next step is to autograde your answers and submit your code. Place all code for this step in the same folder as the submitter (paste spark shell commands into a file if you used only shell commands) and run the following commands:
+    <p></p><pre>cd ~    
+wget https://s3.amazonaws.com/15-319-s15-p42/submitter
+chmod +x submitter
+submitter -p</pre><p></p>
+    </li></ol>
+    </div>
+    <div class="bs-callout bs-callout-task" id="ui-bonus">
+    <h3>Tasks to complete : Bonus</h3>
+    <ol>
+    <li>Load the two ranks into a database (Spark SQL). This works exactly like Hive.<p></p>
+    </li><li>Download the web server using: wget <a href="https://s3.amazonaws.com/15-319-s15/proj4_web.zip">https://s3.amazonaws.com/15-319-s15/proj4_web.zip</a><p></p>
+    </li><li>Update the homepage such that when a term is searched for (single word only), the results are filtered and sorted as follows: <ol><li>The top 20 documents for that word are filtered out using TF-IDF.</li><li>Sort these 20 documents using PageRank and display them to the web UI.</li></ol>
+    </li><li>Once you have ensured your results are visible from a browser at http://your-frontend-dns/proj4_web/results.html?term='term' , run the following:
+    <p></p><pre>cd ~    
+wget https://s3.amazonaws.com/15-319-s15-p42/bonus/submitter_bonus
+chmod +x submitter_bonus
+./submitter_bonus</pre><p></p>
+    </li></ol>
+    </div>
+    <div class="bs-callout bs-callout-danger">
+      <h4>Project Grading Penalties</h4>
+      <p>Besides the penalties mentioned in recitation and/or on Piazza, penalties accrue for the following:</p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Violation</th>
+            <th>Penalty of the project grade</th>
+          </tr>
+        </thead>
+        <tbody><tr>
+          <td>Spending more than $25 for this project checkpoint</td>
+          <td>-10%</td>
+        </tr>
+        <tr>
+          <td>Spending more than $50 for this project checkpoint</td>
+          <td>-100%</td>
+        </tr>
+        <tr>
+          <td>Using GraphX or MLLib library functions</td>
+          <td>-100%</td>
+        </tr>
+        <tr>
+          <td>Failing to tag all your resources for this project</td>
+          <td>-10%</td>
+        </tr>
+        <tr>
+          <td>Using any instance other than the ones specified in the writeup</td>
+          <td>-10%</td>
+        </tr>
+        <tr>
+          <td>Attempting to hack/tamper the auto-grader</td>
+          <td>-100%</td>
+        </tr>
+      </tbody></table>
+    </div>
+  </div>
+
+<p></p></div>
+<!-- JS Scripts -->
+<script src="./P4.2_files/docs.min.js"></script>
+<p></p>
+
+
+    </div>
+
+
+    </div>
+
+    <div id="footer" class="navbar-fixed-bottom" style="height:30px;background-color:#f5f5f5;position:fixed;bottom:0;width:100%;text-align:center;padding:5px">
+        <p class="text-muted credit">©2015 Teaching Staff Of The Cloud Computing Course, Carnegie Mellon University</p>
+    </div>
+
+    
+    
+    
+
+    <script type="text/javascript">
+        function dashIfUNE(str) {
+            return (str==null || str.length===0)?'<span class="glyphicon glyphicon-minus"></span>':str;
+        }
+        /* https://docs.djangoproject.com/en/dev/ref/csrf/ */
+        function csrfSafeMethod(method) {
+            return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+        }
+        $.ajaxSetup({
+            beforeSend: function(xhr, settings) {
+                if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                    xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                }
+            }
+        });
+        function getCookie(name) {
+            var cookieValue = null;
+            if (document.cookie && document.cookie != '') {
+                var cookies = document.cookie.split(';');
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = jQuery.trim(cookies[i]);
+                    if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+        var csrftoken = getCookie('csrftoken');
+    </script>
+    
+    <script type="text/javascript">
+        function fixNavbarTop() {
+            $('#base-container').css('padding-top', $('.navbar-fixed-top').height()+10);
+        }
+        $(document).ready(fixNavbarTop);
+        $(window).resize(fixNavbarTop);
+        $(window).load(fixNavbarTop);
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_writeup').addClass('btn-primary');
+            $("#project4").addClass('active');
+        });
+    </script>
+
+
+
+</div></body></html>

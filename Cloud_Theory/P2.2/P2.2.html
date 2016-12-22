@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)https://theproject.zone/writeup/2/2 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+
+    <link type="image/x-icon" rel="shortcut icon" href="https://theproject.zone/static/favicon.ico">
+    <!--<link type="text/css" rel="stylesheet" href="/static/css/table_sort.css">-->
+    <link type="text/css" rel="stylesheet" href="./P2.2_files/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="./P2.2_files/jquery.dataTables.min.css">
+    <link type="text/css" rel="stylesheet" href="./P2.2_files/header.css">
+    <link type="text/css" rel="stylesheet" href="./P2.2_files/defaultTheme.css">
+    <link type="text/css" rel="stylesheet" href="./P2.2_files/datepicker.css">
+    <link type="text/css" rel="stylesheet" href="./P2.2_files/bootstrap-editable.css">
+    <title>15-319/619 Cloud Computing</title>
+    
+    
+    
+    
+    
+    <link type="text/css" rel="stylesheet" href="./P2.2_files/inside.base.css">
+
+    <link type="text/css" rel="stylesheet" href="./P2.2_files/docs.min.css">
+
+
+    <script type="text/javascript" src="./P2.2_files/jquery.min.js"></script>
+    <script type="text/javascript" src="./P2.2_files/jquery.tablesorter.js"></script>
+    <script type="text/javascript" src="./P2.2_files/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="./P2.2_files/jquery.fixedheadertable.js"></script>
+    <script type="text/javascript" src="./P2.2_files/fnSetFilteringDelay.js"></script>
+    <script type="text/javascript" src="./P2.2_files/datatableview.min.js"></script>
+    <script type="text/javascript" src="./P2.2_files/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./P2.2_files/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="./P2.2_files/bootstrap-editable.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./P2.2_files/prettify.css"></head>
+
+<body role="document" style="margin-bottom: 40px">
+
+    <div id="base-container" class="container-fluid" style="padding-top: 49.888888835907px;">
+    
+    
+    
+    
+    
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+   
+        <div class="container-fluid">
+
+            <div class="navbar-header" style="padding-bottom:40px">
+               <a href="https://theproject.zone/home"><img src="./P2.2_files/TPZlogo_small_inverted.png"></a>
+            </div>
+
+            <div class="navbar-header pull-right">
+                <a class="navbar-brand" href="https://theproject.zone/writeup/2/2#" onclick="return false;" style="margin-left: 0px;"><span class="label label-default" id="username-label">pgandala</span></a>
+            </div>
+
+            <div class="coll pull-right">
+                <ul id="navbar" class="nav navbar-nav" style="font-weight:bold">
+                    <li id="home"><a href="https://theproject.zone/home">Home</a></li>
+
+                    
+                        
+                        <li id="project0" class="dropdown">
+                            <a href="https://theproject.zone/writeup/2/2#" data-toggle="dropdown" class="dropdown-toggle">Primer
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/0/1">Project Primer</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li id="project1" class="dropdown">
+                            <a href="https://theproject.zone/writeup/2/2#" data-toggle="dropdown" class="dropdown-toggle">Project 1
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/1/1">1.1 Sequential Analysis</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/1/2">1.2 Using Amazon's Elastic MapReduce</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li id="project2" class="dropdown active">
+                            <a href="https://theproject.zone/writeup/2/2#" data-toggle="dropdown" class="dropdown-toggle">Project 2
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/2/1">2.1 Introduction to AWS APIs</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="./P2.2_files/P2.2.html">2.2 Load Balancing and AutoScaling</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/2/3">2.3 Advanced Scaling Concepts</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li id="project3" class="dropdown">
+                            <a href="https://theproject.zone/writeup/2/2#" data-toggle="dropdown" class="dropdown-toggle">Project 3
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/3/1">3.1 Files v/s Databases</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/3/2">3.2 Partitioning and Replication</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/3/3">3.3 Database-as-a-Service</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/3/4">3.4 Cloud Data Warehousing</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/3/5">3.5 Consistency in Distributed Key-Value Stores</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li id="project4" class="dropdown">
+                            <a href="https://theproject.zone/writeup/2/2#" data-toggle="dropdown" class="dropdown-toggle">Project 4
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/4/1">4.1 MapReduce Programming using YARN</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/4/2">4.2 Iterative Programming using Apache Spark</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/4/3">4.3 Graph Programming using GraphLab</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li id="project5" class="dropdown">
+                            <a href="https://theproject.zone/writeup/2/2#" data-toggle="dropdown" class="dropdown-toggle">15619 Project
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/1">Phase 1</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/2">Phase 1 Report</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/3">Phase 2</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/4">Phase 2 Live Test (MySQL)</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/5">Phase 2 Live Test (HBase)</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/6">Phase 2 Report</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/7">Phase 3</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/9">Phase 3 Live Test</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/10">Phase 3 Report</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                    
+                
+                    
+                    <li id="grade"><a class="active" href="https://theproject.zone/grade/">Grade Book</a></li>
+                    <li id="profile"><a href="https://theproject.zone/profile">Profile</a></li>
+                    <li id="logout"><a href="https://theproject.zone/log_out">Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+
+        <div class="row">
+
+        <div class="col-md-6">
+            <h2>2.2 Load Balancing and AutoScaling</h2>
+        </div>
+        
+        
+        <div class="col-md-6 pull-down">
+            <div class="btn-group pull-right" style="margin-bottom: 10px">
+                <a class="btn btn-default btn-primary" href="https://theproject.zone/writeup/2/2/" id="nav_writeup">Writeup</a>
+
+                
+
+                
+
+                <a class="btn btn-default" href="https://theproject.zone/submissions/2/2/" id="nav_submissions">Submissions</a>
+                <a class="btn btn-default" href="https://theproject.zone/scoreboard/2/2/" id="nav_score_board">ScoreBoard</a>
+            </div>
+        </div>
+        
+        
+        </div>
+
+        <table class="table table-striped table-bordered table-condensed prettyBorder">
+        <thead>
+            <tr>
+                <th>Phase</th>
+                <th>Open</th>
+                <th>Deadline</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2.2 Load Balancing and AutoScaling</td>
+                <td>Feb. 09, 2015 00:01</td>
+                <td>Feb. 15, 2015 23:59</td>
+            </tr>
+        </tbody>
+        </table>
+        
+        
+
+        <hr>
+        
+
+<style>
+  img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  }
+  small.caption {
+  display: block;
+  text-align: center;
+  margin-bottom: 4em;
+  }
+  iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  }
+  .bs-callout-task {
+  background-color: #ffffff;
+  border-left-color: green;
+  }
+  .bs-callout-task h4,
+  .bs-callout-task a.alert-link {
+  color: green;
+  }
+  .bs-callout-learning {
+  background-color: #ffffff;
+  border-left-color: purple;
+  }
+  .bs-callout-learning h4,
+  .bs-callout-learning a.alert-link {
+  color: purple;
+  }
+  .bs-docs-sidebar.affix {
+  position: fixed;
+  top: 25x;
+  }
+</style>
+
+<div id="writeup-content" class="row">
+  <div class="col-md-3" role="complementary">
+    <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top" style="top:120px">
+      <!-- Inline CSS Hack for Display -->
+      <ul class="nav bs-docs-sidenav">
+        <li>
+          <a href="https://theproject.zone/writeup/2/2#lb-as">Load Balancing and AutoScaling</a>
+          <ul class="nav">
+            <li><a href="https://theproject.zone/writeup/2/2#elb">Elastic Load Balancer</a></li>
+            <li><a href="https://theproject.zone/writeup/2/2#asg">Amazon Auto Scaling</a></li>
+            <li><a href="https://theproject.zone/writeup/2/2#use">Using Elastic Load Balancing and Auto Scaling</a></li>
+            <li><a href="https://theproject.zone/writeup/2/2#internal">AWS Auto Scaling Internals</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://theproject.zone/writeup/2/2#a-day-at-msb">A Day at the MSB</a>
+          <ul class="nav">
+            <li><a href="https://theproject.zone/writeup/2/2#msb">MSB Junior Architect Test</a></li>
+            <li><a href="https://theproject.zone/writeup/2/2#fault">Fault Tolerance</a></li>
+            <li><a href="https://theproject.zone/writeup/2/2#together">Putting it all together</a></li>
+            <li><a href="https://theproject.zone/writeup/2/2#target">Performance Targets</a></li>
+            <li><a href="https://theproject.zone/writeup/2/2#task">Tasks to Complete</a></li>
+            <li><a href="https://theproject.zone/writeup/2/2#additional">Additional Resources and References</a></li>
+          </ul>
+        </li>
+      </ul>
+      <a class="back-to-top" href="https://theproject.zone/writeup/2/2#top">
+      Back to top
+      </a>
+    </nav>
+  </div>
+  <div class="col-md-9" role="main">
+    <div class="bs-docs-section">
+      <h1 id="lb-as" class="page-header">Load Balancing and Auto Scaling</h1>
+      <div class="bs-callout bs-callout-learning">
+        <h4>Learning Objectives</h4>
+        <p>This project will encompass the following learning objectives:</p>
+        <ol>
+          <li>Configure and deploy an Elastic Load Balancer along with Auto Scaling Group on AWS</li>
+          <li>Develop programs that manage cloud resources, while dealing with resource failures</li>
+        </ol>
+      </div>
+      <div class="bs-callout bs-callout-warning">
+        <h4 id="resource-tagging">Resource Tagging And Project AMIs</h4>
+        <p>For this project, assign the tag with <code>Key: Project</code> and <code>Value: 2.2</code> for all resources</p>
+        <p>For this project, the AMI IDs are <code>Load Generator (LG): ami-ae0a46c6</code> and <code>Data Center Instance (DCI): ami-7c0a4614</code></p>
+        <p>For this project, use only <strong>m3.medium</strong> instance for Load Generator (LG) or your test result will be invalid.</p>
+      </div>
+      <p>Congratulations on joining the Massive Surveillance Bureau. Your mission, should you choose to accept it, is to design a scalable data center to handle requests from the agents in a timely manner. </p>
+
+      <h3 id="elb">Elastic Load Balancer</h3>
+      <p>You have already been introduced to the Elastic Load Balancer, which acts as a network router that sends incoming requests to multiple EC2 instances sitting behind it in a round-robin fashion. Round-robin scheduling is not perfect, but it does an adequate job given a large number of users, each with relatively simple requests. The instances it points to can be added manually through the web console, programmatically through an API, or dynamically with an Auto Scaling Group. It also does a Health Check to see if the host is alive (if not, it will stop sending requests to it). Using an ELB costs $0.025 per hour + $0.008 per GB transferred through it.</p>
+
+      <p>Last week, you were introduced to the ELB, but not the APIs. Apart from the web console, you can programmatically interact with an Elastic Load Balancer in many ways, including:</p>
+
+      <ol>
+        <li><a href="http://aws.amazon.com/cli/">The AWS Command Line Interface (AWS CLI)</a></li>
+        <li><a href="http://aws.amazon.com/sdk-for-java">The AWS SDK for Java</a></li>
+        <li><a href="https://boto.readthedocs.org/en/latest/">boto for Python</a></li>
+      </ol>
+
+      <p>We will give you more information about working with these APIs after introducing the next section on Auto Scaling.</p>
+
+      <h3 id="asg">Amazon Auto Scaling</h3>
+      <p>Amazon's Auto Scaling service automatically adds or removes computing resources allocated to an application, by responding to changes in demand. AWS Auto Scaling refers to horizontal scaling, which is the act of increasing or decreasing the compute capacity of an application by changing the number of servers assigned to it. This is in contrast to vertical scaling, which is achieved by changing the size of individual servers in response to demand (such as changing <strong>m1.small</strong> to <strong>m1.large</strong>), and is currently not supported by AWS Auto Scaling. Amazon Auto Scaling can be accessed through command-line tools or through APIs in the SDK. The following video explains AutoScaling:</p>
+
+      <iframe width="560" height="315" src="./P2.2_files/WsGpj5eZaS4.html" frameborder="0" allowfullscreen=""></iframe>
+      <h4><small class="caption">Video: Auto Scaling</small></h4>
+      <p>Amazon's Auto Scaling provides the following deployment modes on a group of EC2 instances:</p>
+
+      <ul>
+        <li>Maintain a fixed number of running EC2 instances at all times, by performing periodic health checks on instances and automatically launching new instances when one or more are unhealthy;</li>
+        <li>Scale instances by invoking Auto Scaling manually, which will increase or decrease the number of running instances on your behalf;</li>
+        <li>Predictable scaling based on a developer-specified schedule (for example, a condition you could specify to decrease the servers every Friday at 5 p.m. and to increase them every Monday at 8 a.m);</li>
+        <li>Dynamically scale based on conditions specified by the developer (for example, CPU utilization of your EC2 instances).</li>
+      </ul>
+
+      <h3 id="use">Using Elastic Load Balancing and Auto Scaling</h3>
+      <p>A use case for Auto Scaling is dynamic infrastructure management. In the case of MSB, it should be clear how Auto Scaling can help deal with variable traffic patterns. As the traffic increases and the load on the servers increases, the number of servers can be increased dynamically. Similarly, as the traffic decreases and the load on the servers decreases, the number of servers can be decreased dynamically. In that sense, we can program Auto Scaling to respond to changes in CPU load (or other metrics) of provisioned servers.</p>
+
+      <img src="./P2.2_files/junior_asarch.png" style="border: 1px solid;">
+      <h4><small class="caption">Auto Scaling Architecture in Amazon EC2</small></h4>
+
+      <h3 id="internal">AWS Auto Scaling Internals</h3>
+
+      <p>Using Amazon's Auto Scaling in a dynamic fashion requires, at minimum, the following:</p>
+
+      <ul>
+        <li>An <strong>Auto Scaling group</strong> should be defined with minimum, maximum and desired number of instances defined during the group creation. More information can be found here on creating auto scaling groups.</li>
+        <li>A <strong>Launch Configuration</strong> template should be defined, which includes the AMI ID, instance types, key pairs and security group information, among others. As Auto Scaling is meant to scale automatically based on application demands; i.e. the instance should be configured to automatically start the required application services and work seamlessly on launch.</li>
+        <li>An <strong>Auto Scaling policy</strong> should be created, which defines the set of actions to perform when an event, such as a CloudWatch alarm, is triggered.</li>
+      </ul>
+
+      <p>The following video will demonstrate how you can use Auto Scaling:</p>
+
+      <iframe width="560" height="315" src="./P2.2_files/MchfwYakgWU.html" frameborder="0" allowfullscreen=""></iframe>
+      <h4><small class="caption">Video: Auto Scaling Demo</small></h4>
+
+      <h1 id="a-day-at-msb" class="page-header">A Day at the MSB with Auto Scaling</h1>
+
+      <h3 id="msb">MSB Junior System Architect Test</h3>
+
+      <p>In Project 2.2 you get to experience one day in the life of a MSB junior system architect. As a junior system architect, you must ensure that the Data Center is responding reliably and efficiently to requests from the field agents for 24 hours a day.</p>
+      <div class="bs-callout bs-callout-info">
+        <h4>A Note on Time Warping</h4>
+        <p>Unfortunately we do not have the budget (and most of you do not have the time) to conduct 24-hour long tests. So, for the rest of this module, you can assume that 1 hour of MSB time in the write-up corresponds to 2 minutes of real time. Thus the 24-hour test takes only 48 minutes of your time.</p>
+      </div>
+      <p>System architects earn a salary relative to a day's performance. The minimum requirement is that the mean requests per second for the entire 24 hours of traffic is over 2400 rps (this corresponds to the mean rps of the 48-minute test). During a typical day, there is one morning peak and one evening peak. During both rush hours, MSB receives a huge number of requests to track person(requests to the <b>/track/person</b> page of Data Center). Unfortunately, system architects have a daily limit of 200 instance-hours.</p>
+      <div class="bs-callout bs-callout-info">
+        <h4>A Note on Instance-Hours</h4>
+        <p>The instance-hour is the unit of cost when one <b>m1.small</b> instance is billed for a period of one hour. One <b>m1.medium/m3.medium</b> instance running for one hour corresponds to 2 instance-hour, while one <b>m1.large/m3.large</b> instance(m1.large/m3.large) running for one hour corresponds to 4 instance-hour. For the purpose of our tests, time-warping makes 1 hour of MSB time correspond to 2 minutes of real time. <br><br> For example, if you have two <b>m1.medium</b> instances running for the entire 48 minute test, that corresponds to 2 instances * 24 hours * 2 instance-hour per medium instance per hour = 96 instance-hours. <br><br> If you have three <b>m3.large</b> instances that are launched together for 6 minutes in real time, you will be charged for 3 instances * 3 hours * 4 instance-hour per large instance per hour = 36 instance-hours.</p>
+      </div>
+      <p>For each instance-hour used beyond the limit, a small amount is deducted from your salary. Thus, to maximize your earnings, the system should use the bare minimum number of instances required for most of the day, quickly scale up to handle the spikes as they occur, and then scale down as soon as the spikes have ended. You can visualize your instance-hours using the "Healthy Hosts" graph in the ELB page.</p>
+      <p>You should use an ELB to divide traffic evenly between your instances. Using Auto Scaling and CloudWatch, you can scale your system to handle the traffic. In the section <a href="https://theproject.zone/writeup/2/2#together">Putting it all together</a>, we give you an example of Auto Scaling rules, but you should feel free to devise your own rules to meet the target.</p>
+      <h3 id="fault">Fault Tolerance</h3>
+      <p>Since you are no longer able to afford the best and the fastest equipment, your Data Center instances have become unstable - they tend to crash regularly. The Load Balancer will continue to send traffic to these buggy servers until they are no longer marked as healthy. You need to ensure that most of these requests are not lost by setting up the ELB to detect and respond to failure. You should also be able to pinpoint exactly when each of your Data Center's instances failed.</p>
+      <h3 id="together">Putting it all together</h3>
+      <p>To become a qualified MSB junior system architect, you are required to write a program, using either the Java, Python(boto) or CLI API, to do the following set of steps. You may also choose to use the AWS Web Console to do this for dry runs. But in order to report the test result to MSB, you need to upload code for at least one test. </p> 
+      <p>Initially for testing, you may ignore setting up CloudWatch alarms and an AutoScaling Group (Steps 2-6 could be replaced by attaching a fixed number of instances in Auto Scaling Group to the Elastic Load Balancer) to have a sense of the traffic pattern. Once you have analyzed the traffic pattern using a fixed set of instances, you could continue with the full set of steps below:</p>
+      <ol>
+        <li>
+          Create a Security Group to allow <strong>ALL</strong> requests on <strong>ALL</strong> ports from <strong>ANYWHERE</strong> and <strong>allow all outgoing requests on all ports to anywhere</strong>. This should later be associated with your Elastic Load Balancer and Auto Scaling Group.
+        </li>
+        <li>
+          Create an ELB that:
+          <ul>
+            <li>Redirects HTTP:80 requests from the load balancer to HTTP:80 on the instance</li>
+            <li>Set up the page <b>/heartbeat</b> as the health check page</li>
+          </ul>
+        </li>
+        <li>
+          Create a Launch Configuration for the instances that will become part of the Auto Scaling Group, with the following parameters:
+          <ul>
+            <li>AMI ID: As described in <a href="https://theproject.zone/writeup/2/2#resource-tagging">Resource Tagging And Project AMIs</a>.</li>
+            <li>Instance Type: <strong>m1.small, m1.medium, m1.large, m3.medium or m3.large</strong></li>
+            <li>Detailed Monitoring: enabled</li>
+          </ul>
+        </li>
+        <li>
+          After analyzing the traffic pattern, figure out a good rule for Scale Out and Scale In operations. Below we define the following default rules to give you an idea of the various parameters that need to be set. Please note that you may find it difficult to achieve a passing grade using an Auto Scaling Group with the following parameters.
+          <ul>
+            <li>Group Size Start With: 1 instance</li>
+            <li>Subnet: Recommeded to choose the same availability zone(s) corresponding to your ELB</li>
+            <li>Load Balancing: Receive traffic from Elastic Load Balancer and choose your ELB</li>
+            <li>ELB Name: Choose your ELB name, make sure it’s alphanumeric</li>
+            <li>Health Check Type: ELB</li>
+            <li>Detailed Monitoring: enabled</li>
+            <img src="./P2.2_files/junior_asg_1.png" style="border: 1px solid;">
+            <h4><small class="caption">An example of Auto Scaling Group configuration</small></h4>
+          </ul>
+        </li>
+        <li>
+          Create the following Auto Scale Policies: Please note that you may find it difficult to achieve a passing grade using an Auto Scaling Group with the following parameters.
+          <ul>
+            <li>Minimum Instance Size: 1</li>
+            <li>Maximum Instance Size: 2</li>
+            <li>Create a ScaleOut policy that automatically adds 1 instance to the auto scaling group.</li>
+            <li>Create a ScaleIn policy that automatically removes 1 instance from the auto scaling group.</li>
+            <img src="./P2.2_files/junior_asg_2.png" style="border: 1px solid;">
+            <h4><small class="caption">An example of Auto Scaling Group configuration</small></h4>
+          </ul>
+        </li>
+        <li>
+          Create CloudWatch Alarms that invoke the appropriate policy for the following scenarios: Please note that you may find it difficult to achieve a passing grade using an Auto Scaling Group with the following parameters.
+          <ul>
+            <li>Scale out when the group's CPU load exceeds 80% on average over a 5 minute interval.</li>
+            <li>Scale in when the group's CPU load is below 20% on average over a 5 minute interval.</li>
+          </ul>
+        </li>
+        <li>Link the CloudWatch Alarms to the ScaleOut and ScaleIn rules of your Auto Scaling Group.
+        </li>
+        <li>Configure correct tags for your Auto Scaling Group.
+        </li>
+        <li>Create a Load Generator instance of size <b>m3.medium</b> using AMI described in <a href="https://theproject.zone/writeup/2/2#resource-tagging">Resource Tagging And Project AMIs</a>
+        <img src="./P2.2_files/junior_lg_interface.png" style="border: 1px solid;">
+        <h4><small class="caption">Main Page on Load Generator</small></h4>
+        </li>
+        <li>Before launching the test, you may wish to warm up your Load Balancer by visiting <b>http://&lt;load-generator-dns&gt;/warmup?dns=&lt;your-elb-dns&gt;</b> manually in your browser or sending a HTTP request to <b>http://&lt;load-generator-dns&gt;/warmup?dns=&lt;your-elb-dns&gt;</b> using your code. The Load Generator will send requests concurrently to <strong>/track/device</strong> for 5 minutes during each warm up. You may choose to do this step multiple times until you are satisfied that your ELB has warmed up. The instance-hours used in the warm up phase do not count towards your final grade.
+        <img src="./P2.2_files/junior_warmup.png" style="border: 1px solid;">
+        <h4><small class="caption">Warmup Page on Load Generator</small></h4>
+        </li>
+        <li>
+          Once your ELB is warmed up, start the test by visiting the URL: <b>http://&lt;your-load-generator-dns&gt;/junior</b> and entering your ELB DNS. <br>
+          <img src="./P2.2_files/junior.png" style="border: 1px solid;">
+        <h4><small class="caption">Junior System Architect Test Page on Load Generator</small></h4>
+          Your code should request the following HTTP URL: <b>http://&lt;your-load-generator-dns&gt;/junior?dns=&lt;your-elb-dns&gt;</b>. <br>
+          You can view the progress of this test using the page: <b>http://&lt;your-load-generator-instance-dns-name&gt;/log?name=test.&lt;testId&gt;.log</b>.
+          <img src="./P2.2_files/junior_test_log.png" style="border: 1px solid;">
+          <h4><small class="caption">A sample Junior System Architect test log</small></h4>
+        </li>
+        <li>
+          You can monitor your ELB using the web console:<br> 
+          <img src="./P2.2_files/junior_cloudwatch_elb.png" style="border: 1px solid;">
+          <h4><small class="caption">Sum of 2XX Https of ELB in CloudWatch</small></h4>
+          The graph above is for HTTP 2xx requests (successful requests). There are other graphs for failed HTTP requests (non-2xx). If you are seeing a large number of non-2xx pages, it indicates that you have misconfigured your ELB or that you are not scaling fast enough to handle the spikes.
+        </li>
+        <li>
+          At the end of the 48 minutes, you will be told your average rps for the entire test and your instance-hour summary.
+          <img src="./P2.2_files/junior_ih.png" style="border: 1px solid;">
+          <h4><small class="caption">A sample test result</small></h4>
+        </li>
+        <li>
+          Your code should terminate all resources except for the Load Generator <del> and the Load Balancer</del>.
+        </li>
+      </ol>
+
+      <h3 id="target">Performance targets and scoring</h3>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Value</th>
+            <th>Target</th>
+            <th>Score</th>
+          </tr>
+        </thead>
+        <tbody><tr>
+          <td>Instance Hour Limit</td>
+          <td>200</td>
+          <td>if (x &lt; 200) { return 40; } else { return 40 - 0.25 * (x - 200); } </td>
+        </tr>
+        <tr>
+          <td>Requests Per Second</td>
+          <td>2400</td>
+          <td>x / 60</td>
+        </tr>
+      </tbody></table>
+      <p>If you have achieved rps = 1800 with 150 instance-hours, your performance score will be 30 + 40 = 70.</p>
+      <p>If you have achieved rps = 2400 with 250 instance-hours, your performance score will be 40 + 27.5 = 67.5.</p>
+      <p>In addition, your code will be manually graded and its score is 20 at maximum.</p>
+      <p>The total score is 100, including 40 for rps, 40 for instance hour and 20 for code.</p>
+      <div class="bs-callout bs-callout-task">
+        <h4 id="task">Tasks to Complete</h4>
+        <ol>
+          <li>
+            Manually launch the Load Generator with the correct AMI and instance type. You don't have to write code for this step.
+          </li>
+          <li>
+            Write a program in Python, Java or shell script using the AWS APIs.
+          </li>
+          <li>
+            You program should create correct Security Groups, launch a Elastic Load Balancer and initiate an Auto Scaling Group along with Launch Configuration, Auto Scale Polices and CloudWatch Alarms. Your program should wait for all resources to be ready.
+          </li>
+          <li>
+            Your program should warm up the ELB (0 or more times) and start the junior system architect test on the Load Generator. Your program should also record the <strong>testId</strong> in the response.
+            <br>
+          </li>
+          <li>
+            Your program should wait for the test to complete, terminate all resources(Security Group, Elastic Load Balancer, Auto Scaling Group, Launch Configuration, Auto Scale Polices, CloudWatch Alarms) except the Load Generator.
+          </li>
+          <li>
+            Manually submit your program as <code>&lt;testId&gt;.zip</code> including your source code(*.java, *.py or *.sh) AND <code>references</code> in <b>http://&lt;your-load-generator-instance-dns-name&gt;/upload</b>. Please note that <code>references</code> is compulsory. Please do not include any library (*.jar) or credential (*.pem,access_key.csv) files in your <code>&lt;testId&gt;.zip</code>. Your test will be graded <strong>only</strong> if you have uploaded code for that test. You don't have to write code for this step either. You will see a check mark in <a href="https://theproject.zone/submissions/2/2/">scoreboard</a>.
+          </li>
+          <li>
+            Repeat steps 3-6 if you have budget left and hope to try with different parameters/policies.
+          </li>
+          <li>
+            Do not forget to terminate your Load Generator. You don't have to write code for this step either.
+          </li>
+        </ol>
+      </div>
+
+    <div class="bs-callout bs-callout-info">
+     <h4>Hints</h4>
+     <ul>
+     <li>You may wish to perform several runs manually - one without Auto Scaling, the next with a set of Auto Scaling rules based on your observations of the static test, followed by a run with modified rules to perform well. Realize that CloudWatch provides very interesting metrics that you can use to correctly identify the load on the system. Try to match the CloudWatch metrics to the number of HTTP requests received by the ELB.</li>
+     <li>Warming up ELB is tricky. <strong>Think</strong> about why Project 2.1 ELB Test lasts for 15 minutes long and how many times you run ELB Test to meet the required rps in Project 2.1. </li>
+     <li>Scaling out is also tricky. <strong>Think</strong> about why we do not calculate the first minute in Project 2.1 Vertical Scaling Test. Find a way to mitigate the impact of adding new instances.</li>
+     <li>The availability zone you choose may or may not have an impact on your test result.</li>
+     <li>Do not launch multiple Load Generators at the same time. This will interfere with the calculation of instance hours.<p></p>
+     </li><li>If your rps is nearly zero(0 &lt; rps &lt; 1), please check if there is at least one healthy instance connected to ELB. Please notice that your solution should be <a href="https://theproject.zone/writeup/2/2#fault">fault-tolerant</a>.</li>
+     <li><strong>Think twice</strong> before starting test and burning your budget. </li>
+     </ul>
+    </div>
+      <h3 id="additional">Additional Resources and References</h3>
+      <p><a href="http://awsdocs.s3.amazonaws.com/AutoScaling/latest/as-dg.pdf" id="_i_6" target="_blank">Autoscaling Developer Guide</a></p>
+      <p><a href="http://awsdocs.s3.amazonaws.com/AutoScaling/latest/as-api.pdf" id="_i_7" target="_blank">Autoscaling API Guide</a></p>
+      <p><a href="http://aws.amazon.com/documentation/cloudwatch/">CloudWatch Documentation</a></p>
+      <p><a href="http://aws.amazon.com/documentation/elastic-load-balancing/">Elastic Load Balancing Documentation</a></p>
+      <div class="bs-callout bs-callout-danger">
+        <h4>Project Grading Penalties</h4>
+        <p>Besides the penalties mentioned in recitation and/or on Piazza, penalties accrue for the following:</p>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Violation</th>
+              <th>Penalty of the project grade</th>
+            </tr>
+          </thead>
+          <tbody><tr>
+            <td>Spending more than $10 for this project phase</td>
+            <td>-10%</td>
+          </tr>
+          <tr>
+            <td>Spending more than $20 for this project phase</td>
+            <td>-100%</td>
+          </tr>
+          <tr>
+            <td>Failing to tag all your resources(EC2 instances, ELB, ASG) for this project</td>
+            <td>-10%</td>
+          </tr>
+          <tr>
+            <td>Submitting your AWS credentials in your code for grading</td>
+            <td>-10%</td>
+          </tr>
+          <tr>
+            <td>Using instances other than m1/m3.small/medium/large</td>
+            <td>-10%</td>
+          </tr>
+        </tbody></table>
+      </div>
+      <!--DIV END HERE -->
+    </div>
+
+<p></p></div>
+</div>
+<!-- JS Scripts -->
+<script src="./P2.2_files/docs.min.js"></script>
+<p></p>
+
+
+    </div>
+
+
+    </div>
+
+    <div id="footer" class="navbar-fixed-bottom" style="height:30px;background-color:#f5f5f5;position:fixed;bottom:0;width:100%;text-align:center;padding:5px">
+        <p class="text-muted credit">©2015 Teaching Staff Of The Cloud Computing Course, Carnegie Mellon University</p>
+    </div>
+
+    
+    
+    
+
+    <script type="text/javascript">
+        function dashIfUNE(str) {
+            return (str==null || str.length===0)?'<span class="glyphicon glyphicon-minus"></span>':str;
+        }
+        /* https://docs.djangoproject.com/en/dev/ref/csrf/ */
+        function csrfSafeMethod(method) {
+            return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+        }
+        $.ajaxSetup({
+            beforeSend: function(xhr, settings) {
+                if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                    xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                }
+            }
+        });
+        function getCookie(name) {
+            var cookieValue = null;
+            if (document.cookie && document.cookie != '') {
+                var cookies = document.cookie.split(';');
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = jQuery.trim(cookies[i]);
+                    if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+        var csrftoken = getCookie('csrftoken');
+    </script>
+    
+    <script type="text/javascript">
+        function fixNavbarTop() {
+            $('#base-container').css('padding-top', $('.navbar-fixed-top').height()+10);
+        }
+        $(document).ready(fixNavbarTop);
+        $(window).resize(fixNavbarTop);
+        $(window).load(fixNavbarTop);
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_writeup').addClass('btn-primary');
+            $("#project2").addClass('active');
+        });
+    </script>
+
+
+
+</body></html>

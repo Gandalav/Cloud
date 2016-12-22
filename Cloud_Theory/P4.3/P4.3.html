@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)https://theproject.zone/writeup/4/3 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+
+    <link type="image/x-icon" rel="shortcut icon" href="https://theproject.zone/static/favicon.ico">
+    <!--<link type="text/css" rel="stylesheet" href="/static/css/table_sort.css">-->
+    <link type="text/css" rel="stylesheet" href="./P4.3_files/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="./P4.3_files/jquery.dataTables.min.css">
+    <link type="text/css" rel="stylesheet" href="./P4.3_files/header.css">
+    <link type="text/css" rel="stylesheet" href="./P4.3_files/defaultTheme.css">
+    <link type="text/css" rel="stylesheet" href="./P4.3_files/datepicker.css">
+    <link type="text/css" rel="stylesheet" href="./P4.3_files/bootstrap-editable.css">
+    <title>15-319/619 Cloud Computing</title>
+    
+    
+    
+    
+    
+    <link type="text/css" rel="stylesheet" href="./P4.3_files/inside.base.css">
+
+    <link type="text/css" rel="stylesheet" href="./P4.3_files/docs.min.css">
+
+
+    <script type="text/javascript" src="./P4.3_files/jquery.min.js"></script>
+    <script type="text/javascript" src="./P4.3_files/jquery.tablesorter.js"></script>
+    <script type="text/javascript" src="./P4.3_files/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="./P4.3_files/jquery.fixedheadertable.js"></script>
+    <script type="text/javascript" src="./P4.3_files/fnSetFilteringDelay.js"></script>
+    <script type="text/javascript" src="./P4.3_files/datatableview.min.js"></script>
+    <script type="text/javascript" src="./P4.3_files/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./P4.3_files/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="./P4.3_files/bootstrap-editable.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./P4.3_files/prettify.css"></head>
+
+<body role="document" style="margin-bottom: 40px">
+
+    <div id="base-container" class="container-fluid" style="padding-top: 49.888888835907px;">
+    
+    
+    
+    
+    
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+   
+        <div class="container-fluid">
+
+            <div class="navbar-header" style="padding-bottom:40px">
+               <a href="https://theproject.zone/home"><img src="./P4.3_files/TPZlogo_small_inverted.png"></a>
+            </div>
+
+            <div class="navbar-header pull-right">
+                <a class="navbar-brand" href="https://theproject.zone/writeup/4/3#" onclick="return false;" style="margin-left: 0px;"><span class="label label-default" id="username-label">pgandala</span></a>
+            </div>
+
+            <div class="coll pull-right">
+                <ul id="navbar" class="nav navbar-nav" style="font-weight:bold">
+                    <li id="home"><a href="https://theproject.zone/home">Home</a></li>
+
+                    
+                        
+                        <li id="project0" class="dropdown">
+                            <a href="https://theproject.zone/writeup/4/3#" data-toggle="dropdown" class="dropdown-toggle">Primer
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/0/1">Project Primer</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li id="project1" class="dropdown">
+                            <a href="https://theproject.zone/writeup/4/3#" data-toggle="dropdown" class="dropdown-toggle">Project 1
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/1/1">1.1 Sequential Analysis</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/1/2">1.2 Using Amazon's Elastic MapReduce</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li id="project2" class="dropdown">
+                            <a href="https://theproject.zone/writeup/4/3#" data-toggle="dropdown" class="dropdown-toggle">Project 2
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/2/1">2.1 Introduction to AWS APIs</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/2/2">2.2 Load Balancing and AutoScaling</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/2/3">2.3 Advanced Scaling Concepts</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li id="project3" class="dropdown">
+                            <a href="https://theproject.zone/writeup/4/3#" data-toggle="dropdown" class="dropdown-toggle">Project 3
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/3/1">3.1 Files v/s Databases</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/3/2">3.2 Partitioning and Replication</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/3/3">3.3 Database-as-a-Service</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/3/4">3.4 Cloud Data Warehousing</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/3/5">3.5 Consistency in Distributed Key-Value Stores</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li id="project4" class="dropdown active">
+                            <a href="https://theproject.zone/writeup/4/3#" data-toggle="dropdown" class="dropdown-toggle">Project 4
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/4/1">4.1 MapReduce Programming using YARN</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/4/2">4.2 Iterative Programming using Apache Spark</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="./P4.3_files/P4.3.html">4.3 Graph Programming using GraphLab</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li id="project5" class="dropdown">
+                            <a href="https://theproject.zone/writeup/4/3#" data-toggle="dropdown" class="dropdown-toggle">15619 Project
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/1">Phase 1</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/2">Phase 1 Report</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/3">Phase 2</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/4">Phase 2 Live Test (MySQL)</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/5">Phase 2 Live Test (HBase)</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/6">Phase 2 Report</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/7">Phase 3</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/9">Phase 3 Live Test</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/10">Phase 3 Report</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                    
+                
+                    
+                    <li id="grade"><a class="active" href="https://theproject.zone/grade/">Grade Book</a></li>
+                    <li id="profile"><a href="https://theproject.zone/profile">Profile</a></li>
+                    <li id="logout"><a href="https://theproject.zone/log_out">Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+
+        <div class="row">
+
+        <div class="col-md-6">
+            <h2>4.3 Graph Programming using GraphLab</h2>
+        </div>
+        
+        
+        <div class="col-md-6 pull-down">
+            <div class="btn-group pull-right" style="margin-bottom: 10px">
+                <a class="btn btn-default btn-primary" href="https://theproject.zone/writeup/4/3/" id="nav_writeup">Writeup</a>
+
+                
+
+                
+
+                <a class="btn btn-default" href="https://theproject.zone/submissions/4/3/" id="nav_submissions">Submissions</a>
+                <a class="btn btn-default" href="https://theproject.zone/scoreboard/4/3/" id="nav_score_board">ScoreBoard</a>
+            </div>
+        </div>
+        
+        
+        </div>
+
+        <table class="table table-striped table-bordered table-condensed prettyBorder">
+        <thead>
+            <tr>
+                <th>Phase</th>
+                <th>Open</th>
+                <th>Deadline</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>4.3 Graph Programming using GraphLab</td>
+                <td>Apr. 27, 2015 00:01</td>
+                <td>May. 03, 2015 23:59</td>
+            </tr>
+        </tbody>
+        </table>
+        
+        
+
+        <hr>
+        
+
+<style>
+  img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  }
+  small.caption {
+  display: block;
+  text-align: center;
+  margin-bottom: 4em;
+  }
+  iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  }
+  .bs-callout-task {
+  background-color: #ffffff;
+  border-left-color: green;
+  }
+  .bs-callout-task h4,
+  .bs-callout-task a.alert-link {
+  color: green;
+  }
+  .bs-callout-learning {
+  background-color: #ffffff;
+  border-left-color: purple;
+  }
+  .bs-callout-learning h4,
+  .bs-callout-learning a.alert-link {
+  color: purple;
+  }
+  .bs-docs-sidebar.affix {
+  position: fixed;
+  top: 25x;
+  }
+</style>
+
+<div id="writeup-content" class="row">
+  <div class="col-md-3" role="complementary">
+    <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top" style="top:120px">
+      <!-- Inline CSS Hack for Display -->
+      <ul class="nav bs-docs-sidenav">
+        <li>
+          <a href="https://theproject.zone/writeup/4/3#graphlab">GraphLab</a>
+        </li>
+        <li> 
+          <a href="https://theproject.zone/writeup/4/3#bfs">Breadth-First Search</a>
+        </li>
+        <li>
+          <a href="https://theproject.zone/writeup/4/3#tasks">Tasks</a>
+          <ul class="nav">
+            <li><a href="https://theproject.zone/writeup/4/3#task1">1: Find the popular pages</a></li>
+            <li><a href="https://theproject.zone/writeup/4/3#task2">2: Find the connections between pages</a></li>
+            <li><a href="https://theproject.zone/writeup/4/3#task3">3: Visualize the connections</a></li>
+          </ul>
+        </li>
+      </ul>
+      <a class="back-to-top" href="https://theproject.zone/writeup/4/3#top">
+      Back to top
+      </a>
+    </nav>
+  </div>
+  <div class="col-md-9" role="main">
+    <h1 id="top" class="page-header">Graph Programming using GraphLab</h1>
+      <div class="bs-callout bs-callout-learning">
+        <h4>Learning Objectives</h4>
+        <p>This project will encompass the following learning objectives:</p>
+        <ol>
+          <li>Develop graph-parallel programs using the GraphLab programming model.</li>
+          <li>Gain experience with GraphLab’s API</li>
+          <li>Analyze a large-scale graph in a real-world scenario using graph algorithms</li>
+        </ol>
+      </div>    
+      <div class="bs-callout bs-callout-warning">
+        <h4 id="resource-tagging">Resource Tagging And Budgets</h4>
+        <p>Tag all of your resources with <code>Key: Project</code> and <code>Value: 4.3</code></p>
+        <p>You have a budget <strong>$15</strong> for Project 4.3.</p>
+      </div>
+      <div class="bs-docs-section">
+      <h3 id="graphLab">GraphLab</h3>
+      <p>In this section, we will give a brief introduction to some aspects of GraphLab you may need to know in this project. To have a deeper understanding on GraphLab, you should go to unit 4 in OLI and read related materials to get more information.</p>
+      <p>GraphLab is a distributed graph-parallel framework developed by CMU, which is used to perform machine learning and data mining algorithms efficiently on large-scale datasets. GraphLab abstracts the computation as vertex and data dependencies between computations as edges. It uses vertex-centric model, where the user-defined program is represented as an update function running on a scope consisting of a centric vertex and its adjacent vertices and edges. The computation can be either performed synchronously with Bulk Synchronous Model (BSP) or asynchronously using flexible consistency models.</p>
+      <p>In GraphLab1.0,  the data represented as a graph is partitioned using edge-cut, meaning two endpoints of an edge may be located at different machines. In GraphLab2.0 (also called PowerGraph), the partition method is changed to vertex-cut in order to handle the power-law property of having a few highly connected vertices which is exhibited in most of the natural graphs. In the PowerGraph approach, each edge along with its two endpoints will be on only one machine, and for each vertex, one of its copies will be selected as the master node, the rest of its copies are considered as mirror nodes.</p>
+      <p>In the rest of this writeup, when we refer to GraphLab, we mean GraphLab 2.0.</p>
+      <img src="./P4.3_files/graphlab-edge-cut.png" width="600px/">
+      <h4><small class="caption">Figure 1: Edge-cut in GraphLab 1.0</small></h4>
+      <img src="./P4.3_files/graphlab-vertex-cut.png" width="600px/">
+      <h4><small class="caption">Figure 2: Vertex-cut in GraphLab 2.0</small></h4>
+      <p>To develop applications in GraphLab, a user needs to write a program which runs on each vertex. This is accomplished using the following three steps:</p>
+      <ol>
+          <li><b>Gather. </b>For each vertex, its master and mirror nodes will accumulate information from their adjacent vertices or edges.</li>
+          <li><b>Apply. </b>In this step, the accumulated information will be aggregated in the master node of a vertex and be applied to update the state of the master node. The updated state of the master node will be subsequently synchronized to all the mirror nodes.</li>
+          <li><b>Scatter. </b>This is the final step where both the master and mirror nodes of a vertex could choose to update the data on their adjacent edges and send messages to their adjacent vertices. The vertices which receive messages will be activated and will continue performing subsequent computations.</li>
+      </ol>
+      <p>These three steps can be illustrated in the following diagram:</p>
+      <img src="./P4.3_files/graphlab-gas.png" width="800px/">
+      <h4><small class="caption">Figure 3: Gather, Apply, Scatter in a user-defined program</small></h4>
+      <h3 id="bfs">Breadth-First Search</h3>
+      <p>Breadth-First Search is a commonly used algorithm for traversing trees and graphs. The algorithm starts from a given node and explores its neighbors level by level, where all the nodes that are one step away from the starting node are examined, followed by the nodes that are two steps away, three steps away and so on. Due to this kind of traversal order, the path between two nodes found by BFS is guaranteed to be the shortest one in an unweighted graph.</p>
+      <p>The pseudocode below demonstrates the sequential implementation of this algorithm:</p>
+      <pre><b>procedure</b> BFS(G,V) <b>is</b>
+let Q be a queue
+Q.push(v)
+label v as discovered
+<b>while</b> Q is not empty
+    v ← Q.pop()
+    <b>for all</b> edges from v to w <b>in</b> G.adjacentEdges(v) <b>do</b>
+        <b>if</b> w is not labeled as discovered
+        Q.push(w)
+        label w as discovered</pre>
+      <h3 id="scenario">The Scenario</h3>
+<p>So far you have learned to build a simple search engine, rank pages appropriately and autosuggest search terms. One feature that could set Mellonitics apart is if we could find the most relevant links that connect two topics (in case you forgot, Mellonitics was the company you founded in Project 4.1). To be able do this, we need to link all our content together in the form of a graph. Then, for any pair of search terms, we can build a short list of pages that link the most relevant content together for a search term.</p>
+<p>Like many people, I'm sure you've often wondered: "How is Chocophorous venedictoffi related to the List of sovereign states?". Or, if you are less of an intellectual, you may have wondered "Is Gigi Proietti related to England?"
+</p>
+<p>
+<img src="./P4.3_files/GraphLab1.png" width="600px/">
+</p><h4 align="left"><small class="caption">Figure 4: Finding links and paths between topics (using Breadth First Search)<br>a.Answering the eternal question: How is Chocophorous venedictoffi related to the List of sovereign states?<br>b.Answering the infernal question: Is Gigi Proietti related to England?</small></h4>
+<p></p>
+<p>Fortunately, you can use GraphLab to answer these questions and many more like them. By writing a simple Breadth First Search program, you can find the links between any topics, no matter how obscure. You hope to leverage this as an entrepreneur-- you want to create a great business that links Cloud Computing and Ice Cream, but don't know how. And when you use this tool and your 15-319/15-619 skills to create the next billion-dollar startup, please remember your friendly TAs.</p>
+<img src="./P4.3_files/GraphLab2.png" width="600px/">
+<h4 align="left"><small class="caption">Figure 5: Constructing a network of related data. Can you believe that Jane Kamensky is so closely related to Alain Pompidou?</small></h4>
+<p>Any knowledge by itself is a vacuum. Mellonitics equips you with the tools to see the big picture; simply plug in some terms you feel are relevant and it can show you all the relevant topics. Use this to prepare for exams, impress people with your breadth of knowledge on a particular topic, and most importantly, complete all your 15-319/619 work this semester. May the Force be with you.
+</p>
+      <h3 id="dataset">The Dataset</h3>
+      <p>In this project you will use the enwiki-2013 dataset. It’s a graph file which represents a snapshot of the English part of Wikipedia as of late February 2013. There are over 4 million nodes and 100 million edges in the graph, where each node represents a page in Wikipedia and there will be an edge (a, b) if page a has at least one link to page b. You can download the graph file from <code>s3://s15-p43-dataset/enwiki-2013-arc</code>. We also provide you a mapping file that can help you find a page’s title according to its id in the graph. You can download this mapping file from <code>s3://s15-p43-dataset/enwiki-mapping</code>.</p>
+      <div class="bs-callout bs-callout-task">
+      <h3 id="tasks">Task to Complete:</h3>
+      <p>To complete Project 4.3, you need to finish the following tasks:</p>
+      <h4 id="task1">Task 1: Find the popular pages</h4>
+      <p>In this task, you will deploy GraphLab in EC2 and run the PageRank program which is provided within GraphLab in order to rank pages in Wikipedia.</p>
+      <ol>
+          <li>Launch three m3.large instances with <b>ami-e697958e</b> and note down their public DNSs. Set the security group of all these instances to allow all traffic.</li>
+          <li>Upload the key pair file you use to log into EC2 instance into each of those three machines.</li>
+          <li>Log into each instance and create a file <b>config</b> in the /home/ubuntu/.ssh directory. Add the following lines into config:
+          <p></p><pre>Host *.compute-1.amazonaws.com
+    IdentityFile &lt;path of your key pair file&gt;</pre><p></p>
+          <p>After making the above configuration, those three instances should be able to ssh into each other without specifying the key pair file, which is a requirement to run GraphLab. You should verify this by trying to ssh from one instance to another instance.</p>
+          </li>
+          <li>Go to one of the instance and create file <b>machines</b> in the home directory. Put the three DNSs you noted down in step 1 in this file, with one DNS per line and the DNS of current instance in the first line. In this task and next task, you will use this instance as the master node and the other two instances as slave nodes.</li>
+          <li>Download the graph file from <code>s3://s15-p43-dataset/enwiki-2013-arc</code> to this instance.</li>
+          <li>Change the working directory into graphlab/release/toolkits/graph_analytics and run PageRank program with the following command:
+          <p></p><pre>mpiexec -hostfile ~/machines -n 3 ./pagerank --graph &lt;path of input graph&gt;  --format snap  --saveprefix &lt;path for output&gt;</pre><p></p>
+          </li>
+          <li>Collect output files from the other two instances and aggregate them into a single file on the current instance.</li>
+          <li>Find the ids of top 10 pages in terms of PageRank value from the merged file. Don’t delete this file now, you will need it in the last task.</li>
+      </ol>
+      <h4 id="task2">Task 2: Find the connections between pages</h4>
+      <p>After identifying the top ten Wikipedia pages, you need to find out how each of them is connected by other pages in Wikipedia.</p>
+      <ol>
+          <li>Change the working directory into graphlab/apps/bfs. You should see the skeleton code <b>bfs.cpp</b> in this directory.</li>
+          <li>Complete bfs.cpp to implement the Breadth-First Search (BFS) algorithm with GraphLab’s API. For each of the top ten pages, your program should find all the shortest paths with each page in the graph as <strong>source</strong> and the current top page as <strong>destination</strong>. If there are multiple shortest paths between two pages, then the one with smallest <strong>numerical</strong> order is prefered. For example, if there are three paths between node 1 and 5 in the graph:
+           <p>(1) 1 → 3 → 5</p>
+           <p>(2) 1 → 2 → 4 → 5</p>
+           <p>(3) 1 → 21 → 5</p>
+           <p>Then you should return path (1) as the answer, since it is shorter than path (2) and is smaller than path (3) in <strong>numerical</strong> order.</p>
+           <p>
+           The output format should be: <code>&lt;source&gt;\t&lt;destination&gt;\t&lt;source&gt; &lt;v1&gt; &lt;v2&gt; &lt;destination&gt;</code> where there are two <strong>tab</strong>s between source and destination, and between destination and path. Numbers in the path should be separated by <strong>space</strong>. <br>
+           For example, if the path between node 1 and node 5 is <code>1 -&gt; 2 -&gt; 3 -&gt; 4 -&gt; 5</code> <br>
+           the line in the output should be <code>1	5	1 2 3 4 5</code></p>.
+          </li>
+          <li>Go to directory graphlab/release/apps/bfs and execute <b>make</b> to compile your code.</li>
+          <li>Distribute your executable program as well as the file which has the top ten ids to other two instances. Make sure they have the same path among all the three instances. </li>
+          <li>Execute the following command to run your program:  
+          <p></p><pre>mpiexec -hostfile ~/machines -n 3 ./bfs --graph &lt;path of input graph&gt; --format snap --top &lt;path of file which contains the top 10 ids&gt; --saveprefix &lt;path for output&gt;</pre><p></p>
+          <p>Keep the output files of this program, you will need them in the next task.</p>
+          </li>
+      </ol>
+      <h4 id="task3">Task 3: Visualize the connections</h4>
+      <p>Although the text results can show connections between pages, they are not intuitive enough. Thus in this task, your will visualize those connections to make them easier to observe. To achieve this, you need to do the following steps:</p>
+      <ol>
+          <li>Launch an m3.medium instance with <b>ami-0681836e</b>. Make sure you set the security group to allow incoming http requests in port 80. After logging into it, you should see network.html, path.html, root.html, server.py and server.pyc in the home directory. These files are provided to read connections from database and visualize those paths in the webpage. You don’t need to modify those files.</li>
+          <li>The MySQL server is already installed on the ami. You can connect to it by using command <b>mysql -ucc -ppassword cc</b>. We have created three tables in the database: the <b>map</b> table is used to store the mapping from node ids to page titles; the <b>pagerank</b> table is used to store the PageRank value of each page; the <b>path</b> table is used to store the shortest path between each pair of pages.</li>
+          <li>Load the results for connections, PageRank values and the enwiki-mapping file into table path, pagerank, map respectively</li>
+          <li>Start the web server by executing:  
+          <p></p><pre>sudo nohup python server.py 80 &amp;</pre><p></p>
+          </li>
+          <li>Now you can access the URL: http://&lt;your web server’s dns&gt; to see the visualized paths between pages.</li>
+          <li>Copy your implementation of BFS algorithm bfs.cpp from the master node of GraphLab to the home directory of current instance. Perform the following steps to make the submission:
+          <p></p><pre>cd ~
+wget https://15-319-s15-p43.s3.amazonaws.com/submitter
+chmod +x submitter
+./submitter</pre><p></p></li>
+           <li>The above step will upload your code for manual grading and test the /top.json and /path.json endpoints. It is highly recommended to ensure you are able to view valid results at these endpoints before running the autograder. You will see your score updated on the scoreboard after this step.</li>
+      </ol>
+</div>
+     <div class="bs-callout bs-callout-info">
+     <h4>Notes and Suggestions</h4>
+     <br>
+     <strong>Load Graph in Parallel</strong>
+     <p>If you feel the time for loading the graph is taking too long, you can split the graph file into multiple pieces and distribute   them among machines. Each machine will then load the pieces assigned to them simultaneously to accelerate the graph loading process.</p>
+     <strong>Think like a vertex</strong>
+     <p>The programming model of GraphLab is different from the models you have seen so far. The computation in GraphLab is vertex-centric, so you need to jump out of the box and use the perspective of a vertex to view the algorithm you are going to implement.</p>
+     <strong>Tutorial and API reference for GraphLab</strong>
+     <p>You can find the tutorial and API documentation of GraphLab in the directory graphlab/doc/doxygen/html. To view those html pages, you can download the whole folder into your own computer and open the index.html file to start viewing the document.</p>
+     </div>
+
+     <h3 id="additional">Additional Resources and References</h3>
+         <p><a href="http://vldb.org/pvldb/vol5/p716_yuchenglow_vldb2012.pdf" id="_i_6">1. Low, Yucheng, et al. "Distributed GraphLab: a framework for machine learning and data mining in the cloud." Proceedings of the VLDB Endowment 5.8 (2012): 716-727.</a></p>
+         <p><a href="https://www.usenix.org/system/files/conference/osdi12/osdi12-final-167.pdf" id="_i_7">2. Gonzalez, Joseph E., et al. "PowerGraph: Distributed Graph-Parallel Computation on Natural Graphs." OSDI. Vol. 12. No. 1. 2012.</a></p>
+         <p><a href="http://ilpubs.stanford.edu/422/">3. Page, Lawrence, et al. "The PageRank citation ranking: Bringing order to the web." (1999).</a></p>
+         <p><a href="http://en.wikipedia.org/wiki/Breadth-first_search">4. http://en.wikipedia.org/wiki/Breadth-first_search</a></p>
+    <div class="bs-callout bs-callout-danger">
+      <h4>Project Grading Penalties</h4>
+      <p>Besides the penalties mentioned in recitation and/or on Piazza, penalties accrue for the following:</p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Violation</th>
+            <th>Penalty of the project grade</th>
+          </tr>
+        </thead>
+        <tbody><tr>
+          <td>Spending more than $15 for this project checkpoint</td>
+          <td>-10%</td>
+        </tr>
+        <tr>
+          <td>Spending more than $30 for this project checkpoint</td>
+          <td>-100%</td>
+        </tr>
+        <tr>
+          <td>Failing to tag all your resources for this project</td>
+          <td>-10%</td>
+        </tr>
+        <tr>
+          <td>Using any instance other than the ones specified in the writeup</td>
+          <td>-10%</td>
+        </tr>
+        <tr>
+          <td>Attempting to hack/tamper the auto-grader</td>
+          <td>-100%</td>
+        </tr>
+      </tbody></table>
+    </div>
+  </div>
+
+<p></p></div>
+<!-- JS Scripts -->
+<script src="./P4.3_files/docs.min.js"></script>
+<p></p>
+
+
+    </div>
+
+
+    </div>
+
+    <div id="footer" class="navbar-fixed-bottom" style="height:30px;background-color:#f5f5f5;position:fixed;bottom:0;width:100%;text-align:center;padding:5px">
+        <p class="text-muted credit">©2015 Teaching Staff Of The Cloud Computing Course, Carnegie Mellon University</p>
+    </div>
+
+    
+    
+    
+
+    <script type="text/javascript">
+        function dashIfUNE(str) {
+            return (str==null || str.length===0)?'<span class="glyphicon glyphicon-minus"></span>':str;
+        }
+        /* https://docs.djangoproject.com/en/dev/ref/csrf/ */
+        function csrfSafeMethod(method) {
+            return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+        }
+        $.ajaxSetup({
+            beforeSend: function(xhr, settings) {
+                if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                    xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                }
+            }
+        });
+        function getCookie(name) {
+            var cookieValue = null;
+            if (document.cookie && document.cookie != '') {
+                var cookies = document.cookie.split(';');
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = jQuery.trim(cookies[i]);
+                    if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+        var csrftoken = getCookie('csrftoken');
+    </script>
+    
+    <script type="text/javascript">
+        function fixNavbarTop() {
+            $('#base-container').css('padding-top', $('.navbar-fixed-top').height()+10);
+        }
+        $(document).ready(fixNavbarTop);
+        $(window).resize(fixNavbarTop);
+        $(window).load(fixNavbarTop);
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_writeup').addClass('btn-primary');
+            $("#project4").addClass('active');
+        });
+    </script>
+
+
+
+</div></body></html>

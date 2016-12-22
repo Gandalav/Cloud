@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)https://theproject.zone/writeup/3/1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+
+    <link type="image/x-icon" rel="shortcut icon" href="https://theproject.zone/static/favicon.ico">
+    <!--<link type="text/css" rel="stylesheet" href="/static/css/table_sort.css">-->
+    <link type="text/css" rel="stylesheet" href="./P3.1_files/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="./P3.1_files/jquery.dataTables.min.css">
+    <link type="text/css" rel="stylesheet" href="./P3.1_files/header.css">
+    <link type="text/css" rel="stylesheet" href="./P3.1_files/defaultTheme.css">
+    <link type="text/css" rel="stylesheet" href="./P3.1_files/datepicker.css">
+    <link type="text/css" rel="stylesheet" href="./P3.1_files/bootstrap-editable.css">
+    <title>15-319/619 Cloud Computing</title>
+    
+    
+    
+    
+    
+    <link type="text/css" rel="stylesheet" href="./P3.1_files/inside.base.css">
+
+    <link type="text/css" rel="stylesheet" href="./P3.1_files/docs.min.css">
+
+
+    <script type="text/javascript" src="./P3.1_files/jquery.min.js"></script>
+    <script type="text/javascript" src="./P3.1_files/jquery.tablesorter.js"></script>
+    <script type="text/javascript" src="./P3.1_files/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="./P3.1_files/jquery.fixedheadertable.js"></script>
+    <script type="text/javascript" src="./P3.1_files/fnSetFilteringDelay.js"></script>
+    <script type="text/javascript" src="./P3.1_files/datatableview.min.js"></script>
+    <script type="text/javascript" src="./P3.1_files/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./P3.1_files/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="./P3.1_files/bootstrap-editable.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./P3.1_files/prettify.css"></head>
+
+<body role="document" style="margin-bottom: 40px">
+
+    <div id="base-container" class="container-fluid" style="padding-top: 49.888888835907px;">
+    
+    
+    
+    
+    
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+   
+        <div class="container-fluid">
+
+            <div class="navbar-header" style="padding-bottom:40px">
+               <a href="https://theproject.zone/home"><img src="./P3.1_files/TPZlogo_small_inverted.png"></a>
+            </div>
+
+            <div class="navbar-header pull-right">
+                <a class="navbar-brand" href="https://theproject.zone/writeup/3/1#" onclick="return false;" style="margin-left: 0px;"><span class="label label-default" id="username-label">pgandala</span></a>
+            </div>
+
+            <div class="coll pull-right">
+                <ul id="navbar" class="nav navbar-nav" style="font-weight:bold">
+                    <li id="home"><a href="https://theproject.zone/home">Home</a></li>
+
+                    
+                        
+                        <li id="project0" class="dropdown">
+                            <a href="https://theproject.zone/writeup/3/1#" data-toggle="dropdown" class="dropdown-toggle">Primer
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/0/1">Project Primer</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li id="project1" class="dropdown">
+                            <a href="https://theproject.zone/writeup/3/1#" data-toggle="dropdown" class="dropdown-toggle">Project 1
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/1/1">1.1 Sequential Analysis</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/1/2">1.2 Using Amazon's Elastic MapReduce</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li id="project2" class="dropdown">
+                            <a href="https://theproject.zone/writeup/3/1#" data-toggle="dropdown" class="dropdown-toggle">Project 2
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/2/1">2.1 Introduction to AWS APIs</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/2/2">2.2 Load Balancing and AutoScaling</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/2/3">2.3 Advanced Scaling Concepts</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li id="project3" class="dropdown active">
+                            <a href="https://theproject.zone/writeup/3/1#" data-toggle="dropdown" class="dropdown-toggle">Project 3
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="./P3.1_files/P3.1.html">3.1 Files v/s Databases</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/3/2">3.2 Partitioning and Replication</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/3/3">3.3 Database-as-a-Service</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/3/4">3.4 Cloud Data Warehousing</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/3/5">3.5 Consistency in Distributed Key-Value Stores</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li id="project4" class="dropdown">
+                            <a href="https://theproject.zone/writeup/3/1#" data-toggle="dropdown" class="dropdown-toggle">Project 4
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/4/1">4.1 MapReduce Programming using YARN</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/4/2">4.2 Iterative Programming using Apache Spark</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/4/3">4.3 Graph Programming using GraphLab</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li id="project5" class="dropdown">
+                            <a href="https://theproject.zone/writeup/3/1#" data-toggle="dropdown" class="dropdown-toggle">15619 Project
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/1">Phase 1</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/2">Phase 1 Report</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/3">Phase 2</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/4">Phase 2 Live Test (MySQL)</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/5">Phase 2 Live Test (HBase)</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/6">Phase 2 Report</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/7">Phase 3</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/9">Phase 3 Live Test</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/10">Phase 3 Report</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                    
+                
+                    
+                    <li id="grade"><a class="active" href="https://theproject.zone/grade/">Grade Book</a></li>
+                    <li id="profile"><a href="https://theproject.zone/profile">Profile</a></li>
+                    <li id="logout"><a href="https://theproject.zone/log_out">Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+
+        <div class="row">
+
+        <div class="col-md-6">
+            <h2>3.1 Files v/s Databases</h2>
+        </div>
+        
+        
+        <div class="col-md-6 pull-down">
+            <div class="btn-group pull-right" style="margin-bottom: 10px">
+                <a class="btn btn-default btn-primary" href="https://theproject.zone/writeup/3/1/" id="nav_writeup">Writeup</a>
+
+                
+
+                
+
+                <a class="btn btn-default" href="https://theproject.zone/submissions/3/1/" id="nav_submissions">Submissions</a>
+                <a class="btn btn-default" href="https://theproject.zone/scoreboard/3/1/" id="nav_score_board">ScoreBoard</a>
+            </div>
+        </div>
+        
+        
+        </div>
+
+        <table class="table table-striped table-bordered table-condensed prettyBorder">
+        <thead>
+            <tr>
+                <th>Phase</th>
+                <th>Open</th>
+                <th>Deadline</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>3.1 Files v/s Databases</td>
+                <td>Feb. 23, 2015 00:01</td>
+                <td>Mar. 01, 2015 23:59</td>
+            </tr>
+        </tbody>
+        </table>
+        
+        
+
+        <hr>
+        
+
+<style>
+  img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  }
+  small.caption {
+  display: block;
+  text-align: center;
+  margin-bottom: 4em;
+  }
+  iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  }
+  .bs-callout-task {
+  background-color: #ffffff;
+  border-left-color: green;
+  }
+  .bs-callout-task h4,
+  .bs-callout-task a.alert-link {
+  color: green;
+  }
+  .bs-callout-learning {
+  background-color: #ffffff;
+  border-left-color: purple;
+  }
+  .bs-callout-learning h4,
+  .bs-callout-learning a.alert-link {
+  color: purple;
+  }
+  .bs-docs-sidebar.affix {
+  position: fixed;
+  top: 25x;
+  }
+</style>
+
+<div id="writeup-content" class="row">
+  <div class="col-md-3" role="complementary">
+    <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top" style="top:120px">
+      <!-- Inline CSS Hack for Display -->
+      <ul class="nav bs-docs-sidenav">
+        <li><a href="https://theproject.zone/writeup/3/1#intro">Introduction</a>
+            <ul class="nav">
+            <li><a href="https://theproject.zone/writeup/3/1#intro-to-files-and-databases">Intro to Files and Databases</a></li>
+            <li><a href="https://theproject.zone/writeup/3/1#the-scenario">The Scenario</a></li>
+            </ul>
+        </li>
+        <li>
+          <a href="https://theproject.zone/writeup/3/1#flat-file">Operations on Flat Files</a>
+          <ul class="nav">
+          </ul>
+        </li>
+        <li>
+          <a href="https://theproject.zone/writeup/3/1#mysql">Working with MySQL</a>
+          <ul class="nav">
+          </ul>
+        </li>
+         <li>
+          <a href="https://theproject.zone/writeup/3/1#vertical">Vertical Scaling</a>
+          <ul class="nav">
+            <li><a href="https://theproject.zone/writeup/3/1#common">Common Disk Operations in Linux</a></li>
+            <li><a href="https://theproject.zone/writeup/3/1#ebs">Working with EBS Volumes</a></li>
+            <li><a href="https://theproject.zone/writeup/3/1#drive">Show available drives</a></li>
+            <li><a href="https://theproject.zone/writeup/3/1#partition">Create and format a partition</a></li>
+            <li><a href="https://theproject.zone/writeup/3/1#mount">Mount a volume</a></li>
+            <li><a href="https://theproject.zone/writeup/3/1#sysbench">Running sysbench for FileIO</a></li>
+            <li><a href="https://theproject.zone/writeup/3/1#benchmarks">FileIO Performance Benchmarks</a></li>
+          </ul>
+        </li>
+      </ul>
+      <a class="back-to-top" href="https://theproject.zone/writeup/3/1#top">
+      Back to top
+      </a>
+    </nav>
+  </div>
+<div class="col-md-9" role="main">
+<div class="bs-docs-section">
+<h1 id="intro" class="page-header">Introduction</h1>
+<div class="bs-callout bs-callout-learning">
+<h4>Learning Objectives</h4>
+<p>This project will encompass the following learning objectives:</p>
+<ol>
+<li>Explore the advantages and disadvantages of utilizing flat files</li>
+<li>Explore the advantages and disadvantages of utilizing databases</li>
+<li>Explore the performance of vertical scaling in persistent cloud storage (magnetic vs SSD HDDs)</li>
+</ol>
+</div>
+<h3 id="intro-to-files-and-databases">Introduction to Files and Databases</h3>
+<p>Files and databases are essentially resources for storing information that will be used by various computer programs. Files are mostly unstructured data, while databases organize data to make it easy to access efficiently for applications. To understand what unstructured or structured means, consider the following example which shows how the same line is stored and accessed from a file and a database.</p>
+<p>The box below shows a single line in a file</p>
+<pre>Name: Carnegie, Course: Cloud Computing, Section: A, Year: 2015</pre>
+<p>The box below shows a single line (row) in a database table</p>
+<pre>|    Name    |     Course      |    Section    |    Year     |<br>|  Carnegie  | Cloud Computing |       A       |    2015     |</pre>
+<p>As you can see, in the case of a database, the data is represented in a more structured way which makes it easier for users of this data to access. In the case of a file, accessing the required data might require more effort from the end user.</p>
+<h3 id="the-scenario">The Scenario</h3>
+<p>Since you excelled at your job at MSB, you were hired for a part-time job by a music content delivery company, Carnegie Records (CR), as a music data analytics consultant. Before adopting cloud storage services, CR would like your help to evaluate the functionality and limitations in adopting flat files or relational databases to query and perform basic analytics on their data. You will commence your work with files and move on to databases. </p>
+<p>As a first step in this process, CR has provided their dataset and a database as a saved instance on AWS. To get started, launch an instance on AWS. In the directory <code>/home/ubuntu/Project3_1/</code>, you will find two comma-separated files (csv), titled <strong>million_songs_metadata.csv</strong> and <strong>million_songs_sales_data.csv</strong>. </p>
+<p>The million_songs_metadata.csv is all of the track metadata from the Million Song Dataset that CR uses and the <strong>million_songs_sales_data.csv</strong> has daily record sales count for CR for each song for a finite period of time. The two formats of the two files are as shown below.</p>
+<table class="table">
+<thead>
+            <tr>
+              <th>Col #</th>
+              <th>Name</th>
+              <th>MySQL type</th>
+            </tr>
+</thead>
+          <tbody><tr>
+            <td>1</td>
+            <td>track_id</td>
+            <td>text(19)</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>title</td>
+            <td>text</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>song_id</td>
+            <td>text</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>release</td>
+            <td>text</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>artist_id</td>
+            <td>text</td>
+          </tr>
+             <tr>
+            <td>6</td>
+            <td>artist_mbid</td>
+            <td>text</td>
+          </tr>
+        <tr>
+            <td>7</td>
+            <td>artist_name</td>
+            <td>text</td>
+          </tr>
+        <tr>
+            <td>8</td>
+            <td>duration</td>
+            <td>double</td>
+          </tr>
+        <tr>
+            <td>9</td>
+            <td>artist_familiarity</td>
+            <td>double</td>
+          </tr>
+        <tr>
+            <td>10</td>
+            <td>artist_hotttnesss</td>
+            <td>double</td>
+          </tr>
+         <tr>
+            <td>11</td>
+            <td>year</td>
+            <td>int(11)</td>
+          </tr>
+        </tbody></table>
+<h4><small class="caption">Table 1: MySQL Data Schema for million_songs_metadata.csv</small></h4>
+<table class="table">
+<thead>
+            <tr>
+              <th>Col #</th>
+              <th>Name</th>
+              <th>MySQL type</th>
+            </tr>
+</thead>
+          <tbody><tr>
+            <td>1</td>
+            <td>track_id</td>
+            <td>text(19)</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>sales_date</td>
+            <td>datetime</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>sales_count</td>
+            <td>int(11)</td>
+          </tr>
+        </tbody></table>
+<h4><small class="caption">Table 2: MySQL Data Schema for million_songs_sales_data.csv</small></h4>
+<div class="bs-callout bs-callout-warning">
+<h4 id="resource-tagging">Resource Tagging</h4>
+<p>For this project, assign the tag with <code>Key: Project</code> and <code>Value: 3.1</code> for all resources</p>
+</div>
+</div>
+<div class="bs-docs-section">
+<h1 id="flat-file" class="page-header">Operations on Flat Files</h1>
+<p> As a good consultant, you need to learn the tools necessary to carry out the job presented to you by CR. So, before you start working with the operations on flat files make sure you read about the <a href="http://unixhelp.ed.ac.uk/CGI/man-cgi?grep">grep</a> and <a href="http://www.gnu.org/software/gawk/manual/gawk.html">awk</a> tools in Unix. Now that you have quickly become an expert, start by launching an t1.micro instance of the following AMI. </p>
+<div class="bs-callout bs-callout-warning">
+<h4>Project AMI</h4>
+<p>For this part, the AMI ID is <code>ami-54590a3c</code>, and the instance type is <code>t1.micro</code>.</p>
+</div>
+<div class="bs-callout bs-callout-task">
+<h4>Task to Complete:</h4>
+<p>1.Use the following to find the records that contain <code>The Beatles</code>, while understanding the difference between the 2 commands below:</p>
+<pre>grep -P 'The Beatles' million_songs_metadata.csv
+grep -i -P 'The Beatles' million_songs_metadata.csv</pre>
+<p>Make a note of the number of matches (Use <code>wc -l</code>) for the two commands in the step above for later use. Make sure to understand why there is a difference in the output of the two commands.</p>
+<p> </p>
+<p>2.The result of running the grep command returns rows that include the search pattern in any matching column. What if you just wanted the ones that match the <code>artist_name</code> field? AWK is a data extraction and reporting tool. You can use awk to find the records with <code>artist_name</code> field containing <code>The Beatles</code>:</p>
+<pre>awk ' BEGIN {FS = ","} ; {if ($7 ~ /The Beatles/) { print; }}' million_songs_metadata.csv 
+($7 denotes the 7th column and FS="," sets the field separator to a comma)</pre>
+<p> </p>
+<p>3.Now, what if we wanted to know something more complicated, like <b>"How many songs are from Michael Jackson, but only from the '80s ?"</b></p>
+<pre>awk ' BEGIN {FS = ","} ; {if (tolower($7) ~ /michael jackson/ &amp;&amp; $11 &gt;= 1980 &amp;&amp; $11 &lt; 1990) { print; }}' million_songs_metadata.csv
+(Column #11 is the year)</pre>
+<p> </p>
+<p>4.CR would like to know the average song duration in the dataset. They need you to write an awk program that computes the <b>average song length</b> (using the duration field) over the million songs. This program should be executed using a <b>single UNIX line</b>. Paste the command into the runner.sh, when asked.</p>
+<p> </p>
+<p>5.CR would like you to implement the query to find "How many songs are from Michael Jackson? (Exact match)" using a shell script by looping through each record in the file (You can use <code>while</code>, <code>for</code> or <code>foreach</code> or any bash commands such as <code>grep</code> or <code>cut</code>). You will be asked to invoke the script in runner.sh.</p>
+<p> </p>
+<p>6.CR would like to consolidate the data in the two source csv files mentioned earlier. To do that you need to either write a program or a set of commands (using awk or shell) to join the records from the <strong>million_songs_metadata.csv</strong> file and the <strong>million_songs_sales_data.csv</strong> file using the common column <code>track_id</code>.</p>
+<p>The goal is to generate a new merged dataset <code>million_songs_metadata_and_sales.csv</code> with <code>track_id</code> as <b>column 1</b>, <code>sales_date</code> as <b>column 2</b>, <code>sales_count</code> as <b>column 3</b> and the other columns in million_songs_metadata.csv as <b>columns 4 to 13</b>. Save the output file and the program (or set of commands) for later use.</p>
+<p><b>Hint</b>: Search for a unix command that lets you join two files based on a common field.</p>
+</div>
+<p>You can see that as your questions become more complex, it is more difficult to write a single line of code to answer the question. For these reasons (among many others) we want to explore the benefits or limitations of <b>moving this data to a database</b>.
+</p>
+</div>
+<div class="bs-docs-section">
+<h1 id="mysql" class="page-header">Working with MySQL</h1>
+<p>Carnegie Records (CR) would like its favourite consultant (you) to evaluate MySQL (an open source relational database) to load and process the data sets in preparation for querying and analytics so that it can decide whether to adopt flat files or databases for its needs. </p>
+<div class="bs-callout bs-callout-warning">
+<h4>Project AMI</h4>
+<p>For this part, the AMI ID is <code>ami-54590a3c</code>, and the instance type is <code>t1.micro</code>.</p>
+</div>
+<p>MySQL should be already installed and running on the AMI supplied for this project. To start a MySQL CLI client and connect to the running MySQL server on your instance, use the following command: </p>
+<pre>mysql -u root -pdb15319root song_db</pre>
+<p>In the command above, the username is <b>root</b> and the password is <b>db15319root</b>. The database that you will be using is <b>song_db</b>, which has been already created for you within the AMI.</p>
+<p>You should now take a closer look at databases and what a database schema is. A database holds the records, fields and cells, of data while a database schema describes how these fields and cells are structured and organized and what types of relationships are mapped between these entities. A database can have multiple tables that are related to each other. A table is referred to as a relation in the sense that it is a collection of objects of the same type (rows). The schema defines the structure of the tables and the relations between them.</p>
+<p>Before loading CR’s records into the database, we need to describe the database and its fields in a schema, which encapsulates the structure and relationship of the data. CR has provided two csv files, million_songs_metadata.csv and million_songs_sales_data.csv. CR also provided their schemas in Table 1 and Table 2 described before. </p>
+<p>CR has asked you to create two tables within the database according to the schemas. They have provided a <code>~/Project3_1/create_tables.sql</code> file for you to get started.</p>
+<div class="bs-callout bs-callout-info">
+<h4>Note</h4>
+<ul>
+<li>MySQL has some keywords that cannot be used in queries. When a table or column name contains a keyword use the <code>backtick (`)</code> as an escape sequence. Example - <code>`keyword`</code></li>
+<li>The MySQL package pre-installed in the AMI provided is version 5.5. Make sure you search through the documentation for the correct version when looking for command references.</li>
+</ul>
+</div>
+<p>After creating the tables (songs &amp; sales), you can use the following command to verify the schema of that table:</p>
+<pre>DESCRIBE songs;
+DESCRIBE sales;</pre>
+<p>After executing these commands, you should compare and verify that they match with the information provided in tables 1 and 2 above.</p>
+<p>You now need to find the appropriate command to load the database from the supplied files, <code>million_songs_metadata.csv</code> and <code>million_songs_sales.csv</code>. You can use either a <b>SQL command from within the MySQL CLI client</b>, or use the <b>mysqlimport utility</b> to load the records from the CSV file into the database. Please note down the command you have used. </p>
+<p>To verify whether the data has been successfully loaded into the database, you can list the first 10 records of the table using the SELECT command:</p>
+<pre>SELECT * FROM songs LIMIT 10;</pre>
+<p>The equivalent SQL command to find the records that contain <code>The Beatles</code> (equivalent of the Beatles awk command from the previous part) is: </p>
+<pre>SELECT * FROM songs WHERE artist_name LIKE '%The Beatles%';</pre>
+<p>Similarly the Michael Jackson query would look like:</p>
+<pre>SELECT * FROM songs WHERE artist_name LIKE '%michael jackson%'AND year &gt;= 1980 AND year &lt; 1990;</pre>
+<p>While evaluating flat files you have used <b>awk</b> to compute the average song length (using the duration field) over the million songs. The equivalent SQL command is:</p>
+<pre>SELECT AVG(duration) FROM songs;</pre>
+<p>Now you have successfully built the tables and made simple queries. Since the dataset is quite large, CR wants you to ensure that the database responds rapidly to queries. As an informed consultant, you will consider creating an indexed database to improve performance. A database index helps speed up the retrieval of data from tables. When you query data from a table, MySQL checks if the indexes exist. Then MySQL uses the indexes to select exact physical corresponding rows of the table instead of scanning the whole table. You conclude that you should create an index on the columns of the table from which you often query the data. Notice that all primary key columns are in the primary index of the table automatically. In the following steps, you are going to compare the MySQL query response times before creating the index with the time recorded after creating the index. Take note of the following four MySQL query response times before indexing:</p>
+<pre>SELECT * FROM songs WHERE duration=(SELECT MAX(duration) FROM songs);
+SELECT * FROM songs ORDER BY duration DESC LIMIT 5;
+SELECT * FROM songs WHERE duration=(SELECT MIN(duration) FROM songs);
+SELECT * FROM songs ORDER BY duration ASC LIMIT 5;</pre>
+<p>Now you want to create an index for the table songs. Create an index for one column to improve the speed of the queries above. Which column do you think you should create the index for? Create an index on the column you think is the most reasonable. Please note down the command you have used when creating the index and paste it into the runner.sh file when asked. Creating an index might take a while since MySQL has to build and maintain the index table. The payoff is in speeding up all subsequent queries that could take advantage of the index. After that has finished, exit MySQL and restart it using the following command:</p>
+<pre>sudo service mysql restart </pre>
+<p>Then relaunch the mysql client, and re-run the four SQL queries above, noting the new times (“after index”) for the quiz.</p>
+<div class="bs-callout bs-callout-info">
+<h4>Note</h4>
+<p>Please update the variable <code>“INDEX_NAME”</code> in runner.sh with your index name before running the script.</p>
+</div>
+<p>Sometimes SQL queries are more complicated than their grep/awk counterparts. Write SQL queries that will return the same results as the following commands you used while evaluating flat files. Note each query for the quiz.</p>
+<pre>grep -P -c 'The Beatles' million_songs_metadata.csv
+grep -i -P -c 'The Beatles' million_songs_metadata.csv</pre>
+<p><b>Hint</b>: The SQL LIKE operator is case insensitive by default.</p>
+<div class="bs-callout bs-callout-info">
+<h4>Note</h4>
+<p>You are going to perform some SQL queries in the checkpoint quiz related to <code>JOIN</code> and <code>GROUP BY</code> using the same two tables. If you do not want to lose data, do not terminate your instance until you finish the runner.sh, or take a snapshot of your current instance to save everything.</p>
+</div>
+<p>After you have experienced the basics of MySQL, it is time to move forward to <b>Aggregate Functions</b>.The aggregate functions allow you to perform calculations on a set of records and return a single value. The most common aggregate functions include <code>SUM, AVG, MAX, MIN and COUNT</code>. Aggregate functions are often used with the MySQL GROUP BY keyword to perform calculations on each subgroup and return a single value for each subgroup. The MySQL GROUP BY keyword is used with the SELECT statement to group rows into subgroups by one or more columns or expressions. It is extremely useful when several records belong to a category and other records in the same table belong to another category and you want to compare between different categories rather than a single record. The following statement illustrates the MySQL GROUP BY keyword syntax:</p>
+<pre>SELECT c1, c2, … cn, aggregate_function(expression)
+FROM table
+WHERE where_conditions
+GROUP BY c1, c2, … cn;</pre>
+<p>For example, the query about the total sales for each of the recent 10 days looks like:</p>
+<pre>SELECT sales_date, SUM(sales_count) AS total_sales 
+FROM sales 
+GROUP BY sales_date 
+ORDER BY sales_date DESC 
+LIMIT 10;</pre>
+<p>The MySQL JOIN keyword is used to query data from two or more related tables. In MySQL, <code>JOIN,CROSS JOIN and INNER JOIN</code> are syntactic equivalents (they can replace each other). The following illustrates a sample JOIN syntax:</p>
+<pre>#select statement
+    SELECT c1,c2,....cn
+    FROM join_table;
+#join_table
+    table1 [INNER|CROSS] JOIN table2 [join_condition]
+#join_condition:
+    ON conditional_expr
+    USING (column_list)</pre>
+<p>INNER JOIN builds the Cartesian product between specified tables, that is, each and every row in the first table is joined to each and every row in the second table based on the join condition. Here all the track_ids in table songs have corresponding records in table sales. We are going to only cover INNER JOIN.</p>
+<div class="bs-callout bs-callout-info">
+<h4>What about OUTER JOIN?</h4>
+<p>OUTER JOIN identifies rows without a match in the joined table. Outer joins combine two or more tables in a way that some columns may have NULL values. MySQL separates OUTER JOINS into LEFT or RIGHT JOINS depending on which table provides the unmatched data. In a LEFT JOIN, the unmatched records from the table on the left side of the JOIN clause are returned. In a RIGHT JOIN, the unmatched records from the table on the right side of the JOIN clause are returned. When no match was found, MySQL sets the value of columns from the joined table to NULL. This is important for example when you want to select all records from a reference table that have no related data in another.</p>
+</div>
+<p>For example, the query that shows the title of the song that has the most sales count looks like:</p>
+<pre>SELECT songs.title, SUM(sales_count) AS total_sale FROM songs INNER JOIN sales ON songs.track_id = sales.track_id GROUP BY sales.track_id ORDER BY total_sale DESC LIMIT 10;</pre>
+<p>Now that you have explored both files and databases, you can realize that both of these storage systems have advantages and disadvantages. Files can be flexible and portable, can hold structured and unstructured data, and is easy to implement and modify. Databases on the other hand can represent relationships among data, and has easy rollback of transactions in case of failure. Moreover, there are more advantages and disadvantages about files and databases waiting for you to explore. For files, security can be achieved only through file permissions while databases supports fine grain level security. The access mode for files is sequential, thus it is slower when the files are larger. But for databases, it is more concurrent. Further, reads and updates can be rule-based in databases using constraints which ensures data consistency. When updating databases, a specific record can be updated, on the other hand, file contents have to be scanned when updating data. Furthermore, you can easily rollback transactions in case of a failure in a database while you cannot do that with files. Databases have to maintain transaction consistency which is expensive.</p>
+</div>
+<div class="bs-docs-section">
+<h1 id="vertical" class="page-header">Vertical Scaling</h1>
+<p>In the following sections, you will get acquainted with common disk operations in Linux and use those commands to perform vertical scaling of storage devices by attaching different storage devices offered in AWS to an instance and measuring the performance using some common benchmarking tools.</p>
+<div class="bs-callout bs-callout-warning">
+<h4>Project AMI</h4>
+<p>For this part, the AMI ID is <code>ami-54590a3c</code>, and the instance types to be used are <code>t1.micro</code> and <code>m3.large</code>.</p>
+</div>
+</div>
+<div class="bs-docs-section">
+<h3 id="common">Common Disk Operations in Linux</h3>
+<p>On this page there are several mini-howto's for accomplishing certain disk-related tasks in Linux, similar to the ones you have seen in the Project Primer.</p>
+<p>Since most of these commands require root access, you might find it easier to run the following once: <code>sudo su</code> or alternatively you can prepend sudo to each command.</p>
+<h3 id="ebs">Working with EBS Volumes</h3>
+<p>The following video will demonstrate the use of EBS volumes with EC2 instances:</p>
+<iframe width="560" height="315" src="./P3.1_files/8Bwg_wUVhkE.html" frameborder="0" allowfullscreen=""></iframe>
+<h4><small class="caption">Video 1: EBS volumes with EC2 instances</small></h4>
+<h3 id="drive">Show available drives</h3>
+<p>GNU <b>parted</b> is a program for creating, destroying, resizing, checking and copying partitions, and the file systems on them. The partition editor, <b>parted</b>, is used to manipulate the partition table on block devices. It has replaced <b>fdisk</b> and supports newer features like GUID Partition Tables (GPT), which are required for volumes &gt; 2TB. You can also run <b>parted</b> with no parameters to get interactive mode. You can read more from <a href="http://www.gnu.org/software/parted/manual/html_chapter/parted_1.html">here.</a></p>
+<pre>parted -l</pre>
+<p>/dev/xvda1 – this is the OS partition</p>
+<p>/dev/xvdb – this is the first Ephemeral (instance store) drive</p>
+<p>/dev/xvdc – this is the second Ephemeral (instance store) drive</p>
+<h3 id="partition">Create and format a partition</h3>
+<pre>umount /dev/xvdX #where “X” - is a,b,c..etc (You should use your device’s name)
+parted /dev/xvdX mklabel gpt
+parted /dev/xvdX mkpart db ext4 0% 10G
+mkfs.ext4 /dev/xvdX1</pre>
+<p>If you have a small volume (such as EBS), it’s easier to just format the whole device directly, without creating a partition table (note the missing ‘1’):</p>
+<pre>mkfs.ext4 /dev/xvdX</pre>
+<h3 id="mount">Mount a volume</h3>
+<pre>mkdir /storage/mountpoint
+mount /dev/yourdevice /storage/mountpoint</pre>
+<p>mountpoint is your choice, but you have to use a different name for each filesystem that is mounted at the same time. (/storage/ is arbitrary as well – most Linux mount extra drives under /mnt, but this automatically mounts the first ephemeral drive at boot on EC2 images). yourdevice is the device or partition that you have previously formatted, such as xvdX1, md0p1, etc.</p>
+<div class="bs-callout bs-callout-info">
+<h4>Note</h4>
+<p>Running mount without parameters shows all mountpoints. Use this to verify that your mount was successful.</p>
+</div>
+<h3 id="sysbench">Running sysbench for FileIO</h3>
+<p>In this project, you will be comparing the SSD and magnetic storage types using <b>sysbench</b>, a suite containing multiple benchmarks. For this task, you will be using a modified version of sysbench with identical functionality as the original one except that you can declare the storage type as [SSD|Magnetic] when “sysbench run” command is called. To test disk performance, we can use the FileIO benchmark. The benchmark can be run by doing the following:</p>
+<div class="bs-callout bs-callout-task">
+<h4>Sysbench</h4>
+<ol>
+<li>The first step is to create a test file dataset. If you are using the course AMI for the project, you can run the following command:
+<pre>sudo /home/ubuntu/Project3_1/sysbench --test=fileio --file-total-size=100G prepare</pre>
+The above command will generate a test file set of a total of 100 GBs. When you run this command make sure you run it after changing the directory into the folder where your storage device is mounted.</li>
+<li>Once the test files are deployed, you can run the benchmark using the following command. Use SSD or Magnetic as the first argument to specify your disk type:
+<pre>sudo /home/ubuntu/Project3_1/sysbench [SSD|Magnetic] --test=fileio --file-total-size=100G --file-test-mode=rndrw --max-time=300 --max-requests=0 run</pre>
+<b>Hint</b>: This command should be run under the directory with test files (the same directory you execute sysbench prepare command).You can read more about sysbench <a href="http://wiki.gentoo.org/wiki/Sysbench">here</a>.</li>
+</ol>
+</div>
+<h3 id="benchmarks">FileIO Performance Benchmarks</h3>
+<p>In this part of the project, we will be experimenting with "Vertical Scaling" for storage and instance types, by attaching Magnetic (i.e. spinning disks) and Solid State Drive (SSD) storage devices offered in AWS to two types of instances and measuring their performance for FileIO.</p>
+<p>As a result of this project exercise, we expect you to gain insight on the benefits of employing faster storage systems such as SSD and using larger instances.</p>      
+<div class="bs-callout bs-callout-warning">
+<h4>Project AMI</h4>
+<p>AMI is <code>ami-54590a3c</code>. We want you to test the following scenarios:</p>
+<table class="table">
+<thead>
+            <tr>
+              <th>Scenario</th>
+              <th>Instance Type</th>
+              <th>Storage Type</th>  
+            </tr>
+</thead>
+          <tbody><tr>
+            <td>1</td>
+            <td>t1.micro</td>
+            <td>EBS Magnetic Storage</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>t1.micro</td>
+            <td>EBS General Purpose SSD</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>m3.large</td>
+            <td>EBS Magnetic Storage</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>m3.large</td>
+            <td>EBS General Purpose SSD</td>
+          </tr>
+</tbody></table>
+</div>
+<div class="bs-callout bs-callout-task">
+<h4>Experiment 1</h4>
+<p>To run the benchmark for this experiment, perform the following steps:</p>
+<ol>
+<li>Launch a t1.micro instance with the AMI given above.</li>
+<li>Attach a 200 GB EBS volume of the desired type (Magnetic or SSD EBS) using the EC2 console.</li>
+<li>SSH to the instance.</li>
+<li>Perform the required steps to format and mount the EBS volume into the filesystem on that instance.</li>
+<li>Use the <b>sysbench fileio test</b> command with the <code>prepare</code> option to generate 100 GB of data into the attached EBS volume.</li>
+<li>Run <b>sysbench fileio test</b> on the data three times (without allowing for a long delay between runs)</li>
+<li>Enter your answers in runner.sh.</li>
+<li>Repeat steps 2 to 6 for the next storage type.</li>
+</ol>
+</div>
+<div class="bs-callout bs-callout-danger">
+<p>Do not delete the EBS volumes at this point.</p>
+</div>
+<div class="bs-callout bs-callout-task">
+<h4>Experiment 2</h4>
+<p>Please read the following instructions carefully. They are not the same as in Experiment 1.</p>
+<p>You can reuse the test files generated by sysbench prepare command from the previous experiment. So please don’t format the disks from the previous experiment, or you will lose the data.</p>
+<ol>
+<li>Launch a m3.large instance with the AMI given above.</li>
+<li>Detach the two 200 GB EBS volumes you used in previous steps.</li>
+<li>Attach one of the 200 GB EBS volumes of the desired type (Magnetic or SSD EBS) using  EC2 console.</li>
+<li>SSH to the instance and mount the EBS volume into the filesystem on that instance.</li>
+<li>Run <b>sysbench fileio test</b> on the data three times (without allowing for a long delay between runs).</li>
+<li>Record your results for the quiz.</li>
+<li>Repeat step 3 to 6 for another storage type.</li>
+</ol>
+</div>
+<div class="bs-callout bs-callout-info">
+<h4>Note</h4>
+<p>If you want to redo the experiments, please reboot the instance from AWS console. After rebooting, you need to mount the disk again. But don’t format the disk or generate test files using the sysbench prepare command. </p>
+</div>
+<h1 id="grading" class="page-header">Grading</h1>
+<p>To complete the project, you are expected to answer some questions provided in the same AMI. The quiz questions are present in the file <code>/home/ubuntu/Project3_1/runner.sh</code>. You can verify and submit your results using the given auto-grader in the AMI. To use the autograder, do the following:</p>
+<ol>
+<li>
+<p>Go to the auto-grader folder located at <code>/home/ubuntu/Project3_1</code></p>
+</li>
+<li>
+<p>The auto-grader consists of three files, <code>runner.sh</code>, <code>submitter</code> and <code>references</code>. You have permissions to edit <code>runner.sh</code> and <code>references</code> files.</p>
+</li>
+<li>
+<p>Edit the script <code>runner.sh</code> to include the commands/code used to answer the questions. You need to complete the questions using only bash commands and MySQL queries. Using any language other than bash will be given a grade of 0. Do not move any of the provided files. If you are using any external scripts, ensure that you are calling the correct scripts from <code>runner.sh</code>. Please ensure that you are placing all your code in the same folder and also assume that the dataset is present in the current folder.</p>
+</li>
+<li>
+<p>Edit the text file <code>references</code> to include all the links that you referred to for completing this project. Also include the Andrew IDs of all the other students who you might have discussed general ideas with when working on this project in the same file.</p>
+</li>
+<li>
+<p>You can run the autograder by typing <code>./runner.sh</code> from the autograder folder. Running this script should print out the answers to all the questions. Please ensure that the answers are printing correctly before using submitter.</p>
+</li>
+<li>
+<p>Once you have completed all the questions, you can submit the answers to the evaluation system using the auto-grader executable <code>submitter</code>. Run the executable using the command <code>./submitter</code> from the autograder folder. After running this command, you should be able to see your scores on the website in a few minutes. There is no limit on the number of submissions allowed before the project deadline. However, each submission must be separated by at least 60 seconds.</p>
+</li>
+<li>
+<p>NOTE: There might be some questions in the <code>runner.sh</code> which will be manually graded at the end of this project.</p>
+</li>
+</ol>
+<div class="bs-callout bs-callout-danger">
+<h4>Project Grading Penalties</h4>
+<p>Besides the penalties mentioned in recitation and/or on Piazza, penalties accrue for the following:</p>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Violation</th>
+              <th>Penalty of the project grade</th>
+            </tr>
+          </thead>
+          <tbody><tr>
+            <td>Spending more than $15 for this project checkpoint</td>
+            <td>-10%</td>
+          </tr>
+          <tr>
+            <td>Spending more than $30 for this project checkpoint</td>
+            <td>-100%</td>
+          </tr>
+          <tr>
+            <td>Failing to tag all your resources for this project</td>
+            <td>-10%</td>
+          </tr>
+          <tr>
+            <td>Using any instance other than t1.micro or m3.large</td>
+            <td>-10%</td>
+          </tr>
+          <tr>
+            <td>Attempting to hack/tamper the auto-grader</td>
+            <td>-100%</td>
+          </tr>
+        </tbody></table>
+      </div>
+
+<p></p></div>
+</div>
+<!-- JS Scripts -->
+<script src="./P3.1_files/docs.min.js"></script>
+<p></p>
+
+
+    </div>
+
+
+    </div>
+
+    <div id="footer" class="navbar-fixed-bottom" style="height:30px;background-color:#f5f5f5;position:fixed;bottom:0;width:100%;text-align:center;padding:5px">
+        <p class="text-muted credit">©2015 Teaching Staff Of The Cloud Computing Course, Carnegie Mellon University</p>
+    </div>
+
+    
+    
+    
+
+    <script type="text/javascript">
+        function dashIfUNE(str) {
+            return (str==null || str.length===0)?'<span class="glyphicon glyphicon-minus"></span>':str;
+        }
+        /* https://docs.djangoproject.com/en/dev/ref/csrf/ */
+        function csrfSafeMethod(method) {
+            return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+        }
+        $.ajaxSetup({
+            beforeSend: function(xhr, settings) {
+                if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                    xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                }
+            }
+        });
+        function getCookie(name) {
+            var cookieValue = null;
+            if (document.cookie && document.cookie != '') {
+                var cookies = document.cookie.split(';');
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = jQuery.trim(cookies[i]);
+                    if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+        var csrftoken = getCookie('csrftoken');
+    </script>
+    
+    <script type="text/javascript">
+        function fixNavbarTop() {
+            $('#base-container').css('padding-top', $('.navbar-fixed-top').height()+10);
+        }
+        $(document).ready(fixNavbarTop);
+        $(window).resize(fixNavbarTop);
+        $(window).load(fixNavbarTop);
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_writeup').addClass('btn-primary');
+            $("#project3").addClass('active');
+        });
+    </script>
+
+
+
+</div></body></html>

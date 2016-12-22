@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)https://theproject.zone/writeup/4/1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+
+    <link type="image/x-icon" rel="shortcut icon" href="https://theproject.zone/static/favicon.ico">
+    <!--<link type="text/css" rel="stylesheet" href="/static/css/table_sort.css">-->
+    <link type="text/css" rel="stylesheet" href="./P4.1_files/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="./P4.1_files/jquery.dataTables.min.css">
+    <link type="text/css" rel="stylesheet" href="./P4.1_files/header.css">
+    <link type="text/css" rel="stylesheet" href="./P4.1_files/defaultTheme.css">
+    <link type="text/css" rel="stylesheet" href="./P4.1_files/datepicker.css">
+    <link type="text/css" rel="stylesheet" href="./P4.1_files/bootstrap-editable.css">
+    <title>15-319/619 Cloud Computing</title>
+    
+    
+    
+    
+    
+    <link type="text/css" rel="stylesheet" href="./P4.1_files/inside.base.css">
+
+    <link type="text/css" rel="stylesheet" href="./P4.1_files/docs.min.css">
+
+
+    <script type="text/javascript" src="./P4.1_files/jquery.min.js"></script>
+    <script type="text/javascript" src="./P4.1_files/jquery.tablesorter.js"></script>
+    <script type="text/javascript" src="./P4.1_files/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="./P4.1_files/jquery.fixedheadertable.js"></script>
+    <script type="text/javascript" src="./P4.1_files/fnSetFilteringDelay.js"></script>
+    <script type="text/javascript" src="./P4.1_files/datatableview.min.js"></script>
+    <script type="text/javascript" src="./P4.1_files/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./P4.1_files/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="./P4.1_files/bootstrap-editable.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./P4.1_files/prettify.css"></head>
+
+<body role="document" style="margin-bottom: 40px">
+
+    <div id="base-container" class="container-fluid" style="padding-top: 49.888888835907px;">
+    
+    
+    
+    
+    
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+   
+        <div class="container-fluid">
+
+            <div class="navbar-header" style="padding-bottom:40px">
+               <a href="https://theproject.zone/home"><img src="./P4.1_files/TPZlogo_small_inverted.png"></a>
+            </div>
+
+            <div class="navbar-header pull-right">
+                <a class="navbar-brand" href="https://theproject.zone/writeup/4/1#" onclick="return false;" style="margin-left: 0px;"><span class="label label-default" id="username-label">pgandala</span></a>
+            </div>
+
+            <div class="coll pull-right">
+                <ul id="navbar" class="nav navbar-nav" style="font-weight:bold">
+                    <li id="home"><a href="https://theproject.zone/home">Home</a></li>
+
+                    
+                        
+                        <li id="project0" class="dropdown">
+                            <a href="https://theproject.zone/writeup/4/1#" data-toggle="dropdown" class="dropdown-toggle">Primer
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/0/1">Project Primer</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li id="project1" class="dropdown">
+                            <a href="https://theproject.zone/writeup/4/1#" data-toggle="dropdown" class="dropdown-toggle">Project 1
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/1/1">1.1 Sequential Analysis</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/1/2">1.2 Using Amazon's Elastic MapReduce</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li id="project2" class="dropdown">
+                            <a href="https://theproject.zone/writeup/4/1#" data-toggle="dropdown" class="dropdown-toggle">Project 2
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/2/1">2.1 Introduction to AWS APIs</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/2/2">2.2 Load Balancing and AutoScaling</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/2/3">2.3 Advanced Scaling Concepts</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li id="project3" class="dropdown">
+                            <a href="https://theproject.zone/writeup/4/1#" data-toggle="dropdown" class="dropdown-toggle">Project 3
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/3/1">3.1 Files v/s Databases</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/3/2">3.2 Partitioning and Replication</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/3/3">3.3 Database-as-a-Service</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/3/4">3.4 Cloud Data Warehousing</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/3/5">3.5 Consistency in Distributed Key-Value Stores</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li id="project4" class="dropdown active">
+                            <a href="https://theproject.zone/writeup/4/1#" data-toggle="dropdown" class="dropdown-toggle">Project 4
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="./P4.1_files/P4.1.html">4.1 MapReduce Programming using YARN</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/4/2">4.2 Iterative Programming using Apache Spark</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/4/3">4.3 Graph Programming using GraphLab</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li id="project5" class="dropdown">
+                            <a href="https://theproject.zone/writeup/4/1#" data-toggle="dropdown" class="dropdown-toggle">15619 Project
+                            
+                                <b class="caret"></b>
+                            
+                            </a>
+                            
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/1">Phase 1</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/2">Phase 1 Report</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/3">Phase 2</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/4">Phase 2 Live Test (MySQL)</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/5">Phase 2 Live Test (HBase)</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/6">Phase 2 Report</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/7">Phase 3</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/9">Phase 3 Live Test</a></li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                        
+                                        <li><a class="active" href="https://theproject.zone/writeup/5/10">Phase 3 Report</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                    
+                
+                    
+                    <li id="grade"><a class="active" href="https://theproject.zone/grade/">Grade Book</a></li>
+                    <li id="profile"><a href="https://theproject.zone/profile">Profile</a></li>
+                    <li id="logout"><a href="https://theproject.zone/log_out">Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+
+        <div class="row">
+
+        <div class="col-md-6">
+            <h2>4.1 MapReduce Programming using YARN</h2>
+        </div>
+        
+        
+        <div class="col-md-6 pull-down">
+            <div class="btn-group pull-right" style="margin-bottom: 10px">
+                <a class="btn btn-default btn-primary" href="https://theproject.zone/writeup/4/1/" id="nav_writeup">Writeup</a>
+
+                
+
+                
+
+                <a class="btn btn-default" href="https://theproject.zone/submissions/4/1/" id="nav_submissions">Submissions</a>
+                <a class="btn btn-default" href="https://theproject.zone/scoreboard/4/1/" id="nav_score_board">ScoreBoard</a>
+            </div>
+        </div>
+        
+        
+        </div>
+
+        <table class="table table-striped table-bordered table-condensed prettyBorder">
+        <thead>
+            <tr>
+                <th>Phase</th>
+                <th>Open</th>
+                <th>Deadline</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>4.1 MapReduce Programming using YARN</td>
+                <td>Apr. 06, 2015 00:01</td>
+                <td>Apr. 13, 2015 23:59</td>
+            </tr>
+        </tbody>
+        </table>
+        
+        
+
+        <hr>
+        
+
+<style>
+  img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  }
+  small.caption {
+  display: block;
+  text-align: center;
+  margin-bottom: 4em;
+  }
+  iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  }
+.bs-callout-task h4,
+  .bs-callout-task a.alert-link {
+  color: green;
+  }
+.bs-callout-task {
+  background-color: #ffffff;
+  border-left-color: green;
+  }
+.bs-callout-learning {
+  background-color: #ffffff;
+  border-left-color: purple;
+  }
+  .bs-callout-learning h4,
+  .bs-callout-learning a.alert-link {
+  color: purple;
+  }
+
+</style>
+
+<div id="writeup-content" class="row">
+<div class="col-md-3" role="complementary">
+  <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top" style="top:120px">
+    <!-- Inline CSS Hack for Display -->
+    <ul class="nav bs-docs-sidenav">
+      <li>
+        <a href="https://theproject.zone/writeup/4/1#top">MapReduce Programming</a>
+        <ul class="nav">
+          <li><a href="https://theproject.zone/writeup/4/1#paradigm">MapReduce Paradigm</a></li>
+          <li><a href="https://theproject.zone/writeup/4/1#start">Getting Started</a></li>
+          <li><a href="https://theproject.zone/writeup/4/1#example">Word Count Example</a></li>
+          <li><a href="https://theproject.zone/writeup/4/1#walkthrough">&nbsp;&nbsp;&nbsp;&nbsp;Code Walkthrough</a></li>
+          <li><a href="https://theproject.zone/writeup/4/1#running">&nbsp;&nbsp;&nbsp;&nbsp;Running a Job</a></li>
+          <li><a href="https://theproject.zone/writeup/4/1#predictor">Input Text Predictor</a></li>
+          <li><a href="https://theproject.zone/writeup/4/1#building">Building a Text Predictor</a></li>
+          <li><a href="https://theproject.zone/writeup/4/1#step1">Step 1</a></li>
+          <li><a href="https://theproject.zone/writeup/4/1#step2">Step 2</a></li>
+          <li><a href="https://theproject.zone/writeup/4/1#step3">Step 3</a></li>
+        </ul>
+      </li>
+    </ul>
+    <a class="back-to-top" href="https://theproject.zone/writeup/4/1#top">
+    Back to top
+    </a>
+  </nav>
+</div>
+<div class="col-md-9" role="main">
+  <div class="bs-docs-section">
+    <h1 id="top" class="page-header">Input Text Predictor using MapReduce</h1>
+<div class="bs-callout bs-callout-learning">
+<h4>Learning Objectives</h4>
+<p>This project will encompass the following learning objectives:</p>
+<ol>
+<li>Learn distributed programming using the MapReduce paradigm.</li>
+<li>Run jobs that run on the YARN framework and write to HBase.</li>
+<li>Build an input text predictor that feeds from an HBase table.</li>
+</ol>
+</div>  
+<div class="bs-callout bs-callout-warning">
+      <h4 id="resource-tagging">Resource Tagging And Budgets</h4>
+      <p>Tag all of your instances with <code>Key: Project</code> and <code>Value: 4.1</code> for all resources</p>
+      <p>You have a budget <strong>$15</strong> for all the tasks in Project 4.1.</p>
+</div>
+<p>At Carnegie Records you realized that the music industry is no longer profitable, since it is too easy to find illegal copies of music online. You come to the realization that true power is held by those who control the flow of information and data.</p>
+<p>You decide to join Mellonitics, a corporation for search and data analytics. Of course, there are some small companies that currently dominate the web search market, so you need to build an engine that is faster and provides more accurate results than the incumbents.</p>
+<p>The first stage is to build a simple engine that can predict what people want to search for. Studies have shown that millennials are too lazy to type in the entire search term in the search box.</p>
+<p>This week, you will build a search query Input Text Predictor simple Hadoop programs.</p>
+<p></p>
+
+<h3 id="paradigm">The MapReduce Programming Paradigm</h3>
+<p>This project module is complemented by <a href="https://oli.cmu.edu/jcourse/webui/syllabus/module.do?context=decd71b580020ca601408d175da47cfe">Unit 5: "Programming Models"</a> on OLI.</p>
+<p>The <a href="http://en.wikipedia.org/wiki/MapReduce">MapReduce</a> programming model, pioneered by Google, is designed to process big data using a large number of commodity machines. 
+In a MapReduce program, data, stored as Key/Value pairs, is processed by a Map function. Mappers output a transformed 
+set of Key/Value pairs, which are subsequently processed by a Reduce function (see Figure 1 Below:).</p>
+
+<img src="./P4.1_files/MapRed.PNG" width="800px/">
+<h4><small class="caption">Figure 1: MapReduce Overview</small></h4>
+
+<p>MapReduce is a proprietary framework designed to run in Google's large server farms and data centers. <a href="http://hadoop.apache.org/">Hadoop</a> is an open-source implementation of MapReduce. </p>
+<p>The Hadoop framework runs atop HDFS. HDFS mimics the Google File System (GFS) and partitions input datasets into fixed-size chunks (blocks), distributing them on participating cluster nodes. By default 128MB, each HDFS block can be configured differently by users. Jobs can subsequently process HDFS blocks in parallel at distributed machines, thus exploiting the parallelism enabled by partitioning datasets. MapReduce breaks jobs into multiple tasks denoted as map and reduce tasks. All map tasks are encapsulated in what is known as the map phase, and reduce tasks are encompassed in what is called the reduce phase. The map phase can have one or many map tasks, and the reduce phase can have zero or many reduce tasks. When a MapReduce job includes no reduce tasks, it is referred to as "reduce-less."</p>
+<p>Map and reduce tasks consume different data, operating independently and in parallel only in their respective phases. That is, tasks in the same phase never communicate (send or receive messages)</p>
+<p>The <a href="https://hadoop.apache.org/docs/current/api/org/apache/hadoop/mapreduce/InputFormat.html">InputFormat</a> defines how to read data from a file into the Mapper tasks. Hadoop comes with several implementations of InputFormat; some of them work with text files and describe different ways in which the text files can be interpreted. The Map function will process these values and write an output value of a particular <a href="https://hadoop.apache.org/docs/current/api/org/apache/hadoop/io/Writable.html">Writable</a> type. The only communication in MapReduce occurs implicitly between different tasks in different phases. Specifically, map tasks generate new partitions in the map phase, and the Hadoop engine itself transfers partitions (over the network) to the reduce tasks in the reduce phase/ The results emitted from each mapper are sorted by key, and partitioned into one of the reducers. This is done when each mapper task completes to avoid an overload of traffic at the end of the final mapper's operation. The intermediate data is passed to a waiting reducer task, and also written to the local disk.</p>
+<pre>Map(k1,v1) --&gt; list(k2,v2)
+</pre>
+<p>The next steps are the Shuffle then Merge and Sort, which are performed automatically by the MapReduce framework.  This is done using a Partition function, which when given a key, returns the ID of the target reducer. For e.g. you may choose the default HashPartitioner, where the key is hashed into a modulo-n integer (where n is the number of reducers). The goal of this phase is to send all KV pairs with the same key to the same reducer.</p>
+<p>The Reduce function is called once for each unique key output from the mapper. The Reducer has an iterator for all values for each key. This may be used to aggregate results, and finally returns another an output in the desired OutputFormat which is written to a destination by a specific Output Writer.</p>
+<pre>Reduce(k2, list (v2)) --&gt; list(v3)
+</pre>
+<h3 id="start">Getting Started</h3>
+<p>In this project, you will be writing MapReduce programs to perform data analytics in order to build a text predictor. The first part of this project involves getting familiarized with MapReduce programming in the native Java framework. Please read the entire project write-up carefully before provisioning any resources. You will be required to write Java code in order to complete this project.</p>
+<p>Before we discuss the task to be completed, we will first go through a few example programs in Hadoop. The following cluster configuration will be used.</p>
+<p>Launch a 5-node cluster (1 Master + 4 Core) (m1.large/m1.xlarge) using Amazon EMR, following the instructions outlined in Project 1. You should use spot pricing as long as the savings are significant compared to on-demand pricing. Choose the <a href="http://docs.aws.amazon.com/ElasticMapReduce/latest/DeveloperGuide/ami-versions-supported.html">3.6.0 AMI version</a> (which runs <a href="https://hadoop.apache.org/docs/r2.4.0/">Hadoop 2.4.0</a>). Remember to provide an EC2 keypair so that you can SSH into the instances once the cluster is provisioned.</p>
+<p>Once provisioned, login to the Master node of your cluster. The EMR console should tell you the DNS name of the master instance. If you have trouble connecting, make sure the security group associated with the master instance has SSH (Port 22) open to all IPs. Remember that EMR clusters use a special AMI which allows you to log in as the hadoop user.</p>
+<p>List the entries in the home directory of the hadoop user, you should find multiple jar files, including <code>hadoop-examples.jar</code>.</p>
+<p>Run <code>hadoop jar hadoop-examples.jar</code> to see a list of sample programs that are available with Hadoop.</p>
+<p>Run the sample pi application (using 8 maps and 10,000 samples per map) to ensure that your Hadoop cluster is working correctly.</p>
+<p>You can keep the cluster running to try more example programs. You should use this cluster configuration for all activities related to this project checkpoint</p>
+
+<h3 id="example">MapReduce Word Count Example</h3>
+<p>In this example, we will compile and run a Word Count program to process text files and report the number of times each word appears in the input files.</p>
+<p>For help with the various hadoop command line syntaxes, we refer you to the <a href="http://hadoop.apache.org/docs/current/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html">MapReduce Tutorial</a> and <a href="http://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-hdfs/HDFSCommands.html">HDFS Command Guide</a>.</p>
+<p>The following video will cover the classical Word Count Java example for Hadoop:</p>
+<iframe width="560" height="315" src="./P4.1_files/3O5e6zGb1dw.html" frameborder="0" allowfullscreen=""></iframe>
+<h4><small class="caption">Video 1: Word Count using MapReduce : Code Walkthrough</small></h4>
+<p>Note: In the video, we have compiled the Word Count example in Eclipse to run on the cluster. Newer versions of Eclipse and/or the JDK may use JRE 1.8, which is not compatible with JRE 1.7 that is typically found on EMR clusters. Please compile the code using the correct JRE, or compile the program on the cluster as described below.</p>
+<div class="bs-callout bs-callout-warning">
+<h4 id="walkthrough">Code Walkthrough:</h4>The code for Word Count on Hadoop is best explained in the <a href="http://hadoop.apache.org/docs/current/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html">Apache Hadoop tutorial</a>
+<p>Please read the tutorial carefully, and create <code>WordCount.java</code> using first the <a href="http://hadoop.apache.org/docs/current/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html#Example:_WordCount_v1.0">simple</a>, and then later the <a href="http://hadoop.apache.org/docs/current/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html#Example:_WordCount_v2.0">more complex</a> example.
+</p></div>
+<h4 id="running">Running the WordCount Hadoop Program on EMR</h4>
+<p>Follow this video:</p>
+<iframe width="560" height="315" src="./P4.1_files/iWGqAhViyfY.html" frameborder="0" allowfullscreen=""></iframe>
+<h4><small class="caption">Video 2: Word Count using MapReduce : Running the program</small></h4>
+<p>Note: Some students report issues when loading data into HBase using the runnable JAR exported from Eclipse. It makes more sense to use the approach below to compile.</p>
+<p>Login to the master instance of your hadoop cluster to author the WordCount.java file.</p>
+<p>Compile your code and package it as a jar using the following commands:</p>
+<pre>cd ~
+mkdir wordcount_classes
+cp ~/share/hadoop/common/hadoop-common-2.4.0-amzn-3.jar .
+cp ~/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.4.0-amzn-3.jar .
+cp ~/share/hadoop/mapreduce/hadoop-mapreduce-client-common-2.4.0-amzn-3.jar .
+javac -classpath hadoop-common-2.4.0-amzn-3.jar:hadoop-mapreduce-client-core-2.4.0-amzn-3.jar:hadoop-mapreduce-client-common-2.4.0-amzn-3.jar -d wordcount_classes WordCount.java
+jar -cvf wordcount.jar -C wordcount_classes/ .
+</pre>
+<p>Please note the trailing . at the end of the jar command. If you have trouble finding the jar command in your instance, a version may be located in <code>/usr/lib/jvm/*/bin</code> OR <code>/usr/java/latest/bin/jar</code></p>
+<p>To prepare the input, you can either create a simple text file and upload it to HDFS using the command <code>hadoop dfs -put <filename> /wordcount/input</filename></code>, or for a much larger dataset, you can run RandomTextWriter in the hadoop examples jar file with the parameter /wordcount/input to generate the input data. This uses the configuration to generate about 40 GB of data, (10 GB of data per node), which can take a while to complete. Once the program has finished, use the HDFS commands to check the contents of /wordcount/input</p>
+<p>Run your MapReduce jar file (wordcount.jar) over /wordcount/input. Use <code>/wordcount/output</code> as the destination for your output files.</p>
+<p>Once the program has completed execution, you can use the hadoop dfs commands to inspect and copy the output of your program.</p>
+<h3 id="predictor">Input Text Prediction</h3>
+<p>Input text prediction helps speed up search by "autosuggesting" the next word(s) that the user is more likely to search for. This is often used as a component for incremental search, by providing real-time suggestions for users to progressively filter through text. As the user types text, one or more possible matches for the text are found and immediately presented to the user. This immediate feedback often allows the user to stop short of typing the entire word or phrase they were looking for. The user may also choose a closely related option from the presented list.</p>
+<p>Predictors are often frequency-based and are known to be influenced by frequent searching (example <a href="http://en.wikipedia.org/wiki/Google_bomb">Google bombs</a>).</p>
+<p>A basic input predictor works using a language model that predicts the probability of a future word occuring given that a string has already been typed. It then recommends the most likely words in order from that list. You will learn to build this in three steps.</p>
+<img src="./P4.1_files/input_predictor.PNG" width="">
+<h4><small class="caption">Figure 2: The Input Text Predictor at one of our rivals (please note that it is highly accurate) </small></h4>
+<h3 id="building">Building an Input Text Predictor</h3>
+<p>For this project, you will build your own input text predictor, similar to <a href="http://www.google.com/insidesearch/features/instant/about.html">Google Instant</a>. You will build this input text predictor using a text corpus.</p>
+<p>The steps involved in building this input text predictor are:</p>
+<ol>
+<li>Given a text corpus, generate a list of n-grams, which is simply a list of phrases in a text corpus with their corresponding counts.</li>
+<li>Generate a statistical language model using the n-grams. The statistical language model contains the probability of a word appearing after a phrase.</li>
+<li>Create a user interface for the input text predictor, so that when a word or phrase is typed, the next word can be predicted and displayed to the user using the statistical language model.</li>
+</ol>
+<p>You will start the project by generating n-grams from a text corpus for this module.</p>
+<h4 id="step1">Step 1</h4>
+<p>In the first part of the project, you will work with a plain-text corpus of 6000 books from Project Gutenberg and generate a list of n-grams from it.</p>
+<p>An n-gram is phrase with n-words in it. For example a 1-gram is a single word such as "this" or "where", and 2-grams are phrases with two words, such as "this is" or "where is".</p>
+<p>This text corpus has been processed and stored in the following S3 location:</p>
+<pre>s3://15-319-s13/book-dataset/</pre>
+<p>Process the entire text corpus using a MapReduce job to output every phrase in the corpus, along with the number of times the phrase appeared. These n-grams must be in the following plain-text format:
+<code>&lt;phrase&gt;&lt;\t&gt;&lt;count&gt;</code>
+</p>
+<p>
+For Example:
+</p>
+<pre>this        1000
+this is     500
+this is a   250
+</pre>
+<p>Once you have your ngrams, select the top 100 ngrams (ordered by count, break ties alphabetically) and store them in a file. You will use this file of 100 ngrams for grading later. We strongly recommend using <a href="https://cwiki.apache.org/confluence/display/Hive/LanguageManual+Select">Hive</a> which you were introduced to in Project 3 to get this data using a SQL-like syntax, though you are free to use any method you see fit. Another interesting approach will be to write a custom Partitioner and use it to perform Distributed Sort.</p>
+<p>Please note the following instructions/assumptions:</p>
+<ul>
+<li>You must generate 1-gram, 2-gram, 3-gram, 4-gram, 5-gram outputs in the same MapReduce job.</li>
+<li>You need to generate raw n-grams and not worry about punctuation or phrase semantics.</li>
+<li><b>You MUST process each line independently. You do not need to consider n-grams and phrases that span multiple lines in the text corpus.</b></li>
+<li><b>You must limit the words in the phrase to be purely alphabetical [A-Za-z] and replace all punctuation, numbers and all non-alphabetical characters can be replaced with a space, generating additional words in the line.</b></li>
+<li><b>Convert all words to lower-case.</b></li>
+<li><b>Do not consider n-grams and phrases that span multiple lines in the text corpus.</b></li>
+<li><b>Treat underscore '_' as a non-word character.</b></li>
+</ul>
+<ul>
+<li>Run your MapReduce job on a cluster provisioned using Amazon EMR.</li>
+<li>Use spot instances.</li>
+<li>Do not exceed more than $1.5 per hour for your EMR cluster (consider all relevant costs in this calculation -- leave a buffer for network and disk I/O)</li>
+<li>If you need to take a break before Step 2, transfer the output of your program to an S3 bucket for the next part of the project. You can do this by using s3cmd or by directly writing to S3 from your MapReduce program.</li>
+<li>Consider using <code>hadoop distcp</code> if you ever need transfer files between S3 and HDFS.</li>
+<li>If your instance is small, or you have no extra EBS provisioned, you will find yourself running out of space if you try to copy the entire output to local disk, so we suggest copying the data out to ephemeral storage in /mnt, or copying small parts of your output for inspection.</li>
+<li><b>Do not output any empty characters "" or double spaces " " between words.</b></li>
+<li><b>Treat apostrophe as punctuation - so the word don't would generate the ngrams don ; don t ; t ;</b></li>
+<li>We recommend that you code and test and debug your program on a small file first before attempting to generate the n-grams for an entire text corpus.</li>
+</ul>
+
+<div class="bs-callout bs-callout-task">
+<h4>Tasks to complete</h4>
+<ol>
+<li>Launch an EMR cluster (with Hive/HBase installed) to run your MapReduce job for step 1 as explained in the video.</li>
+<li>Get the top 100 ngrams and store them in a file called "ngrams".</li>
+<li>SSH into the master of your EMR cluster and download the submitter file from here:
+<pre>cd ~    
+wget https://s3.amazonaws.com/15-319-s15/submitter
+chmod +x submitter
+</pre>
+</li>
+<li>Copy your "ngrams" file into the same folder as the submitter and run the following command:
+<pre>./submitter -n</pre>
+</li>
+<li>This will grade the accuracy of your ngrams and update your score.</li>
+</ol>
+</div>
+
+<h4 id="step2">Step 2</h4>
+<p>We will now compute a statistical language model using the n-gram counts and store them in an efficient manner so that they can be accessed easily from a web interface.</p>
+<p>A statistical language model is a collection of probabilities of words appearing after a phrase. Using the n-gram counts as input, the probability of a word appearing after a phrase can be expressed in simple terms as:</p>
+<img src="./P4.1_files/Math1.PNG">
+<p>As an example, consider the following input:</p>
+<pre>this                     1000
+this is                  500
+this is a                125
+this is a blue           60
+this is a blue house     20
+</pre>
+<p>The following probabilities can be calculated:</p>
+<img src="./P4.1_files/Math2.PNG">
+<p>Your task is to generate the statistical language model for all words and phrases appearing in the n-gram counts generated from a text corpus. You must complete this task using a MapReduce job that reads the input file from HDFS and writes the output file to HBase. Specifically, you must:</p>
+<ol>
+<li>Develop a schema in HBase to store the words appearing after phrases and their probabilities. You must also account for how the data is likely to be accessed from the user interface. Users will type a phrase and will expect to see an ordered list of the next word that the user is “most” likely to type.</li>
+<li>Write a Mapreduce program to read the n-gram counts generated from the previous checkpoint, and process them to generate the probabilities as outlined above. The output from the MapReduce program should be written directly to an HBase table, following the schema that you have designed.</li>
+</ol>
+<h5>Hints, Assumptions, and References:</h5>
+<ol>
+<li>You can launch a cluster that has both HBase and Hadoop automatically using EMR.</li>
+<li>You will want to ignore phrases that appear below or equal to a certain threshold, say t, from your n-gram count for your statistical language model to be accurate. Use t = 2.</li>
+<li>For a given phrase, store only the top n words with the highest probabilities. This value should also be a command-line parameter to your MapReduce application. If two words have the same probability, choose the one which is lexicographically higher i.e. 'ab' comes before 'bc'. Use n = 5.</li>
+<li>Use GenericOptionsParser class, along with apache.commons.cli packages to parse command line options.</li>
+<li>Use no more than 5 instances to complete the MapReduce job. Use spot pricing for all EMR instances, if they are cheaper than the on-demand pricing.</li>
+<li>HBase is covered in the Storage Module of the course; Practical aspects of HBase are available at <a href="http://hbase.apache.org/book/">http://hbase.apache.org/book/</a>. Hadoop, The Definitive Guide by Tom White includes a good chapter on HBase. In addition, HBase, The Definitive Guide by Lars George is also a good reference.</li>
+<li>As always, create a small test set to verify your approach and algorithm before running it over the entire dataset.</li>
+<li>Once you have loaded the phrases, words and their associated probabilities into HBase, please use the hbase shell to test out some get operations.</li>
+</ol>
+<h4 id="step3">Step 3</h4>
+<p>Once the language model has been generated and loaded on to HBase, we can connect it to the Web interface to test out the language auto-completion. Please follow the steps below:</p>
+<ol>
+<li>Log in to your master instance and run the following command:
+<pre>hbase-daemon.sh start rest</pre>
+</li>
+<p>This will start the HBase rest server which your interface will interact with.</p>
+
+<li>Start/restart Apache:
+<pre>sudo service httpd restart</pre>
+</li>
+<li>Install the demo PHP code for this project. From this step it is preferable that you enter a root shell since most of the commands you run will require root access.
+<pre>sudo su
+cd ~
+wget https://s3.amazonaws.com/15-319-s15/proj4_web.tgz
+cd /var/www/html
+sudo tar xzf ~/proj4_web.tgz
+</pre>
+</li>
+<li>Verify the Apache server is running by visiting the IP address of your server instance through a browser (For eg. http://ec2-111-222-333-444.compute-1.amazonaws.com/proj4_web/info.php)</li>
+<p>You should be able to see information about PHP displaying correctly. If the .php file is downloaded instead of displaying in the browser, try restarting apache2 again, or look at <code>/var/log/httpd/error_log</code></p>
+<li>Modify the PHP file provided with the details of your HBase schema (tablename and column family) in order to read data from your HBase table. The code assumes a schema with the phrase as a row key and all words that can appear after the phrase to be column names. Modify the PHP code to match your schema if it is different. You can visit http://your-master-dns/proj4_web/request.php?term=some_term for debugging (this link should return a JSON array of predicted words and their probabilities) and http://your-master-dns/proj4_web/ to see your input predictor in action.  </li>
+</ol>
+
+<div class="bs-callout bs-callout-task">
+<h4>Tasks to complete</h4>
+<ol>
+<li>Launch an EMR cluster and run your MapReduce code to generate the language model.</li>
+<li>Follow the instructions in step 3 to create your user interface. The .tar.gz mentioned in step 3 will have the skeleton code as well as the submitter file.</li>
+<li>This module has 2 grading components. The ngram file you generated in step 1 will be graded by running submitter with the "-n" argument. Steps 2 and 3 will be graded by running submitter with the "-m" argument.  The submitter will also upload all code for this module for manual grading. Copy your MapReduce code for ngrams in a file called 'ngram.java'. Copy your MapReduce code for language model in a file called 'model.java'. Please copy both MapReduce code for steps 1 and 2 to this folder before making your final submission.</li>
+ </ol>
+</div>
+<div class="bs-callout bs-callout-danger">
+<h4>Warning</h4>
+<p>Please copy all MapReduce code to the folder where you run submitter before making your final submission.</p>
+</div>
+
+<div class="bs-callout bs-callout-task">
+  <h4 id="grading">Grading</h4>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Value</th>
+        <th>Weight</th>
+      </tr>
+    </thead>
+    <tbody><tr>
+      <td>Ngram generation</td>
+      <td>45%</td>
+    </tr>
+    <tr>
+      <td>Model generation</td>
+      <td>45%</td>
+    </tr>
+        <tr>
+      <td>Code</td>
+      <td>10%</td>
+    </tr>
+  </tbody></table>
+</div>
+    <div class="bs-callout bs-callout-danger">
+      <h4 id="grading-penalties">Grading Penalties</h4>
+      <p>The following table outlines the violations of the project rules and the corresponding grade penalties:</p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Violation</th>
+            <th>Penalty of the project grade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Using more than $15 to complete this phase</td>
+            <td>-10%</td>
+          </tr>
+          <tr>
+            <td>Using more than $30 to complete this phase</td>
+            <td>-100%</td>
+          </tr>
+          
+          <tr>
+            <td>Not submitting your code</td>
+            <td>-100%</td>
+          </tr>
+          <tr>
+            <td>Using EMR Streaming (Like P1.2)</td>
+            <td>-100%</td>
+          </tr>
+
+          <tr>
+            <td>Publishing your code publicly (e.g. Public Repository on Github)</td>
+            <td>-200% at least</td>
+          </tr>
+          <tr>
+            <td>Copying any code from the Internet, other teams, solutions from previous semesters, or anywhere</td>
+            <td>-200% at least</td>
+          </tr>
+          <tr>
+            <td>Any kind of collaboration</td>
+            <td>-200% at least</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+<p></p></div>
+</div>
+<!-- JS Scripts -->
+<script src="./P4.1_files/docs.min.js"></script>
+<p></p>
+
+
+    </div>
+
+
+    </div>
+
+    <div id="footer" class="navbar-fixed-bottom" style="height:30px;background-color:#f5f5f5;position:fixed;bottom:0;width:100%;text-align:center;padding:5px">
+        <p class="text-muted credit">©2015 Teaching Staff Of The Cloud Computing Course, Carnegie Mellon University</p>
+    </div>
+
+    
+    
+    
+
+    <script type="text/javascript">
+        function dashIfUNE(str) {
+            return (str==null || str.length===0)?'<span class="glyphicon glyphicon-minus"></span>':str;
+        }
+        /* https://docs.djangoproject.com/en/dev/ref/csrf/ */
+        function csrfSafeMethod(method) {
+            return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+        }
+        $.ajaxSetup({
+            beforeSend: function(xhr, settings) {
+                if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                    xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                }
+            }
+        });
+        function getCookie(name) {
+            var cookieValue = null;
+            if (document.cookie && document.cookie != '') {
+                var cookies = document.cookie.split(';');
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = jQuery.trim(cookies[i]);
+                    if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+        var csrftoken = getCookie('csrftoken');
+    </script>
+    
+    <script type="text/javascript">
+        function fixNavbarTop() {
+            $('#base-container').css('padding-top', $('.navbar-fixed-top').height()+10);
+        }
+        $(document).ready(fixNavbarTop);
+        $(window).resize(fixNavbarTop);
+        $(window).load(fixNavbarTop);
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_writeup').addClass('btn-primary');
+            $("#project4").addClass('active');
+        });
+    </script>
+
+
+
+</div></body></html>
